@@ -101,7 +101,7 @@ class KeyboardViewController: UIInputViewController {
             kSmallLowercase: false
         ])
         
-        self.keyboard = defaultKeyboard()
+        self.keyboard = Keyboard.defaultKeyboard()
         
         self.shiftState = .disabled
         self.currentMode = 0
