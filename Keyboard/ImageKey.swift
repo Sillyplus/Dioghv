@@ -33,12 +33,10 @@ class ImageKey: KeyboardKey {
         if switchColors {
             if let downTextColor = self.downTextColor {
                 self.image?.tintColor = downTextColor
-            }
-            else {
+            } else {
                 self.image?.tintColor = self.textColor
             }
-        }
-        else {
+        } else {
             self.image?.tintColor = self.textColor
         }
     }
@@ -51,13 +49,10 @@ class ImageKey: KeyboardKey {
     func redrawImage() {
         if let image = self.image {
             let imageSize = CGSize(width: 20, height: 20)
-            let imageOrigin = CGPoint(
-                x: (self.bounds.width - imageSize.width) / CGFloat(2),
-                y: (self.bounds.height - imageSize.height) / CGFloat(2))
+            let imageOrigin = CGPoint(x: (self.bounds.width - imageSize.width) / CGFloat(2), y: (self.bounds.height - imageSize.height) / CGFloat(2))
             var imageFrame = CGRect.zero
             imageFrame.origin = imageOrigin
             imageFrame.size = imageSize
-            
             image.frame = imageFrame
         }
     }

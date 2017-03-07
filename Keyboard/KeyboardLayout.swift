@@ -362,7 +362,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
                     }
                 }
                 
-                foundCachedKeys.map {
+                let _ = foundCachedKeys.map {
                     keyMap.removeValue(forKey: $0)
                 }
                 
@@ -371,8 +371,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
                     let keyView = self.generateKey()
                     setupKey(keyView, key, frame)
                 }
-            }
-            else {
+            } else {
                 for (key, frame) in keyMap {
                     if let keyView = self.pooledKey(key: key, model: self.model, frame: frame) {
                         setupKey(keyView, key, frame)
@@ -445,17 +444,17 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
             switch model.type {
             case Key.KeyType.shift:
                 if key.shape == nil {
-                    let shiftShape = self.getShape(ShiftShape)
+                    let shiftShape = self.getShape(ShiftShape.self)
                     key.shape = shiftShape
                 }
             case Key.KeyType.backspace:
                 if key.shape == nil {
-                    let backspaceShape = self.getShape(BackspaceShape)
+                    let backspaceShape = self.getShape(BackspaceShape.self)
                     key.shape = backspaceShape
                 }
             case Key.KeyType.keyboardChange:
                 if key.shape == nil {
-                    let globeShape = self.getShape(GlobeShape)
+                    let globeShape = self.getShape(GlobeShape.self)
                     key.shape = globeShape
                 }
             default:
@@ -476,7 +475,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
         
         if model.type == Key.KeyType.shift {
             if key.shape == nil {
-                let shiftShape = self.getShape(ShiftShape)
+                let shiftShape = self.getShape(ShiftShape.self)
                 key.shape = shiftShape
             }
             
@@ -779,7 +778,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
             
             let mostKeysInRow: Int = {
                 var currentMax: Int = 0
-                for (i, row) in page.rows.enumerated() {
+                for (_, row) in page.rows.enumerated() {
                     currentMax = max(currentMax, row.count)
                 }
                 return currentMax
@@ -907,22 +906,19 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
         let specialCharacterGap = sideSpace - specialCharacterWidth
         
         var currentOrigin = frame.origin.x
-        for (k, key) in row.enumerated() {
+        for (k, _) in row.enumerated() {
             if k == 0 {
                 frames.append(CGRect(x: rounded(currentOrigin), y: frame.origin.y, width: specialCharacterWidth, height: frame.height))
                 currentOrigin += (specialCharacterWidth + specialCharacterGap)
-            }
-            else if k == row.count - 1 {
+            } else if k == row.count - 1 {
                 currentOrigin += specialCharacterGap
                 frames.append(CGRect(x: rounded(currentOrigin), y: frame.origin.y, width: specialCharacterWidth, height: frame.height))
                 currentOrigin += specialCharacterWidth
-            }
-            else {
+            } else {
                 frames.append(CGRect(x: rounded(currentOrigin), y: frame.origin.y, width: actualKeyWidth, height: frame.height))
                 if k == row.count - 2 {
                     currentOrigin += (actualKeyWidth)
-                }
-                else {
+                } else {
                     currentOrigin += (actualKeyWidth + keyGap)
                 }
             }
@@ -937,15 +933,13 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
         var keysBeforeSpace = 0
         var keysAfterSpace = 0
         var reachedSpace = false
-        for (k, key) in row.enumerated() {
+        for (_, key) in row.enumerated() {
             if key.type == Key.KeyType.space {
                 reachedSpace = true
-            }
-            else {
+            } else {
                 if !reachedSpace {
                     keysBeforeSpace += 1
-                }
-                else {
+                } else {
                     keysAfterSpace += 1
                 }
             }
@@ -1010,7 +1004,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
         
         let popupWidth = key.bounds.width + self.layoutConstants.popupWidthIncrement
         let popupHeight = totalHeight - self.layoutConstants.popupGap - key.bounds.height
-        let popupCenterY = 0
+//        let popupCenterY = 0
         
         return CGRect(x: (key.bounds.width - popupWidth) / CGFloat(2), y: -popupHeight - self.layoutConstants.popupGap, width: popupWidth, height: popupHeight)
     }

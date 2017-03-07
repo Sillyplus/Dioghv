@@ -112,7 +112,7 @@ class Catboard: KeyboardViewController {
             
             let rect = self.view.bounds
             UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
-            var context = UIGraphicsGetCurrentContext()
+            _ = UIGraphicsGetCurrentContext()
             self.view.drawHierarchy(in: self.view.bounds, afterScreenUpdates: true)
             let capturedImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()

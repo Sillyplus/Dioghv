@@ -10,7 +10,7 @@ import Foundation
 
 var counter = 0
 
-class Key: Hashable {
+class Key {
     
     enum KeyType {
         case character
@@ -133,6 +133,12 @@ class Key: Hashable {
     }
 }
 
-func ==(lhs: Key, rhs: Key) -> Bool {
-    return lhs.hashValue == rhs.hashValue
+extension Key: Hashable {
+    
+    static func ==(lhs: Key, rhs: Key) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
+    
 }
+
+

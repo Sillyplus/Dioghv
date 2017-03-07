@@ -78,8 +78,7 @@ class KeyboardViewController: UIInputViewController {
         get {
             if let constraint = self.heightConstraint {
                 return constraint.constant
-            }
-            else {
+            } else {
                 return 0
             }
         }
@@ -88,6 +87,7 @@ class KeyboardViewController: UIInputViewController {
         }
     }
     
+
     // TODO: why does the app crash if this isn't here?
     convenience init() {
         self.init(nibName: nil, bundle: nil)
@@ -179,7 +179,7 @@ class KeyboardViewController: UIInputViewController {
             self.setupKludge()
             
             self.updateKeyCaps(self.shiftState.uppercase())
-            var capsWasSet = self.setCapsIfNeeded()
+            self.setCapsIfNeeded()
             
             self.updateAppearances(self.darkMode())
             self.addInputTraitsObservers()
@@ -409,7 +409,8 @@ class KeyboardViewController: UIInputViewController {
                 attribute:NSLayoutAttribute.notAnAttribute,
                 multiplier:0,
                 constant:height)
-            self.heightConstraint!.priority = 1000
+            
+            self.heightConstraint!.priority = 900
             
             self.view.addConstraint(self.heightConstraint!) // TODO: what if view already has constraint added?
         }
@@ -676,7 +677,7 @@ class KeyboardViewController: UIInputViewController {
         }
     }
     
-    func setCapsIfNeeded() -> Bool {
+    func setCapsIfNeeded() {
         if self.shouldAutoCapitalize() {
             switch self.shiftState {
             case .disabled:
@@ -686,10 +687,7 @@ class KeyboardViewController: UIInputViewController {
             case .locked:
                 self.shiftState = .locked
             }
-            
-            return true
-        }
-        else {
+        } else {
             switch self.shiftState {
             case .disabled:
                 self.shiftState = .disabled
@@ -698,8 +696,6 @@ class KeyboardViewController: UIInputViewController {
             case .locked:
                 self.shiftState = .locked
             }
-            
-            return false
         }
     }
     

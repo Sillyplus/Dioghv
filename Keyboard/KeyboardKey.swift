@@ -156,7 +156,8 @@ class KeyboardKey: UIControl {
         self.addSubview(self.background)
         self.background.addSubview(self.label)
         
-        let setupViews: Void = {
+        // SetupViews
+        let _: Void = {
             self.displayView.isOpaque = false
             self.underView?.isOpaque = false
             self.borderView?.isOpaque = false
