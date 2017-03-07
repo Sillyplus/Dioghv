@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
+		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
+		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
 		3BCD67901E6E9E0800135DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD67851E6E9E0800135DFE /* Main.storyboard */; };
 		3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67881E6E9E0800135DFE /* ViewController.swift */; };
 		3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */; };
 		3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD678C1E6E9E0800135DFE /* Images.xcassets */; };
 		3BCD67961E6EA21300135DFE /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67951E6EA21300135DFE /* Key.swift */; };
-		3BCD67981E6EA24000135DFE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67971E6EA24000135DFE /* Page.swift */; };
-		3BCD679A1E6EA27D00135DFE /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67991E6EA27D00135DFE /* Keyboard.swift */; };
 		4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E807DC81946209600D875D1 /* KeyboardKey.swift */; };
 		4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */; };
 		4E52A6D21A06A61F006A08CE /* ImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52A6D11A06A61F006A08CE /* ImageKey.swift */; };
@@ -23,7 +24,6 @@
 		4E52A6DA1A06C198006A08CE /* DefaultSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52A6D91A06C198006A08CE /* DefaultSettings.xib */; };
 		4E60A13A1979FA5C00854CC8 /* KeyboardKeyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60A1391979FA5C00854CC8 /* KeyboardKeyBackground.swift */; };
 		4E60A13C1979FA8E00854CC8 /* KeyboardConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60A13B1979FA8E00854CC8 /* KeyboardConnector.swift */; };
-		4E60A13E1979FB2E00854CC8 /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60A13D1979FB2E00854CC8 /* DirectionEnum.swift */; };
 		4E72C96819E04A7A00DFDDB0 /* Catboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AEE4B19D246D700931E8F /* Catboard.swift */; };
 		4E807DC119461DC700D875D1 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E807DB919461DC700D875D1 /* Keyboard.appex */; };
 		4E8EF38619F95D75009CBF5D /* KeyboardFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8EF38519F95D75009CBF5D /* KeyboardFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,14 +95,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
+		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
+		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
 		3BCD67861E6E9E0800135DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BCD67881E6E9E0800135DFE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCD678C1E6E9E0800135DFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BCD678D1E6E9E0800135DFE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCD67951E6EA21300135DFE /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Model/Key.swift; sourceTree = "<group>"; };
-		3BCD67971E6EA24000135DFE /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		3BCD67991E6EA27D00135DFE /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
 		4E52A6D11A06A61F006A08CE /* ImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKey.swift; sourceTree = "<group>"; };
 		4E52A6D31A06A626006A08CE /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		4E52A6D91A06C198006A08CE /* DefaultSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettings.xib; sourceTree = "<group>"; };
 		4E60A1391979FA5C00854CC8 /* KeyboardKeyBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKeyBackground.swift; sourceTree = "<group>"; };
 		4E60A13B1979FA8E00854CC8 /* KeyboardConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardConnector.swift; sourceTree = "<group>"; };
-		4E60A13D1979FB2E00854CC8 /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionEnum.swift; sourceTree = "<group>"; };
 		4E6AEE4B19D246D700931E8F /* Catboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catboard.swift; sourceTree = "<group>"; };
 		4E807D9319461D9000D875D1 /* DioGhv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DioGhv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E807DB919461DC700D875D1 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,10 +218,10 @@
 		4E6AEE5019D2486900931E8F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4E60A13D1979FB2E00854CC8 /* DirectionEnum.swift */,
+				3BB87A881E6EA79E00711FED /* DirectionEnum.swift */,
 				3BCD67951E6EA21300135DFE /* Key.swift */,
-				3BCD67971E6EA24000135DFE /* Page.swift */,
-				3BCD67991E6EA27D00135DFE /* Keyboard.swift */,
+				3BB87A841E6EA78000711FED /* Keyboard.swift */,
+				3BB87A851E6EA78000711FED /* Page.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -275,7 +275,6 @@
 				4EE7599519F759F300B4E6ED /* Utility */,
 				4E6AEE5319D2489C00931E8F /* Demo */,
 				4E807DBB19461DC700D875D1 /* Supporting Files */,
-				4E52A6D51A06BADA006A08CE /* Media.xcassets */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -283,6 +282,7 @@
 		4E807DBB19461DC700D875D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E52A6D51A06BADA006A08CE /* Media.xcassets */,
 				4E807DBC19461DC700D875D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -477,7 +477,6 @@
 			files = (
 				4E52A6D21A06A61F006A08CE /* ImageKey.swift in Sources */,
 				4E52A6D41A06A626006A08CE /* ExtraView.swift in Sources */,
-				3BCD679A1E6EA27D00135DFE /* Keyboard.swift in Sources */,
 				4EC2A47019DF811E00F789E1 /* ForwardingView.swift in Sources */,
 				4EC2A46E19DF811E00F789E1 /* KeyboardLayout.swift in Sources */,
 				4E60A13A1979FA5C00854CC8 /* KeyboardKeyBackground.swift in Sources */,
@@ -485,13 +484,14 @@
 				4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */,
 				4EEFD78919E0DC6B004D4974 /* CatboardBanner.swift in Sources */,
 				4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */,
+				3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */,
 				4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */,
 				3BCD67961E6EA21300135DFE /* Key.swift in Sources */,
-				3BCD67981E6EA24000135DFE /* Page.swift in Sources */,
 				4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
+				3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */,
+				3BB87A871E6EA78000711FED /* Page.swift in Sources */,
 				4E72C96819E04A7A00DFDDB0 /* Catboard.swift in Sources */,
-				4E60A13E1979FB2E00854CC8 /* DirectionEnum.swift in Sources */,
 				4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

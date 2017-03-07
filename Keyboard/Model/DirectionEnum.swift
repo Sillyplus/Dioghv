@@ -7,10 +7,11 @@
 //
 
 enum Direction: Int, CustomStringConvertible {
+    
     case left = 0
-    case down = 3
-    case right = 2
     case up = 1
+    case right = 2
+    case down = 3
     
     var description: String {
     get {
@@ -68,9 +69,7 @@ enum Direction: Int, CustomStringConvertible {
     
     func horizontal() -> Bool {
         switch self {
-        case
-        .left,
-        .right:
+        case .left, .right:
             return true
         default:
             return false
