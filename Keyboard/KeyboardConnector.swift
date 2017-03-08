@@ -123,10 +123,6 @@ class KeyboardConnector: KeyboardKeyBackground {
         path.move(to: CGPoint(x: myConvertedEndPoints.0.x, y: myConvertedEndPoints.0.y))
         path.move(to: CGPoint(x: myConvertedStartPoints.1.x, y: myConvertedStartPoints.1.y))
 
-//        CGPathMoveToPoint(path, nil, myConvertedStartPoints.0.x, myConvertedStartPoints.0.y)
-//        CGPathAddLineToPoint(path, nil, myConvertedEndPoints.1.x, myConvertedEndPoints.1.y)
-//        CGPathAddLineToPoint(path, nil, myConvertedEndPoints.0.x, myConvertedEndPoints.0.y)
-//        CGPathAddLineToPoint(path, nil, myConvertedStartPoints.1.x, myConvertedStartPoints.1.y)
         path.closeSubpath()
 
         // for now, assuming axis-aligned attachment points

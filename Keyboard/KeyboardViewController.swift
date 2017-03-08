@@ -12,6 +12,7 @@ import AudioToolbox
 let metrics: [String:Double] = [
     "topBanner": 30
 ]
+
 func metric(_ name: String) -> CGFloat { return CGFloat(metrics[name]!) }
 
 // TODO: move this somewhere else and localize
@@ -214,8 +215,7 @@ class KeyboardViewController: UIInputViewController {
         
         if (lastLayoutBounds != nil && lastLayoutBounds == orientationSavvyBounds) {
             // do nothing
-        }
-        else {
+        } else {
             let uppercase = self.shiftState.uppercase()
             let characterUppercase = (UserDefaults.standard.bool(forKey: kSmallLowercase) ? uppercase : true)
             
