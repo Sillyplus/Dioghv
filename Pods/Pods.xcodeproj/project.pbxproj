@@ -1,0 +1,2108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00198C0DD2D92A53B60443526408953B /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD7BAFFAC231AAA13D9B21A8D1AA77C /* Blob.swift */; };
+		00D62A5ED14FA61B400311FF57564079 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03BDDE0A7D729705597B012C166B0D9 /* ConstraintInsetTarget.swift */; };
+		019643774105E0913E7D1EF56382A55B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DE2E0AF630E117B24D9CEB0DEBC0 /* LayoutConstraint.swift */; };
+		027BC6F5F6DB002C36D3F9283DBEC0A0 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459AB87B79FFC2FC87E526111B9F6B /* CoreFunctions.swift */; };
+		042D6ECD0E7F47C1A675CFC3A0263BDE /* Pods-Keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C08F51D629720B01DD28FEBF7F8AB0 /* Pods-Keyboard-dummy.m */; };
+		055F635F7677C8DD3C2C796AA2247FBF /* FLEXDictionaryExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8609B878A054B569A27787DB49D0BCEE /* FLEXDictionaryExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		060D49CF80F7594CBC3CC04177ABD229 /* FLEXArgumentInputTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = FED380AD3FD95F1B802E80E3F40EEAED /* FLEXArgumentInputTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		062ECA609F58C2FE186E250FB82E434D /* FLEXSQLiteDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EE9C36A16BD0257826D10242B60E13 /* FLEXSQLiteDatabaseManager.m */; };
+		065F0748995E30C3DEC892FAE3EAA043 /* FLEXArgumentInputDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E7B57EE9488FFC57F98E071F5A700E /* FLEXArgumentInputDateView.m */; };
+		06E31F8A639C5A6A131E2C51AA8C0AB0 /* FLEXHeapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2730DBB60ABB3C214E9EE9768C889EC4 /* FLEXHeapEnumerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06EFEA3B9B6835A950A22015BC513B93 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6E346D4D0E2354819AFD8F0A0F9B0 /* ConstraintPriority.swift */; };
+		077610199435AA2CD9C07A60395EACEC /* FLEXWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E9F5A9695B90CBF2067BA170FD2623 /* FLEXWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08037C97E01706CA497944F36B6D7B4E /* FLEXLayerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15910D4392C6D73AA86A4D93CBC5ABF9 /* FLEXLayerExplorerViewController.m */; };
+		080C68C9D87B2E6B08F8D939EB209C81 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7699B2F5D27D164A2EF3EE9B4442FC /* LayoutConstraintItem.swift */; };
+		08A4E0D87A5A1E4AC57DE4A59670B94D /* FLEXFileBrowserTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B92D9836A26BDB8F5D0046D5070877 /* FLEXFileBrowserTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08B037D039F3C171DA88A0ABFE69FBE4 /* FLEXDefaultEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51104ED33A249E9E879D8726AFDAC402 /* FLEXDefaultEditorViewController.m */; };
+		095A3758204469530F040E5FFFA82571 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 604333945EE7D30F400181FB2AED60C7 /* SQLite-Bridging.m */; };
+		0A7047939239917E7010D8DA6CF22C40 /* FLEXArgumentInputStructView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFA1A9706E2784EAA5EA91CEED28115 /* FLEXArgumentInputStructView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CA8895DC1FD30548578F1C3C7C6E37B /* FLEXWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7964FFF729E331706C0E3E6B39D18D /* FLEXWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D4EB0FD52ACB4FB09B529EFA9A430FC /* FLEXArgumentInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B966A8602FA69C9921656B987D22F8 /* FLEXArgumentInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F2D38E0D1CFC31893BC56AA777AC5F6 /* FLEXHierarchyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BF31E7E73CA26EF01666A3C5195622 /* FLEXHierarchyTableViewController.m */; };
+		11DCB9F6366F83E8DCEC8F74D19EB133 /* FLEXViewExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A0F2F836EEC97DB1BD2E382AF68B28 /* FLEXViewExplorerViewController.m */; };
+		127C9D0DA7ED97AC041327BE74DF9F9A /* FLEXGlobalsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDCCDFC7ED2170543FF4C38E5EE636D /* FLEXGlobalsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12D420728D0E6205F129D183A6CD9BFF /* FLEX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9889898A6DA065E2E65A5C0434E2CB58 /* FLEX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14771356D638FA93661BE6F43B425DDA /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486233D6EB1EEB8D197CDB2B5AB4A8F7 /* ConstraintConstantTarget.swift */; };
+		17273A2E51D1316B7AB6E92C916C2191 /* FLEXTableContentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A84DDFC134BA4C18D3C1118DA654F281 /* FLEXTableContentCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		172D7C61C3BA0AF6DEAAEB62C3F6287D /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A48044ADABA52E507846F423F9D293 /* ConstraintLayoutGuide.swift */; };
+		17CCFD8724B39AD08EABD882D97EAA90 /* FLEXViewControllerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 827836F87F91523E5EF49F46C0365641 /* FLEXViewControllerExplorerViewController.m */; };
+		196E97428E4C6F87B24745FC8F1518D9 /* FLEXHierarchyTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FDCFCF14626199495FDE16B9A8A4533 /* FLEXHierarchyTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D98F5A627E84C21655EFA64F8E8B6A8 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B5D43D1A58C0FB4ECE6640C1CA1D6 /* ConstraintDescription.swift */; };
+		1E14FC269D728CFF838C729603FEB229 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19140FF624F6627DAFA805FAD83E0C /* ConstraintRelatableTarget.swift */; };
+		1EA6F12826241795F04EDE0E68D9B292 /* FLEXClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B11FD495D52FCB0F7C6B6C56C3A877D /* FLEXClassesTableViewController.m */; };
+		1ED9F454A2B3E807F7D8936697932B10 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD8F80F54E0C31753BA18D31CB95809 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203CB8B2A419AA793AA617508B7ABCF4 /* FLEXObjectExplorerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7081E287BBFB8535DBE99F11B025EF8B /* FLEXObjectExplorerFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		215C55B6C77E6212746AC4EB5E9A9891 /* FLEXHierarchyTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B18EB6533FEEE3E0A1A336B4A7A5F18 /* FLEXHierarchyTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22508174FBEC204CAA507D4FF3A7B7FA /* FLEXArgumentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F904BAE860E60E27602903EB3F2D4C /* FLEXArgumentInputView.m */; };
+		22AC86AA07247DF03D135582FCE0BEFF /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B63BE9B8DDFEEE44181E6ACB8FFF14 /* ConstraintOffsetTarget.swift */; };
+		22BDC19834E751A93ACD2FFF87805415 /* FLEXMultiColumnTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B6D8CA62308D6561A8D512F59B048 /* FLEXMultiColumnTableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2305F75728195A0EAB118C952C85A278 /* FLEXArgumentInputNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED8654B29631BC38DCA77AB33F2E4C /* FLEXArgumentInputNumberView.m */; };
+		26B967CCF03D2D527D8568E2FF758550 /* FLEXNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = CFAE0081B525428A67894F4E79F5B9AD /* FLEXNetworkObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27CC17BC6986F3D5BDD84D824060BC02 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1340FE8F7DCD3C05CFD91AA5A20188A /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		297E018E1C8771F373AE31952180D47B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CCA84DFAE28F040848B135BC2524F /* Connection.swift */; };
+		2A080204A8051373041FCD90FE2DF1BA /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D4C2AC83DCAA6065333E35FAF667D /* Filter.swift */; };
+		2A663D1668A2162336FBDB0B5F9E105E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		2C0B8CEFB31CB49D927476F3ECB0D187 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5371B9083F7077638E12E4D2E59AE /* Expression.swift */; };
+		2D6EFE7B104E0FE3733D07C974C64CDE /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6AE4DA4F098E30D867E364772AB0D9 /* ConstraintPriorityTarget.swift */; };
+		2F3195E8F6560EDB171FE36AB3693945 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845288D1E4978AC8C08A47BF89B302E /* ConstraintLayoutSupportDSL.swift */; };
+		31A633FE07C1BDF6D5B854B1E68DB92A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A7333858BD7DDA0B2ACD7C44DB08DE /* ConstraintMakerPriortizable.swift */; };
+		31B079DECEF980039302C8893CB69449 /* FLEXSystemLogMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 635FD63C2E0F0F0A2AB78DF301234C39 /* FLEXSystemLogMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31E785EA3359BBD983FCCEBE01F6318B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777D4460FB303AA49BBB7AF2454F473 /* Constraint.swift */; };
+		340BBEAAB087711A03E97F3CBF13E619 /* FLEXNetworkRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AF703DDC65D18D3DD12CD41F153EED /* FLEXNetworkRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35B515DE786E6FAB61B73D7A24513C06 /* FLEXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D0239DED8A2B850E18E80FA6EBF6B730 /* FLEXNetworkTransaction.m */; };
+		35FA1829D104AB76E8F758E0843CAA20 /* FLEXArgumentInputStructView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AF2261F8A5D662D5E4CB7347C4821F /* FLEXArgumentInputStructView.m */; };
+		3776EE2EF487756CFC5DB63D31CCE110 /* FLEXExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1AE4DE5743D8D72B391A1856CCF168 /* FLEXExplorerViewController.m */; };
+		38DC925D5C7278EBEA92CE5E7F95DAE8 /* FLEXKeyboardHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573816209E0457D458478373D108C0D /* FLEXKeyboardHelpViewController.m */; };
+		3A05EA638465C5F2683CFDF8F1900E79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		3A28A53F16DC11AE5AD778ADC8B25CC0 /* FLEXMethodCallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729E8B9CEB3C67EDD5B8B131FC1154E /* FLEXMethodCallingViewController.m */; };
+		3A8FB54A3B00A0262EB4772685EA7C89 /* FLEXImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBBAE4621F6BEF345BA698BC8E6540 /* FLEXImagePreviewViewController.m */; };
+		3D9A228B383FBDB6DDD7E77FBD3E2562 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC740E548BDABEAB78CC83D085325F7 /* CustomFunctions.swift */; };
+		3E8C8E48200D3E28B9210410F3A7E670 /* FLEXFieldEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C35B7B2754DD040DB1F183417CF54D3 /* FLEXFieldEditorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		431E9E0082F3DC6C964E78096B6948BB /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BD27314E2E13B39A49EB22D446F4C /* Setter.swift */; };
+		434ECF1278A354463EDEA96480007910 /* FLEXImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AF86A7D0F4EEA8AB499A32906D43F3 /* FLEXImagePreviewViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4383C55C91CA79C0184D94CFE77EE862 /* FLEXViewExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD4D9DF67E3C93207FE26DD66FD3024 /* FLEXViewExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44D80D15C77086E7F5D7FEDB50AE5090 /* FLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F066AB77F55518716A64B4E7D827FF4 /* FLEX-dummy.m */; };
+		465BDDD0874C1694C169D37B638B907C /* FLEXFileBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E335DDDE1F9E6BF5464A6895A1DB6C40 /* FLEXFileBrowserTableViewController.m */; };
+		47FBA27CAF1EAD72AF0D304F768E7A9E /* FLEXArgumentInputSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06285C38F2BF9E09D3CA8BB962EC14FC /* FLEXArgumentInputSwitchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		492040111A94D088720542F8A1894013 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854CB923DED052671E7E92CA94659E6E /* FLEXNetworkTransactionDetailTableViewController.m */; };
+		494B861D33FC75D7F4D04F6566A37E37 /* FLEXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6DEC44888D2B4877AA83962EE0E19 /* FLEXWebViewController.m */; };
+		49BEF1866199D7D5E155E744E48F70E5 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F93DAD67B91ED4636DC65F1B18CEAA /* FTS4.swift */; };
+		4ABFFE7898F23AABAD4FF49334279B68 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9AD8B373DE4FEA5BD7D2BF4E524AD3F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4E834F4DDA89DE9A7692FEE9893196CB /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF631B7AF123B9AF31A06B393F320772 /* FLEXArgumentInputFontView.m */; };
+		4FD8E4ACB6708AD51C0C42F91C188E34 /* FLEXNetworkSettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC3467A137B3362524EE8C8AC308B8B /* FLEXNetworkSettingsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		518EBC3E626C6511A35C45589E9651F4 /* FLEXGlobalsTableViewControllerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B73B80EE84776B202C45DA8921C18D1 /* FLEXGlobalsTableViewControllerEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51CE11BC40C9EF654264A81039FC4134 /* FLEXNetworkTransactionDetailTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F34B3310D28ADDC9D6DD7D4E75A6FF /* FLEXNetworkTransactionDetailTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51D552DA12706050568DE17B431CE21E /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A6EB9CE7C7A9E065EB0CBEB1EB15E3 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DA28993B49AF1F9EA62F557E11FB21 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDAD85E22B417EC2C061FE304481C9 /* Query.swift */; };
+		5296EF4607A6390B6A7A0F1A74145F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		532D4C956B94C366FFCF017AA8652B11 /* FLEXDefaultsExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA20FADFF856A4D1FD73F310B7D9C1F4 /* FLEXDefaultsExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		548BFE2355136A356ED165B0913C7532 /* FLEXExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A22C755C35EF44B66199E9255938AD /* FLEXExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		553DB2678B91ED6271B62F6DC6A18525 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5800DDF01A2567824CDF7717C46367 /* Foundation.swift */; };
+		55A99C82629175A92D01020785255ADC /* Pods-Keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1513B8521333B4A5DDA7ACB8A2937512 /* Pods-Keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5637DCDC2759140835DDFB1D3FB4C5B8 /* FLEXFileBrowserSearchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3656B0E6368E13A735F4CE2D5EE37AE7 /* FLEXFileBrowserSearchOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5920A526757714698F1158FC951218C4 /* FLEXKeyboardShortcutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E6587189CECBB60C3F25C95A9F0112B9 /* FLEXKeyboardShortcutManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		599B6D6005F8826EE0D0E1B72D2CEFE5 /* FLEXDictionaryExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D350C18639736C0F8EAB687C1E7223C /* FLEXDictionaryExplorerViewController.m */; };
+		5B00C1C775BCB16805D313EE77220F36 /* FLEXLiveObjectsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CF36D4F313C8AB5306A4267D27568C0C /* FLEXLiveObjectsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E08B90F4B73CDE4273763C006B3CB98 /* FLEXPropertyEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8812219820F39621701CA688CE09D0 /* FLEXPropertyEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		608A322EF4A2BC563AE5986AE5C86E7E /* FLEXLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D6537C799C2551334464630349440D /* FLEXLibrariesTableViewController.m */; };
+		61A2C1504421793336A80DA0EFCF7494 /* FLEXDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0A7CDA1058134679CD5A3692314C3F /* FLEXDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61C498D2427EC3FC264C9F989F23381B /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B7233A55DCCF176A8DA357387BA6B /* BaseDestination.swift */; };
+		6258DF293F4DE21DD45CDF4182FA330B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D3964096785C75FA40E0A083C1464 /* Helpers.swift */; };
+		649DE22CF84BE640E28D53B67B95B69B /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C23A07D69E96A6AC620CB066D69A62 /* ConstraintMakerEditable.swift */; };
+		65C40B07DFB5A97109912E3DE7E283D1 /* FLEXArgumentInputNotSupportedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAB535BB5A4C971232ED4ABFD8CFE5 /* FLEXArgumentInputNotSupportedView.m */; };
+		6935FDCA3AE592C8CF11FFD4BAF1A45E /* FLEXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3B94129560E1F2B4D21D42A266A6DC /* FLEXManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AF40B413D855F5FABD6F8693A82BE81 /* FLEXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1E54B400C9B0DBCC324B67737C944 /* FLEXUtility.m */; };
+		6B5C92AF6FC1158B0CF563194B40DD9D /* FLEXNetworkCurlLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E2DF4859949FBAA3BC24657EB75E3F /* FLEXNetworkCurlLogger.m */; };
+		6D47087EB92A42D317C86FB5DDF8C45E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		6D87BC5BF8C9EAB8386655AFFC42ADA4 /* FLEXRealmDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A8F7EDE263AB2FA301EAB2957B6DED /* FLEXRealmDatabaseManager.m */; };
+		6F6678F9FC64B3979E8B2D6F74640AAA /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C43A7D393BAE903348CF81A2EEB1A /* Collation.swift */; };
+		718227E529ED5AA65C7DC63D71156807 /* FLEXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 4565CB493699ADB31C5EA3E68B03F8C9 /* FLEXResources.m */; };
+		71E70B8367220921AACF0AD7DEB76E9C /* FLEXIvarEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BAAAD95DC0F5D6730AE57E1A511BB /* FLEXIvarEditorViewController.m */; };
+		722A8428E6F7A77BCA12E241D8A5E250 /* FLEXExplorerToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F26337DBB06DDFE3041B78232ECEEBC /* FLEXExplorerToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		72C207AF1910B6F171D5C4EFF8F7E9A0 /* FLEXArgumentInputFontsPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AF4651FDCBD230C17F7CB83BBF4C85 /* FLEXArgumentInputFontsPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		733C3F9AA14E28F45B2AEB2C5BC5C60D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF26F2450A254E1B9AE746C4DD3EAC /* UILayoutSupport+Extensions.swift */; };
+		7853B8240AC7D8F1BA4861CA98136590 /* FLEXArgumentInputStringView.h in Headers */ = {isa = PBXBuildFile; fileRef = B19033F958BB5A0697D874C3BCFC4AEB /* FLEXArgumentInputStringView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A7827A1F13950595FB61F404AA373E1 /* FLEXArgumentInputJSONObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233ACA0AC9D3EEBCC9F60E095D66EC29 /* FLEXArgumentInputJSONObjectView.m */; };
+		7A7BD3332466C063D75C527E249BC8CD /* FLEXRuntimeUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C3251B34C17FCB1A3E05484ADF0518 /* FLEXRuntimeUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A8E66F985DB6C58732A02F576F1C290 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252A0E72273E38343483021F6AB6E3E1 /* ConstraintItem.swift */; };
+		7A9A93E19F92C9CB4A65D579595F8145 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5575A844E739A624948BA259B0E8F9 /* ConstraintLayoutGuideDSL.swift */; };
+		7BE2D0A9BA4DBE9EF7B469377A725553 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9DD9F402422CB7D82FC2E61A1DF7F /* Value.swift */; };
+		7C0EBA71AB8D0FD80E30BABC97AD0FDE /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D0ED9AD968BF6918FA91DF4807201 /* RTree.swift */; };
+		7D28466B3DF18782870D55C823914039 /* FLEXImageExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC189A21A4999CEC7853980C1E4645 /* FLEXImageExplorerViewController.m */; };
+		7DE2747DDBDCE9892172FF7C35C5B9C4 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B6A828F08A7F95EC08753796087FE6 /* SnapKit-dummy.m */; };
+		7F52F1349A65FA07F373265FD8FD08C2 /* FLEXObjectExplorerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF1A5B7E027842CE949535B3263E6F /* FLEXObjectExplorerFactory.m */; };
+		7F75B587F24C1E621254EBE2C2A0EB52 /* FLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A01A68B5EAB0FB870425A192FCB02846 /* FLEXNetworkObserver.m */; };
+		80B510B62387AC9C83D193D2BB11655A /* FLEXRealmDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFD6AAEB97531C39AB9493ACEA2BFEE /* FLEXRealmDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80D43E953BC331999BA8BA1F514C3CDD /* FLEXTableContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E6D9A2E3E48B1E9D6A9E42CD49C73 /* FLEXTableContentCell.m */; };
+		80DB7EF96DEB378A215943DAC18496B5 /* FLEXSetExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DB607E833FFA94F419AF518895623E2C /* FLEXSetExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		818DDA72ADA19210FF6689903AF5B885 /* FLEXArgumentInputColorView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE034F5F2EF89006EAFB0334F1401D5F /* FLEXArgumentInputColorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82DA63BB97214670373155FB9FC159EE /* FLEXKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA751D73692F391CDC35E3CD2CBDF20 /* FLEXKeyboardShortcutManager.m */; };
+		8521AC4293588C4CE204FAFB9A7C6B9C /* FLEXFieldEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC8388FA5C9F2D03A944D0CB221F40 /* FLEXFieldEditorView.m */; };
+		85335ADE786B93CB913910E624788647 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52120C648CFE9625469D2828E0AAB44 /* Schema.swift */; };
+		893E7753AF852DA3230132C3CCDA0EB1 /* FLEXInstancesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFDAA5A4E25B809A24A0388DAFC5FF8 /* FLEXInstancesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B29C9610A0596B4A1187D43CEC797B5 /* FLEXTableListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7134154F23BF8D831CCF26AE74847BA4 /* FLEXTableListViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C9D23FE5C42A650838B3266638E7C19 /* FLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F36648C06697BAF0DE14EB1F0DB36C1A /* FLEXManager.m */; };
+		8DD5512DC1F63352A15F69FF0F00E29F /* FLEXSystemLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB74E34F28485D4B60BAFE0011A2233 /* FLEXSystemLogTableViewController.m */; };
+		8EA0BB6AF0BCC93A7EA28541BAD9855E /* FLEXSystemLogTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4D15D5DFA19BB339E850F432F1FC1F /* FLEXSystemLogTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FA216C9EAC5526681209C36146B7E21 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9346254402910BC32B7020DF30641C08 /* ConstraintAttributes.swift */; };
+		905715B6AA3470E4DDADF025E9ACA78B /* FLEXClassExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1C4E1C0EFEC636BA386D1EB2F8665E /* FLEXClassExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9152CA998C402A945B2E17A57C1C1AD1 /* FLEXDefaultsExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BCF17718CA931E0D7E288753B127A8 /* FLEXDefaultsExplorerViewController.m */; };
+		9220826427093086248150191A003F9D /* FLEXNetworkTransactionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8825E5F193CADBF8489C96CD4AD62BB8 /* FLEXNetworkTransactionTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96E90CE4E17C246DA6D10862AE80A02D /* Pods-DioGhv-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC16A2AC37314E619867A3798E45805 /* Pods-DioGhv-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		972057D0D516D16444C6106126BE3669 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE8BCDDC792DC044F31DFECFC405D2 /* FTS5.swift */; };
+		972E4C5AD62BFF7DAEAF05CAFFF71240 /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A5E4B6466A1979EFBAB63ADE71F6 /* FLEXArgumentInputColorView.m */; };
+		984C2161C4AFEB85B719808D24D0D6EA /* FLEXTableLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE47697A8663686C5A3AFF35B608A01 /* FLEXTableLeftCell.m */; };
+		985F02D301CB99899DCE284D3949EF8B /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4579B9E4BBC3AD2F97CE92E44C48761 /* ConstraintLayoutGuide+Extensions.swift */; };
+		986CA5CD64A41297B133F086C3FDFE05 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FCA3EFB428E914B770AE128BD93C5 /* Statement.swift */; };
+		99762194FDE835E1B93B7A7B50622C64 /* FLEXResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 107E4CE5E55435FBA1EFB35C6CA0825F /* FLEXResources.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99CAE818B9E7C12F496BA3D15F841BB6 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE5088A803F5F947B72FDF24D2A353 /* ConstraintMultiplierTarget.swift */; };
+		99F991C96E36F5BF066D7A2BD58C5460 /* FLEXGlobalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F4DE3A253353EF77BB135C2A6FAE0E /* FLEXGlobalsTableViewController.m */; };
+		9ADECBB9B74CB8BE50B0DFB9C74C3EB6 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C275015EF8117E78776A09C1309D680 /* ConstraintDSL.swift */; };
+		9C1B8E2434893949D083EC627B4C4341 /* FLEXArgumentInputViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65282B6EE8568BE770EC1D20F409A695 /* FLEXArgumentInputViewFactory.m */; };
+		9C554901CB7606FDDE8DE55B90773774 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286EDC82425446FB0F01F645B3FE778 /* ConstraintViewDSL.swift */; };
+		9C640710F98A537C95D11B1F38878881 /* FLEXTableLeftCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D5A9BE12146749AD3E7905E9E2C094 /* FLEXTableLeftCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E087A5B325769F8BB0C6D71FA3480A8 /* FLEXArrayExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE548AAB4E92C91E75CFFF83B6FA9BFC /* FLEXArrayExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9ED9BCD7D5D6E4A98900D17EAF637A91 /* FLEXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC7ECE3886AFABBAB96EF0D708DC22 /* FLEXNetworkRecorder.m */; };
+		9EDA6140544716068682E0F5BD275FDF /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD9FFE1B1827F6576BDCF669EA88CD /* Operators.swift */; };
+		A1A02F599266B8A16ADF77D86EE72A23 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF53AA68071EF7C886E88FCEAF5A4BC /* FileDestination.swift */; };
+		A2DD8FC4E44A2215EB81D2EE01BEBF49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		A623C0A7208865B4E93B619851DDAEC0 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1368863602A5844342337AC8AD98D3 /* ConstraintRelation.swift */; };
+		A66F3DC8FDBFC8C05B18C7102267F190 /* FLEXSystemLogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9151B0EED37B47F4ED76D59A7AA3AA /* FLEXSystemLogMessage.m */; };
+		A74A1E090E817202AE77FCABF81176EC /* FLEXCookiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB3B2A7C5E57E25118A4D522F5D5F41 /* FLEXCookiesTableViewController.m */; };
+		A7CEDE2469902E34184EF21A61FCE1F2 /* FLEXDefaultEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 509EE0E5E65EBB9C009FB81EAF78BFA1 /* FLEXDefaultEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8FA562F8CE31CC1EF89388AA5C34020 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EA1B965BA246345B6D0C84971AA03 /* ConstraintMakerRelatable.swift */; };
+		A97AF6A659CF876299A0242A2E47E013 /* Pods-DioGhv-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7257D4A7E1CD279FBC3740F87A80C08F /* Pods-DioGhv-dummy.m */; };
+		A9DCD99FD9DF3520E9972386FCBB64A7 /* FLEXArgumentInputSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8BB76C1DDADFD34B749A68795C113C /* FLEXArgumentInputSwitchView.m */; };
+		AAAEA22F2A1F52D97C8B79DF3C3132F7 /* FLEXNetworkTransactionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAB9619FDF87AC8E54681DC2342FF5B /* FLEXNetworkTransactionTableViewCell.m */; };
+		AD133A45592196A23198678E5A9B3D24 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4EB4B49D731C4C0EDF6731EFEFB92 /* SQLite.swift-dummy.m */; };
+		AEB69BBDDDA09981D715289AC0C5E7BA /* FLEXNetworkHistoryTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9931465DE936A33CCDBF50688DDCB06A /* FLEXNetworkHistoryTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0B1B794E057CACE21475BBC9F5A955C /* FLEXSystemLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340ED71361202DB1A64023BE4E455F4D /* FLEXSystemLogTableViewCell.m */; };
+		B2690F06A5310E996A29B34F9E49E5C4 /* FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = A9927D043787EF1737F23D882EE5E59F /* FLEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B368BF8DBE9CBAF219211F6C5DD430A7 /* FLEXObjectExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF61B59A7DB548ADD089C6FF2E18FB3 /* FLEXObjectExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B70F5D6FB2D91148F24B9444A75FA03F /* FLEXNetworkTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1BDCE3BB9CE18DE3BA44512181299 /* FLEXNetworkTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B80C98A2BCBDEE277C0E5E2F2FA8779C /* FLEXTableColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D473BD9C0C1C0F704E8233B194BCAF4 /* FLEXTableColumnHeader.m */; };
+		B884D5ACB531B5FBC87D7F600EFDF716 /* FLEXInstancesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E57096D3AA8A3C559F5741D9445E89 /* FLEXInstancesTableViewController.m */; };
+		BA040AFE00D4326C792ABACD02DF09B3 /* FLEXImageExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 164485AA80534BA0AC2C37A87D07D4B2 /* FLEXImageExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAF13783D3245B8C6589DF2528A2B814 /* FLEXNetworkCurlLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8E0D43D6093EAFB9F52A58B34054EC /* FLEXNetworkCurlLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB1E68E18FACA7607B58A46125E7A18D /* FLEXFileBrowserFileOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B15A8577F13EF55BF275A7C0BC649 /* FLEXFileBrowserFileOperationController.m */; };
+		BCD7F150FE136B2F060AC2EDC5943E49 /* FLEXFileBrowserSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4363F59271C94A2AAB5C24CE390AA54 /* FLEXFileBrowserSearchOperation.m */; };
+		BD05EAF4B5549828E8269943F44C9EC8 /* FLEXFileBrowserFileOperationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A3374FE7F9055AC187A9D6D53E9057 /* FLEXFileBrowserFileOperationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD376D4ED0C8C444CB2E37F1E7211032 /* FLEXKeyboardHelpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F87F33E93D1EB7B006B8F1D535ADCDF0 /* FLEXKeyboardHelpViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD9145E9B966EEC29B0DFBB400D4622C /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 0925E766E3290920AA47058B886E3D3B /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDCE6596974A2A8751CEF901B6748B22 /* SwiftyBeaver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B6C870A455202925B42C1CE1677C207 /* SwiftyBeaver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE98EA7E3012D9F4F859CC68D5E822FE /* FLEXArgumentInputViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 66561EA62987D4E3C851E6C55D02C2BD /* FLEXArgumentInputViewFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF9F1A550620CE89194B39CD775102C2 /* FLEXMultilineTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D6007DE5DF941CDA816738BEDB973B64 /* FLEXMultilineTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFC6257046AD8769D64E5947E7AB37B0 /* FLEXIvarEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE2D461A43B013B126CAF94D1727AB1 /* FLEXIvarEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C04815EEEED3921522AF954A623EAFF5 /* FLEXSystemLogTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DBF96AE9FD120C71ACD3F7634AA128 /* FLEXSystemLogTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1F3EE9F7469EF77447D5E62240B6C0E /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B34C1F12E683E99995BBBA73B84420 /* ConstraintMaker.swift */; };
+		C3BEAF593F582070812F218E42A64E04 /* FLEXViewControllerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98003DBF3DA2862C0D42BBFCFAB1E46D /* FLEXViewControllerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C40B66AE3A78D2C8C42196891F9D1DFF /* FLEXExplorerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D425801B447EADF6C385E4298D8D56 /* FLEXExplorerToolbar.m */; };
+		C61163665EE41A73E7713F5E795C3057 /* FLEXGlobalsTableViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 267402201393224C84EE9E39D69AD5FA /* FLEXGlobalsTableViewControllerEntry.m */; };
+		C7244B4B77431DFE2B325D32BA9163C9 /* FLEXToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 888E0485FC2E2413F9629119D7F5EBD8 /* FLEXToolbarItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9D08CD77EBC4AF11868434A66A6C3E9 /* FLEXObjectExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27440A9BE92A97655484E5B4002529B /* FLEXObjectExplorerViewController.m */; };
+		CA79387FDF19FEF179E92241E2044A00 /* FLEXTableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2685FC14421E2F13E232F0001111BF3 /* FLEXTableListViewController.m */; };
+		CAEDB797873E9CC6F82E973E1469C25D /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB453E72263FEA27CE8A8CB71DB96592 /* ConstraintView.swift */; };
+		CB8B90ED8549440FBB078F1FD043355C /* FLEXArgumentInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E17683CE2D10B3AB0904D0F5921C94F7 /* FLEXArgumentInputTextView.m */; };
+		CCD51B1D46140AF4B51F715F0DCD003B /* FLEXTableContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D00A2BEB006EC7D9F66E5BD23B06F3 /* FLEXTableContentViewController.m */; };
+		CE0E6B46AEA1BF8D982F492040C1AC25 /* FLEXLibrariesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E8814CCA7C2FC8A136B249FA2D998025 /* FLEXLibrariesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE40214C5AC598A60AF6F39145D79F8E /* FLEXMultilineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C5C63B7A6DB820118C6430A994EAB /* FLEXMultilineTableViewCell.m */; };
+		CF4F46322DB29E73E9B582B81A966081 /* FLEXArgumentInputJSONObjectView.h in Headers */ = {isa = PBXBuildFile; fileRef = C54EDF0C3F4E648C5DEDC7CC60DAE801 /* FLEXArgumentInputJSONObjectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF667DC2810C7B08F2A1A0C91CCFB583 /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD72FEF26D39C23981A0A6860DA925 /* SBPlatformDestination.swift */; };
+		D07D50696A944B3B5F9CD6999C9222E7 /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC312F31BE6E27CFC0C087E5E05388B /* FLEXArgumentInputFontsPickerView.m */; };
+		D1442F1C189A8A2155402EB027E606D9 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B38B38BBA45C978AF00ACCD86C1597 /* AggregateFunctions.swift */; };
+		D1EFED9BB6CEAD388B710E6825F678FC /* FLEXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5F07367D8063A0C97834E313ECC789 /* FLEXWindow.m */; };
+		D57ED622E979CB4645FB6E12EA23627C /* FLEXTableContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B531CDA80E3E587483E27AAD8A688655 /* FLEXTableContentViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D71087B484E22F219C744F5C3EE785EE /* FLEXFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB5B0E3E9633C32AF3595AA188F33A /* FLEXFieldEditorViewController.m */; };
+		D7E1EFD84F550170FE9D0815A2B24362 /* FLEXHierarchyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C73146768576F0513FE0B2A5F6A81D /* FLEXHierarchyTableViewCell.m */; };
+		D814F855FCE4AEE578E77CCF924368FC /* FLEXArgumentInputNotSupportedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BE77FF2F77E190EC43D0F7564B9FC2 /* FLEXArgumentInputNotSupportedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D818350B67EDFC8A46EEE165EC830C98 /* FLEXPropertyEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EFADA318BF919F82FD7DF0BB0F12FA /* FLEXPropertyEditorViewController.m */; };
+		D8E2C1D3D587610E756AB0B53ADEBE3F /* FLEXNetworkHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CAAB5F87F43AC89CAD8898944ECED8 /* FLEXNetworkHistoryTableViewController.m */; };
+		DA17F576404B0738D272A961D4E35F07 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C73CD467594FC699AB5207782F7D53 /* AES256CBC.swift */; };
+		DB830A61077C2FDC1BEE8A1701BECEED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		DC76EEC9D1B7C60BB38597903120D8D8 /* FLEXArgumentInputStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6A49FCB81AE2232CD08643A460B571 /* FLEXArgumentInputStringView.m */; };
+		DCE438D8C2613CDB46E15AEFD0F68728 /* FLEXLiveObjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C960532D403ECFACFA9EF2A13D11E2B /* FLEXLiveObjectsTableViewController.m */; };
+		DEAFF5AAB4C0E0FA359342CB789B744A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		DEFD2A9BFF9E8B0C24CF9F866C04A824 /* FLEXHeapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E79E7D2A97D78F769FD5543F16469C /* FLEXHeapEnumerator.m */; };
+		DFFE679DB160C46126AD18FB0A7502DA /* FLEXNetworkSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDE282596CAB86B73661F9F02AAB38 /* FLEXNetworkSettingsTableViewController.m */; };
+		E0B6E71E9AC1BABDF087FBDEB3ED7D16 /* FLEXMultiColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FF2D80813F5C2B370E6324AA70A821 /* FLEXMultiColumnTableView.m */; };
+		E0F3887B73ECADB5991E14AE91518653 /* FLEXManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E547BAC4506C426E56F4DD65DEBC49D5 /* FLEXManager+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E36F349D255065EEF7788E514AED82ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		E37B9E773092B6C72739979054D32DAC /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD928DF466E78597A2EF570BF85784 /* ConstraintView+Extensions.swift */; };
+		E44DE3A91A79381775B645F5461AD86E /* FLEXRealmDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EE8BE978F5A499147FB91A153AFF4 /* FLEXRealmDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4911490337414C47DD1395208B0A85A /* FLEXCookiesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FE75DCAA4163805E6580EAC4E39E32 /* FLEXCookiesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5769A2CEBC479A8A46F8992BE2FCE24 /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A7EA2AD7743CF429E0C54AE927B87A /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6B1F9328490B3B4838312F2A0DA248F /* FLEXClassesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F1728BCF2EAE9049B75DF7E5B5AB6E74 /* FLEXClassesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7E626EEC13643A2CE152B4FF1BF8590 /* FLEXToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12DF985B82E23229C9B12E9A79A26 /* FLEXToolbarItem.m */; };
+		E81D4274AEAB3650C2F2D6B5E0530FB7 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97483E39A3C733D2706738E7FC0C4165 /* ConstraintMakerFinalizable.swift */; };
+		E91CAD491109AF2DBBE6A8C020C8A298 /* FLEXFieldEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 39815564F5DE5924C21CCDA201001EF0 /* FLEXFieldEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB3D4F4D471F0B365EA6A779A4AD0BB1 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB0916197035DB927CCADC82B43D37 /* SwiftyBeaver.swift */; };
+		F083D53EBCF6D3AA884DFD50BE9219C0 /* FLEXRuntimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8512AB9FA1B55DB742DD825AB172E6 /* FLEXRuntimeUtility.m */; };
+		F30AB0EB3BD13D514BDF7F0AE5191BAE /* FLEXSetExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4557E327F95BC5D113EA286725D15EAC /* FLEXSetExplorerViewController.m */; };
+		F32071A66262F02008CAE809D3B00F13 /* FLEXTableColumnHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EE45550CF4B5301755F84F7FBB7F3506 /* FLEXTableColumnHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3C7CAB923D3937A47300433E40FE1D8 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0465978C214852DEE71D3A85F6EEFD4 /* ConstraintLayoutSupport.swift */; };
+		F4CFDE05EECF8B34CF19CC4957A89821 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9E4830A708B7E7B79C1F5C2C2AD44 /* ConsoleDestination.swift */; };
+		F6002FA5FCE071585394D66E2FB61EEC /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E34EFD91A3217159E4E09A766902C /* ConstraintInsets.swift */; };
+		F661E37B75C7EC4115D8F5FE67201FFE /* FLEXArgumentInputFontView.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD4DFEDC85248759D87258C9BAA8649 /* FLEXArgumentInputFontView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6669A0B58E09E0FAF534A3871E7FF93 /* FLEXArrayExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9466197E70C8F939F30AC765B4C811 /* FLEXArrayExplorerViewController.m */; };
+		F6BA9DA8F971F508FAC503262B051E6E /* FLEXClassExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A4FD131C2861A3C5F7ECCCD01D5D4 /* FLEXClassExplorerViewController.m */; };
+		F6FBA378CA3A9976EDE5F999860C7E48 /* FLEXArgumentInputNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B53065D5FBC565C1B796A40C4C5A0E /* FLEXArgumentInputNumberView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA53B291F4B4117BA680547EF43FE91E /* FLEXSQLiteDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF69EAEFB6D4957B89E5488404964A47 /* FLEXSQLiteDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA6616042902BB7EE89EE323E07FCF66 /* FLEXUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 808120838204D1FE270552D74CF0C4F4 /* FLEXUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC24515BD767B2022CCAF87DC315DCB2 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1160ACFF1AA0E579F9D559A8C087C76 /* ConstraintConfig.swift */; };
+		FC80D4AE3D61597ED42F73AAAD55B079 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1239DE25A6BB64B3C6DE47E7F142AF16 /* Debugging.swift */; };
+		FC9203253E0AFD1E23AFFEFCD95DEA2F /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5627BDF09E76984628414925BEAF9551 /* SwiftyBeaver-dummy.m */; };
+		FCA129EEB05B46FB087DFB46C8746592 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EC2441FEC5910544F0665300175B5 /* ConstraintMakerExtendable.swift */; };
+		FE37D7338560592816B14D0A1BD0704B /* FLEXLayerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB66CFD5D5E4534F3C6F919B3D2FBC24 /* FLEXLayerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE61AD44354B104B45411B8FA0D1B928 /* FLEXMethodCallingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9057C3C861A98C91FC7336C6E258E2 /* FLEXMethodCallingViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BDAA2D57F91B53DAF431E005A3A7D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D5F9E80E487CBF5499BE5890C8521F;
+			remoteInfo = SQLite.swift;
+		};
+		5A78B7338669EBB1C41226F086F2961F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D5F9E80E487CBF5499BE5890C8521F;
+			remoteInfo = SQLite.swift;
+		};
+		B873F560150123B542EB440CEB8CE319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F495433905764E4E9D9ACEF470786FAA;
+			remoteInfo = SnapKit;
+		};
+		D1E0A9B10BA4102E770FC84994A7B8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F495433905764E4E9D9ACEF470786FAA;
+			remoteInfo = SnapKit;
+		};
+		E760F0D33DD0EFC603BAAA1E1B667EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FEC954840D3D78C6409F917C77026E;
+			remoteInfo = SwiftyBeaver;
+		};
+		E9DCBBF4AC53DC0F6F14D020C39D73C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68A07EF405FD9BCB32A62DB85FB63511;
+			remoteInfo = FLEX;
+		};
+		F9423FE4A395763A8C3849666B45775F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FEC954840D3D78C6409F917C77026E;
+			remoteInfo = SwiftyBeaver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0063A5E4B6466A1979EFBAB63ADE71F6 /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputColorView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
+		00D425801B447EADF6C385E4298D8D56 /* FLEXExplorerToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXExplorerToolbar.m; path = Classes/Toolbar/FLEXExplorerToolbar.m; sourceTree = "<group>"; };
+		04EDAD85E22B417EC2C061FE304481C9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		0573816209E0457D458478373D108C0D /* FLEXKeyboardHelpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXKeyboardHelpViewController.m; path = Classes/Utility/FLEXKeyboardHelpViewController.m; sourceTree = "<group>"; };
+		06285C38F2BF9E09D3CA8BB962EC14FC /* FLEXArgumentInputSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputSwitchView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.h; sourceTree = "<group>"; };
+		07DBF96AE9FD120C71ACD3F7634AA128 /* FLEXSystemLogTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogTableViewCell.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.h; sourceTree = "<group>"; };
+		07EF26F2450A254E1B9AE746C4DD3EAC /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		0925E766E3290920AA47058B886E3D3B /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		0BFDAA5A4E25B809A24A0388DAFC5FF8 /* FLEXInstancesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXInstancesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXInstancesTableViewController.h; sourceTree = "<group>"; };
+		0CB7F2628A762F190B560E64BD0FD145 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		0CFD6AAEB97531C39AB9493ACEA2BFEE /* FLEXRealmDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRealmDefines.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDefines.h; sourceTree = "<group>"; };
+		0D0EA1B965BA246345B6D0C84971AA03 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		107E4CE5E55435FBA1EFB35C6CA0825F /* FLEXResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXResources.h; path = Classes/Utility/FLEXResources.h; sourceTree = "<group>"; };
+		10E7B57EE9488FFC57F98E071F5A700E /* FLEXArgumentInputDateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputDateView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.m; sourceTree = "<group>"; };
+		1239DE25A6BB64B3C6DE47E7F142AF16 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		1513B8521333B4A5DDA7ACB8A2937512 /* Pods-Keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Keyboard-umbrella.h"; sourceTree = "<group>"; };
+		15910D4392C6D73AA86A4D93CBC5ABF9 /* FLEXLayerExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLayerExplorerViewController.m; path = Classes/ObjectExplorers/FLEXLayerExplorerViewController.m; sourceTree = "<group>"; };
+		164485AA80534BA0AC2C37A87D07D4B2 /* FLEXImageExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXImageExplorerViewController.h; path = Classes/ObjectExplorers/FLEXImageExplorerViewController.h; sourceTree = "<group>"; };
+		1777D4460FB303AA49BBB7AF2454F473 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		18BE77FF2F77E190EC43D0F7564B9FC2 /* FLEXArgumentInputNotSupportedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputNotSupportedView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.h; sourceTree = "<group>"; };
+		1BC3467A137B3362524EE8C8AC308B8B /* FLEXNetworkSettingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkSettingsTableViewController.h; path = Classes/Network/FLEXNetworkSettingsTableViewController.h; sourceTree = "<group>"; };
+		1C6A4FD131C2861A3C5F7ECCCD01D5D4 /* FLEXClassExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXClassExplorerViewController.m; path = Classes/ObjectExplorers/FLEXClassExplorerViewController.m; sourceTree = "<group>"; };
+		1CC1E54B400C9B0DBCC324B67737C944 /* FLEXUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXUtility.m; path = Classes/Utility/FLEXUtility.m; sourceTree = "<group>"; };
+		1CCBC8089F233BF37591C4514CDAF715 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		1E6AE4DA4F098E30D867E364772AB0D9 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		1EB4EB4B49D731C4C0EDF6731EFEFB92 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		1F8C5C63B7A6DB820118C6430A994EAB /* FLEXMultilineTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMultilineTableViewCell.m; path = Classes/Utility/FLEXMultilineTableViewCell.m; sourceTree = "<group>"; };
+		1FDCCDFC7ED2170543FF4C38E5EE636D /* FLEXGlobalsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXGlobalsTableViewController.h; path = Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.h; sourceTree = "<group>"; };
+		2001FD784FABE607BCFAAF666A46D65E /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		233ACA0AC9D3EEBCC9F60E095D66EC29 /* FLEXArgumentInputJSONObjectView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputJSONObjectView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.m; sourceTree = "<group>"; };
+		236E34EFD91A3217159E4E09A766902C /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		2421A12C58D2D1A9E98F5A9265BE3308 /* Pods-DioGhv-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DioGhv-acknowledgements.plist"; sourceTree = "<group>"; };
+		24A0F2F836EEC97DB1BD2E382AF68B28 /* FLEXViewExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXViewExplorerViewController.m; path = Classes/ObjectExplorers/FLEXViewExplorerViewController.m; sourceTree = "<group>"; };
+		252A0E72273E38343483021F6AB6E3E1 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		252D587F34DD224D9EA05B38CC2C1D20 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C3251B34C17FCB1A3E05484ADF0518 /* FLEXRuntimeUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRuntimeUtility.h; path = Classes/Utility/FLEXRuntimeUtility.h; sourceTree = "<group>"; };
+		25CD9FFE1B1827F6576BDCF669EA88CD /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		267402201393224C84EE9E39D69AD5FA /* FLEXGlobalsTableViewControllerEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXGlobalsTableViewControllerEntry.m; path = Classes/ObjectExplorers/FLEXGlobalsTableViewControllerEntry.m; sourceTree = "<group>"; };
+		2730DBB60ABB3C214E9EE9768C889EC4 /* FLEXHeapEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHeapEnumerator.h; path = Classes/Utility/FLEXHeapEnumerator.h; sourceTree = "<group>"; };
+		27CAAB5F87F43AC89CAD8898944ECED8 /* FLEXNetworkHistoryTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkHistoryTableViewController.m; path = Classes/Network/FLEXNetworkHistoryTableViewController.m; sourceTree = "<group>"; };
+		288470A73A702B18A57D0EA1C065973A /* Pods-DioGhv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DioGhv.debug.xcconfig"; sourceTree = "<group>"; };
+		2947EE8AE4283F439909F1B9797675E5 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
+		2A1C4E1C0EFEC636BA386D1EB2F8665E /* FLEXClassExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXClassExplorerViewController.h; path = Classes/ObjectExplorers/FLEXClassExplorerViewController.h; sourceTree = "<group>"; };
+		2AD7BAFFAC231AAA13D9B21A8D1AA77C /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		2B0E9FCC401A906C237FFEA0A07BBC15 /* FLEX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLEX-prefix.pch"; sourceTree = "<group>"; };
+		2B18EB6533FEEE3E0A1A336B4A7A5F18 /* FLEXHierarchyTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHierarchyTableViewCell.h; path = Classes/ViewHierarchy/FLEXHierarchyTableViewCell.h; sourceTree = "<group>"; };
+		2C35B7B2754DD040DB1F183417CF54D3 /* FLEXFieldEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFieldEditorView.h; path = Classes/Editing/FLEXFieldEditorView.h; sourceTree = "<group>"; };
+		2CCF1A5B7E027842CE949535B3263E6F /* FLEXObjectExplorerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectExplorerFactory.m; path = Classes/ObjectExplorers/FLEXObjectExplorerFactory.m; sourceTree = "<group>"; };
+		2DFAB535BB5A4C971232ED4ABFD8CFE5 /* FLEXArgumentInputNotSupportedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputNotSupportedView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.m; sourceTree = "<group>"; };
+		2E77163F5FC3989B22F68C09C9542D8F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1368863602A5844342337AC8AD98D3 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		2F26337DBB06DDFE3041B78232ECEEBC /* FLEXExplorerToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXExplorerToolbar.h; path = Classes/Toolbar/FLEXExplorerToolbar.h; sourceTree = "<group>"; };
+		2F3D4C2AC83DCAA6065333E35FAF667D /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		302D3964096785C75FA40E0A083C1464 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		30CC7ECE3886AFABBAB96EF0D708DC22 /* FLEXNetworkRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkRecorder.m; path = Classes/Network/FLEXNetworkRecorder.m; sourceTree = "<group>"; };
+		329FCA3EFB428E914B770AE128BD93C5 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		340ED71361202DB1A64023BE4E455F4D /* FLEXSystemLogTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogTableViewCell.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.m; sourceTree = "<group>"; };
+		3656B0E6368E13A735F4CE2D5EE37AE7 /* FLEXFileBrowserSearchOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserSearchOperation.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.h; sourceTree = "<group>"; };
+		37FE75DCAA4163805E6580EAC4E39E32 /* FLEXCookiesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXCookiesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXCookiesTableViewController.h; sourceTree = "<group>"; };
+		3845288D1E4978AC8C08A47BF89B302E /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		39815564F5DE5924C21CCDA201001EF0 /* FLEXFieldEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFieldEditorViewController.h; path = Classes/Editing/FLEXFieldEditorViewController.h; sourceTree = "<group>"; };
+		3B11FD495D52FCB0F7C6B6C56C3A877D /* FLEXClassesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXClassesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXClassesTableViewController.m; sourceTree = "<group>"; };
+		3C1B5D43D1A58C0FB4ECE6640C1CA1D6 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3C960532D403ECFACFA9EF2A13D11E2B /* FLEXLiveObjectsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLiveObjectsTableViewController.m; path = Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.m; sourceTree = "<group>"; };
+		3E1AE4DE5743D8D72B391A1856CCF168 /* FLEXExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXExplorerViewController.m; path = Classes/ExplorerInterface/FLEXExplorerViewController.m; sourceTree = "<group>"; };
+		4286EDC82425446FB0F01F645B3FE778 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		42F904BAE860E60E27602903EB3F2D4C /* FLEXArgumentInputView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.m; sourceTree = "<group>"; };
+		43D0C6FF4D4339910F11224FBDCB1366 /* SwiftyBeaver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.xcconfig; sourceTree = "<group>"; };
+		452EE8BE978F5A499147FB91A153AFF4 /* FLEXRealmDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRealmDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDatabaseManager.h; sourceTree = "<group>"; };
+		4557E327F95BC5D113EA286725D15EAC /* FLEXSetExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSetExplorerViewController.m; path = Classes/ObjectExplorers/FLEXSetExplorerViewController.m; sourceTree = "<group>"; };
+		4565CB493699ADB31C5EA3E68B03F8C9 /* FLEXResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXResources.m; path = Classes/Utility/FLEXResources.m; sourceTree = "<group>"; };
+		45E2DF4859949FBAA3BC24657EB75E3F /* FLEXNetworkCurlLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkCurlLogger.m; path = Classes/Network/FLEXNetworkCurlLogger.m; sourceTree = "<group>"; };
+		486233D6EB1EEB8D197CDB2B5AB4A8F7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		49A8F7EDE263AB2FA301EAB2957B6DED /* FLEXRealmDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXRealmDatabaseManager.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDatabaseManager.m; sourceTree = "<group>"; };
+		4A19140FF624F6627DAFA805FAD83E0C /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		4B0A7CDA1058134679CD5A3692314C3F /* FLEXDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXDatabaseManager.h; sourceTree = "<group>"; };
+		4B3B94129560E1F2B4D21D42A266A6DC /* FLEXManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXManager.h; path = Classes/FLEXManager.h; sourceTree = "<group>"; };
+		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4EFA1A9706E2784EAA5EA91CEED28115 /* FLEXArgumentInputStructView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputStructView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.h; sourceTree = "<group>"; };
+		4EFE8BCDDC792DC044F31DFECFC405D2 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		4F5575A844E739A624948BA259B0E8F9 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		509EE0E5E65EBB9C009FB81EAF78BFA1 /* FLEXDefaultEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDefaultEditorViewController.h; path = Classes/Editing/FLEXDefaultEditorViewController.h; sourceTree = "<group>"; };
+		51104ED33A249E9E879D8726AFDAC402 /* FLEXDefaultEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDefaultEditorViewController.m; path = Classes/Editing/FLEXDefaultEditorViewController.m; sourceTree = "<group>"; };
+		51B92D9836A26BDB8F5D0046D5070877 /* FLEXFileBrowserTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserTableViewController.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.h; sourceTree = "<group>"; };
+		54BCF17718CA931E0D7E288753B127A8 /* FLEXDefaultsExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDefaultsExplorerViewController.m; path = Classes/ObjectExplorers/FLEXDefaultsExplorerViewController.m; sourceTree = "<group>"; };
+		5627BDF09E76984628414925BEAF9551 /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
+		57A9DD9F402422CB7D82FC2E61A1DF7F /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		59AF2261F8A5D662D5E4CB7347C4821F /* FLEXArgumentInputStructView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputStructView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.m; sourceTree = "<group>"; };
+		5AC16A2AC37314E619867A3798E45805 /* Pods-DioGhv-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DioGhv-umbrella.h"; sourceTree = "<group>"; };
+		5B73B80EE84776B202C45DA8921C18D1 /* FLEXGlobalsTableViewControllerEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXGlobalsTableViewControllerEntry.h; path = Classes/ObjectExplorers/FLEXGlobalsTableViewControllerEntry.h; sourceTree = "<group>"; };
+		5D7964FFF729E331706C0E3E6B39D18D /* FLEXWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXWindow.h; path = Classes/ExplorerInterface/FLEXWindow.h; sourceTree = "<group>"; };
+		5FDCFCF14626199495FDE16B9A8A4533 /* FLEXHierarchyTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHierarchyTableViewController.h; path = Classes/ViewHierarchy/FLEXHierarchyTableViewController.h; sourceTree = "<group>"; };
+		604333945EE7D30F400181FB2AED60C7 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		60A7333858BD7DDA0B2ACD7C44DB08DE /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		635FD63C2E0F0F0A2AB78DF301234C39 /* FLEXSystemLogMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogMessage.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.h; sourceTree = "<group>"; };
+		63D5A9BE12146749AD3E7905E9E2C094 /* FLEXTableLeftCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableLeftCell.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableLeftCell.h; sourceTree = "<group>"; };
+		65282B6EE8568BE770EC1D20F409A695 /* FLEXArgumentInputViewFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputViewFactory.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.m; sourceTree = "<group>"; };
+		65A3374FE7F9055AC187A9D6D53E9057 /* FLEXFileBrowserFileOperationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserFileOperationController.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.h; sourceTree = "<group>"; };
+		66561EA62987D4E3C851E6C55D02C2BD /* FLEXArgumentInputViewFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputViewFactory.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.h; sourceTree = "<group>"; };
+		66A22C755C35EF44B66199E9255938AD /* FLEXExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXExplorerViewController.h; path = Classes/ExplorerInterface/FLEXExplorerViewController.h; sourceTree = "<group>"; };
+		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6CF53AA68071EF7C886E88FCEAF5A4BC /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
+		6D350C18639736C0F8EAB687C1E7223C /* FLEXDictionaryExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDictionaryExplorerViewController.m; path = Classes/ObjectExplorers/FLEXDictionaryExplorerViewController.m; sourceTree = "<group>"; };
+		6D473BD9C0C1C0F704E8233B194BCAF4 /* FLEXTableColumnHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableColumnHeader.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableColumnHeader.m; sourceTree = "<group>"; };
+		6D4D15D5DFA19BB339E850F432F1FC1F /* FLEXSystemLogTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogTableViewController.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewController.h; sourceTree = "<group>"; };
+		6FE47697A8663686C5A3AFF35B608A01 /* FLEXTableLeftCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableLeftCell.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableLeftCell.m; sourceTree = "<group>"; };
+		7081E287BBFB8535DBE99F11B025EF8B /* FLEXObjectExplorerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectExplorerFactory.h; path = Classes/ObjectExplorers/FLEXObjectExplorerFactory.h; sourceTree = "<group>"; };
+		70AF703DDC65D18D3DD12CD41F153EED /* FLEXNetworkRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkRecorder.h; path = Classes/Network/FLEXNetworkRecorder.h; sourceTree = "<group>"; };
+		70BE5B3589F983A3DDBE7B7AD3D64BDA /* SwiftyBeaver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyBeaver.modulemap; sourceTree = "<group>"; };
+		70CC4A0C691BE8B03179321CE4ABFD34 /* Pods-Keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7134154F23BF8D831CCF26AE74847BA4 /* FLEXTableListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableListViewController.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableListViewController.h; sourceTree = "<group>"; };
+		71BF31E7E73CA26EF01666A3C5195622 /* FLEXHierarchyTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHierarchyTableViewController.m; path = Classes/ViewHierarchy/FLEXHierarchyTableViewController.m; sourceTree = "<group>"; };
+		7257D4A7E1CD279FBC3740F87A80C08F /* Pods-DioGhv-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DioGhv-dummy.m"; sourceTree = "<group>"; };
+		75AF4651FDCBD230C17F7CB83BBF4C85 /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputFontsPickerView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
+		75F5E3C8DD6A00E0715386F0BC1B34E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FC8388FA5C9F2D03A944D0CB221F40 /* FLEXFieldEditorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFieldEditorView.m; path = Classes/Editing/FLEXFieldEditorView.m; sourceTree = "<group>"; };
+		789EF583B899064F92A399649BD76F51 /* FLEX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FLEX.framework; path = FLEX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AE2D461A43B013B126CAF94D1727AB1 /* FLEXIvarEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXIvarEditorViewController.h; path = Classes/Editing/FLEXIvarEditorViewController.h; sourceTree = "<group>"; };
+		7B6E6D9A2E3E48B1E9D6A9E42CD49C73 /* FLEXTableContentCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableContentCell.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentCell.m; sourceTree = "<group>"; };
+		7C02A1CD3745C96C6A15C7BEB086FB46 /* FLEX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FLEX.modulemap; sourceTree = "<group>"; };
+		7C275015EF8117E78776A09C1309D680 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		7FD0A10FD08371CCCF090D61818414A1 /* Pods-Keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Keyboard.modulemap"; sourceTree = "<group>"; };
+		802A2F9EE65113A01C363935A2EE4079 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		808120838204D1FE270552D74CF0C4F4 /* FLEXUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXUtility.h; path = Classes/Utility/FLEXUtility.h; sourceTree = "<group>"; };
+		80C73146768576F0513FE0B2A5F6A81D /* FLEXHierarchyTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHierarchyTableViewCell.m; path = Classes/ViewHierarchy/FLEXHierarchyTableViewCell.m; sourceTree = "<group>"; };
+		80E9F5A9695B90CBF2067BA170FD2623 /* FLEXWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXWebViewController.h; path = Classes/GlobalStateExplorers/FLEXWebViewController.h; sourceTree = "<group>"; };
+		81B63BE9B8DDFEEE44181E6ACB8FFF14 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		827836F87F91523E5EF49F46C0365641 /* FLEXViewControllerExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXViewControllerExplorerViewController.m; path = Classes/ObjectExplorers/FLEXViewControllerExplorerViewController.m; sourceTree = "<group>"; };
+		854CB923DED052671E7E92CA94659E6E /* FLEXNetworkTransactionDetailTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransactionDetailTableViewController.m; path = Classes/Network/FLEXNetworkTransactionDetailTableViewController.m; sourceTree = "<group>"; };
+		85B5371B9083F7077638E12E4D2E59AE /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		8609B878A054B569A27787DB49D0BCEE /* FLEXDictionaryExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDictionaryExplorerViewController.h; path = Classes/ObjectExplorers/FLEXDictionaryExplorerViewController.h; sourceTree = "<group>"; };
+		86E79E7D2A97D78F769FD5543F16469C /* FLEXHeapEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHeapEnumerator.m; path = Classes/Utility/FLEXHeapEnumerator.m; sourceTree = "<group>"; };
+		8825E5F193CADBF8489C96CD4AD62BB8 /* FLEXNetworkTransactionTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransactionTableViewCell.h; path = Classes/Network/FLEXNetworkTransactionTableViewCell.h; sourceTree = "<group>"; };
+		885D0ED9AD968BF6918FA91DF4807201 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		888E0485FC2E2413F9629119D7F5EBD8 /* FLEXToolbarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXToolbarItem.h; path = Classes/Toolbar/FLEXToolbarItem.h; sourceTree = "<group>"; };
+		88D6E346D4D0E2354819AFD8F0A0F9B0 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		8923ECD9092D3A700FE042A3D8771F66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E57096D3AA8A3C559F5741D9445E89 /* FLEXInstancesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXInstancesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXInstancesTableViewController.m; sourceTree = "<group>"; };
+		8ABC189A21A4999CEC7853980C1E4645 /* FLEXImageExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXImageExplorerViewController.m; path = Classes/ObjectExplorers/FLEXImageExplorerViewController.m; sourceTree = "<group>"; };
+		8AC9E4830A708B7E7B79C1F5C2C2AD44 /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
+		8D9B116AFA2DCA0E7A8E3CD373F5CFBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA6EE6011E1DF65ADB985920DDC9FA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7BAAAD95DC0F5D6730AE57E1A511BB /* FLEXIvarEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXIvarEditorViewController.m; path = Classes/Editing/FLEXIvarEditorViewController.m; sourceTree = "<group>"; };
+		90A48044ADABA52E507846F423F9D293 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		90FF2D80813F5C2B370E6324AA70A821 /* FLEXMultiColumnTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMultiColumnTableView.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXMultiColumnTableView.m; sourceTree = "<group>"; };
+		92ED8654B29631BC38DCA77AB33F2E4C /* FLEXArgumentInputNumberView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputNumberView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.m; sourceTree = "<group>"; };
+		9346254402910BC32B7020DF30641C08 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B6A828F08A7F95EC08753796087FE6 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		96C27DFC658FD9844D9554CCF1D6507A /* Pods-DioGhv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DioGhv.release.xcconfig"; sourceTree = "<group>"; };
+		9729E8B9CEB3C67EDD5B8B131FC1154E /* FLEXMethodCallingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMethodCallingViewController.m; path = Classes/Editing/FLEXMethodCallingViewController.m; sourceTree = "<group>"; };
+		97483E39A3C733D2706738E7FC0C4165 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		98003DBF3DA2862C0D42BBFCFAB1E46D /* FLEXViewControllerExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXViewControllerExplorerViewController.h; path = Classes/ObjectExplorers/FLEXViewControllerExplorerViewController.h; sourceTree = "<group>"; };
+		9889898A6DA065E2E65A5C0434E2CB58 /* FLEX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLEX-umbrella.h"; sourceTree = "<group>"; };
+		9931465DE936A33CCDBF50688DDCB06A /* FLEXNetworkHistoryTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkHistoryTableViewController.h; path = Classes/Network/FLEXNetworkHistoryTableViewController.h; sourceTree = "<group>"; };
+		998CCA84DFAE28F040848B135BC2524F /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		9AEB0916197035DB927CCADC82B43D37 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
+		9B6C870A455202925B42C1CE1677C207 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
+		9BB74E34F28485D4B60BAFE0011A2233 /* FLEXSystemLogTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogTableViewController.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewController.m; sourceTree = "<group>"; };
+		9BBBBAE4621F6BEF345BA698BC8E6540 /* FLEXImagePreviewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXImagePreviewViewController.m; path = Classes/ViewHierarchy/FLEXImagePreviewViewController.m; sourceTree = "<group>"; };
+		9CB6DEC44888D2B4877AA83962EE0E19 /* FLEXWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXWebViewController.m; path = Classes/GlobalStateExplorers/FLEXWebViewController.m; sourceTree = "<group>"; };
+		9DA751D73692F391CDC35E3CD2CBDF20 /* FLEXKeyboardShortcutManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXKeyboardShortcutManager.m; path = Classes/Utility/FLEXKeyboardShortcutManager.m; sourceTree = "<group>"; };
+		9F066AB77F55518716A64B4E7D827FF4 /* FLEX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLEX-dummy.m"; sourceTree = "<group>"; };
+		A01A68B5EAB0FB870425A192FCB02846 /* FLEXNetworkObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkObserver.m; path = Classes/Network/PonyDebugger/FLEXNetworkObserver.m; sourceTree = "<group>"; };
+		A1160ACFF1AA0E579F9D559A8C087C76 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		A2C12DF985B82E23229C9B12E9A79A26 /* FLEXToolbarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXToolbarItem.m; path = Classes/Toolbar/FLEXToolbarItem.m; sourceTree = "<group>"; };
+		A36AB3329EF50D6B4E52C2D2882EE300 /* Pods-DioGhv-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DioGhv-frameworks.sh"; sourceTree = "<group>"; };
+		A541A3C21F78858CA82A81E7546695F4 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Keyboard.framework; path = "Pods-Keyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56C43A7D393BAE903348CF81A2EEB1A /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		A5DD928DF466E78597A2EF570BF85784 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		A6EE9C36A16BD0257826D10242B60E13 /* FLEXSQLiteDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSQLiteDatabaseManager.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLiteDatabaseManager.m; sourceTree = "<group>"; };
+		A6F4DE3A253353EF77BB135C2A6FAE0E /* FLEXGlobalsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXGlobalsTableViewController.m; path = Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.m; sourceTree = "<group>"; };
+		A7D00A2BEB006EC7D9F66E5BD23B06F3 /* FLEXTableContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableContentViewController.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.m; sourceTree = "<group>"; };
+		A84DDFC134BA4C18D3C1118DA654F281 /* FLEXTableContentCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableContentCell.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentCell.h; sourceTree = "<group>"; };
+		A95BD27314E2E13B39A49EB22D446F4C /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		A9927D043787EF1737F23D882EE5E59F /* FLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEX.h; path = Classes/FLEX.h; sourceTree = "<group>"; };
+		ACAB9619FDF87AC8E54681DC2342FF5B /* FLEXNetworkTransactionTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransactionTableViewCell.m; path = Classes/Network/FLEXNetworkTransactionTableViewCell.m; sourceTree = "<group>"; };
+		ADB3B2A7C5E57E25118A4D522F5D5F41 /* FLEXCookiesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXCookiesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXCookiesTableViewController.m; sourceTree = "<group>"; };
+		AF9151B0EED37B47F4ED76D59A7AA3AA /* FLEXSystemLogMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogMessage.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.m; sourceTree = "<group>"; };
+		AFD4DFEDC85248759D87258C9BAA8649 /* FLEXArgumentInputFontView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputFontView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.h; sourceTree = "<group>"; };
+		AFF61B59A7DB548ADD089C6FF2E18FB3 /* FLEXObjectExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectExplorerViewController.h; path = Classes/ObjectExplorers/FLEXObjectExplorerViewController.h; sourceTree = "<group>"; };
+		B0465978C214852DEE71D3A85F6EEFD4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		B19033F958BB5A0697D874C3BCFC4AEB /* FLEXArgumentInputStringView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputStringView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.h; sourceTree = "<group>"; };
+		B52120C648CFE9625469D2828E0AAB44 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		B531CDA80E3E587483E27AAD8A688655 /* FLEXTableContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableContentViewController.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.h; sourceTree = "<group>"; };
+		B7F93DAD67B91ED4636DC65F1B18CEAA /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		BA7AE64D0EE52F26BBA7AB890D112421 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9057C3C861A98C91FC7336C6E258E2 /* FLEXMethodCallingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMethodCallingViewController.h; path = Classes/Editing/FLEXMethodCallingViewController.h; sourceTree = "<group>"; };
+		BBC740E548BDABEAB78CC83D085325F7 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		BC5F07367D8063A0C97834E313ECC789 /* FLEXWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXWindow.m; path = Classes/ExplorerInterface/FLEXWindow.m; sourceTree = "<group>"; };
+		BFBDE282596CAB86B73661F9F02AAB38 /* FLEXNetworkSettingsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkSettingsTableViewController.m; path = Classes/Network/FLEXNetworkSettingsTableViewController.m; sourceTree = "<group>"; };
+		C0B53065D5FBC565C1B796A40C4C5A0E /* FLEXArgumentInputNumberView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputNumberView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.h; sourceTree = "<group>"; };
+		C4579B9E4BBC3AD2F97CE92E44C48761 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		C4F8523C5B70D8B74DFAF84EB28DE1BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54EDF0C3F4E648C5DEDC7CC60DAE801 /* FLEXArgumentInputJSONObjectView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputJSONObjectView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.h; sourceTree = "<group>"; };
+		C7A6EB9CE7C7A9E065EB0CBEB1EB15E3 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		C9C23A07D69E96A6AC620CB066D69A62 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		CB453E72263FEA27CE8A8CB71DB96592 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		CB5B7233A55DCCF176A8DA357387BA6B /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/BaseDestination.swift; sourceTree = "<group>"; };
+		CC6A49FCB81AE2232CD08643A460B571 /* FLEXArgumentInputStringView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputStringView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.m; sourceTree = "<group>"; };
+		CE2FDE4CD7F8FB664AA9BEC942E73710 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE548AAB4E92C91E75CFFF83B6FA9BFC /* FLEXArrayExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArrayExplorerViewController.h; path = Classes/ObjectExplorers/FLEXArrayExplorerViewController.h; sourceTree = "<group>"; };
+		CF362694C0550CE98349C7ADF522CD8E /* Pods-Keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF36D4F313C8AB5306A4267D27568C0C /* FLEXLiveObjectsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLiveObjectsTableViewController.h; path = Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.h; sourceTree = "<group>"; };
+		CF69EAEFB6D4957B89E5488404964A47 /* FLEXSQLiteDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSQLiteDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLiteDatabaseManager.h; sourceTree = "<group>"; };
+		CFAE0081B525428A67894F4E79F5B9AD /* FLEXNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkObserver.h; path = Classes/Network/PonyDebugger/FLEXNetworkObserver.h; sourceTree = "<group>"; };
+		D0239DED8A2B850E18E80FA6EBF6B730 /* FLEXNetworkTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransaction.m; path = Classes/Network/FLEXNetworkTransaction.m; sourceTree = "<group>"; };
+		D03BDDE0A7D729705597B012C166B0D9 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		D1EFADA318BF919F82FD7DF0BB0F12FA /* FLEXPropertyEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXPropertyEditorViewController.m; path = Classes/Editing/FLEXPropertyEditorViewController.m; sourceTree = "<group>"; };
+		D20C35AE4179FACC777448776312EDE5 /* Pods-Keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Keyboard-resources.sh"; sourceTree = "<group>"; };
+		D2685FC14421E2F13E232F0001111BF3 /* FLEXTableListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableListViewController.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableListViewController.m; sourceTree = "<group>"; };
+		D4B714676B5236DE425197CBA16479FE /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		D5F34B3310D28ADDC9D6DD7D4E75A6FF /* FLEXNetworkTransactionDetailTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransactionDetailTableViewController.h; path = Classes/Network/FLEXNetworkTransactionDetailTableViewController.h; sourceTree = "<group>"; };
+		D6007DE5DF941CDA816738BEDB973B64 /* FLEXMultilineTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMultilineTableViewCell.h; path = Classes/Utility/FLEXMultilineTableViewCell.h; sourceTree = "<group>"; };
+		D808DE2E0AF630E117B24D9CEB0DEBC0 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		D8BD72FEF26D39C23981A0A6860DA925 /* SBPlatformDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBPlatformDestination.swift; path = Sources/SBPlatformDestination.swift; sourceTree = "<group>"; };
+		D8F1BDCE3BB9CE18DE3BA44512181299 /* FLEXNetworkTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransaction.h; path = Classes/Network/FLEXNetworkTransaction.h; sourceTree = "<group>"; };
+		D9C08F51D629720B01DD28FEBF7F8AB0 /* Pods-Keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Keyboard-dummy.m"; sourceTree = "<group>"; };
+		D9CAAF2B674E17A42D83773BC9747388 /* Pods-DioGhv.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DioGhv.modulemap"; sourceTree = "<group>"; };
+		D9CB5B0E3E9633C32AF3595AA188F33A /* FLEXFieldEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFieldEditorViewController.m; path = Classes/Editing/FLEXFieldEditorViewController.m; sourceTree = "<group>"; };
+		DA7699B2F5D27D164A2EF3EE9B4442FC /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		DA8812219820F39621701CA688CE09D0 /* FLEXPropertyEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXPropertyEditorViewController.h; path = Classes/Editing/FLEXPropertyEditorViewController.h; sourceTree = "<group>"; };
+		DAD8F80F54E0C31753BA18D31CB95809 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		DAEB49EAE6F7900C4375B21BBED14491 /* Pods-DioGhv-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DioGhv-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB459AB87B79FFC2FC87E526111B9F6B /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		DB607E833FFA94F419AF518895623E2C /* FLEXSetExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSetExplorerViewController.h; path = Classes/ObjectExplorers/FLEXSetExplorerViewController.h; sourceTree = "<group>"; };
+		DC8B6D8CA62308D6561A8D512F59B048 /* FLEXMultiColumnTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMultiColumnTableView.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXMultiColumnTableView.h; sourceTree = "<group>"; };
+		DC8BB76C1DDADFD34B749A68795C113C /* FLEXArgumentInputSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputSwitchView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.m; sourceTree = "<group>"; };
+		DE034F5F2EF89006EAFB0334F1401D5F /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputColorView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
+		DE8E0D43D6093EAFB9F52A58B34054EC /* FLEXNetworkCurlLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkCurlLogger.h; path = Classes/Network/FLEXNetworkCurlLogger.h; sourceTree = "<group>"; };
+		DF631B7AF123B9AF31A06B393F320772 /* FLEXArgumentInputFontView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputFontView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.m; sourceTree = "<group>"; };
+		E17683CE2D10B3AB0904D0F5921C94F7 /* FLEXArgumentInputTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputTextView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.m; sourceTree = "<group>"; };
+		E1B34C1F12E683E99995BBBA73B84420 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		E335DDDE1F9E6BF5464A6895A1DB6C40 /* FLEXFileBrowserTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserTableViewController.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.m; sourceTree = "<group>"; };
+		E400ABB7E45797F8F2337B5D9B500070 /* Pods_DioGhv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DioGhv.framework; path = "Pods-DioGhv.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4363F59271C94A2AAB5C24CE390AA54 /* FLEXFileBrowserSearchOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserSearchOperation.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.m; sourceTree = "<group>"; };
+		E547BAC4506C426E56F4DD65DEBC49D5 /* FLEXManager+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLEXManager+Private.h"; path = "Classes/Manager/FLEXManager+Private.h"; sourceTree = "<group>"; };
+		E61EC2441FEC5910544F0665300175B5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E6587189CECBB60C3F25C95A9F0112B9 /* FLEXKeyboardShortcutManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyboardShortcutManager.h; path = Classes/Utility/FLEXKeyboardShortcutManager.h; sourceTree = "<group>"; };
+		E8814CCA7C2FC8A136B249FA2D998025 /* FLEXLibrariesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLibrariesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.h; sourceTree = "<group>"; };
+		E8B38B38BBA45C978AF00ACCD86C1597 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		E9AD8B373DE4FEA5BD7D2BF4E524AD3F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		E9D6537C799C2551334464630349440D /* FLEXLibrariesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLibrariesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.m; sourceTree = "<group>"; };
+		EA5927319ADC052C187C18CDF9A412CD /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		EAC312F31BE6E27CFC0C087E5E05388B /* FLEXArgumentInputFontsPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputFontsPickerView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.m; sourceTree = "<group>"; };
+		EACE5088A803F5F947B72FDF24D2A353 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		EB2AD490D9F58A6E03C6D050F950FA8E /* FLEX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLEX.xcconfig; sourceTree = "<group>"; };
+		EB66CFD5D5E4534F3C6F919B3D2FBC24 /* FLEXLayerExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLayerExplorerViewController.h; path = Classes/ObjectExplorers/FLEXLayerExplorerViewController.h; sourceTree = "<group>"; };
+		ED760A3CB7A8D23D6992A84A989A8274 /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		EE45550CF4B5301755F84F7FBB7F3506 /* FLEXTableColumnHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableColumnHeader.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableColumnHeader.h; sourceTree = "<group>"; };
+		EE9466197E70C8F939F30AC765B4C811 /* FLEXArrayExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArrayExplorerViewController.m; path = Classes/ObjectExplorers/FLEXArrayExplorerViewController.m; sourceTree = "<group>"; };
+		EF8512AB9FA1B55DB742DD825AB172E6 /* FLEXRuntimeUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXRuntimeUtility.m; path = Classes/Utility/FLEXRuntimeUtility.m; sourceTree = "<group>"; };
+		EFD4D9DF67E3C93207FE26DD66FD3024 /* FLEXViewExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXViewExplorerViewController.h; path = Classes/ObjectExplorers/FLEXViewExplorerViewController.h; sourceTree = "<group>"; };
+		F1340FE8F7DCD3C05CFD91AA5A20188A /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		F1728BCF2EAE9049B75DF7E5B5AB6E74 /* FLEXClassesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXClassesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXClassesTableViewController.h; sourceTree = "<group>"; };
+		F27440A9BE92A97655484E5B4002529B /* FLEXObjectExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectExplorerViewController.m; path = Classes/ObjectExplorers/FLEXObjectExplorerViewController.m; sourceTree = "<group>"; };
+		F2C73CD467594FC699AB5207782F7D53 /* AES256CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = Sources/AES256CBC.swift; sourceTree = "<group>"; };
+		F36648C06697BAF0DE14EB1F0DB36C1A /* FLEXManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXManager.m; path = Classes/Manager/FLEXManager.m; sourceTree = "<group>"; };
+		F4B6C9D79A06FB2826F04B6A69E2E43C /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBeaver.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AF86A7D0F4EEA8AB499A32906D43F3 /* FLEXImagePreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXImagePreviewViewController.h; path = Classes/ViewHierarchy/FLEXImagePreviewViewController.h; sourceTree = "<group>"; };
+		F6A7EA2AD7743CF429E0C54AE927B87A /* FLEXArgumentInputDateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputDateView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.h; sourceTree = "<group>"; };
+		F7B966A8602FA69C9921656B987D22F8 /* FLEXArgumentInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.h; sourceTree = "<group>"; };
+		F87F33E93D1EB7B006B8F1D535ADCDF0 /* FLEXKeyboardHelpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyboardHelpViewController.h; path = Classes/Utility/FLEXKeyboardHelpViewController.h; sourceTree = "<group>"; };
+		FA0B15A8577F13EF55BF275A7C0BC649 /* FLEXFileBrowserFileOperationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserFileOperationController.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.m; sourceTree = "<group>"; };
+		FA20FADFF856A4D1FD73F310B7D9C1F4 /* FLEXDefaultsExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDefaultsExplorerViewController.h; path = Classes/ObjectExplorers/FLEXDefaultsExplorerViewController.h; sourceTree = "<group>"; };
+		FB5800DDF01A2567824CDF7717C46367 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		FD422F62538755C9BB73D546C4875419 /* Pods-DioGhv-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DioGhv-resources.sh"; sourceTree = "<group>"; };
+		FED380AD3FD95F1B802E80E3F40EEAED /* FLEXArgumentInputTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputTextView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438FFD9E1F6676E589815CC1BD6D5D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A05EA638465C5F2683CFDF8F1900E79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59287A38B2826900B6BA89930ED97B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5296EF4607A6390B6A7A0F1A74145F0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F274153987E96EE57CEF9B30AAD7FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36F349D255065EEF7788E514AED82ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D064A25D71187EDDBFCFAC2AB9A268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A663D1668A2162336FBDB0B5F9E105E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC265B91BDB7A3377640BF6C7E92EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DD8FC4E44A2215EB81D2EE01BEBF49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF435BB8F7DDA1B2BE34C696D8FE8116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB830A61077C2FDC1BEE8A1701BECEED /* CoreGraphics.framework in Frameworks */,
+				DEAFF5AAB4C0E0FA359342CB789B744A /* Foundation.framework in Frameworks */,
+				6D47087EB92A42D317C86FB5DDF8C45E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0608AFE74A4E77C6A481C9242B6EABB1 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				E8B38B38BBA45C978AF00ACCD86C1597 /* AggregateFunctions.swift */,
+				2AD7BAFFAC231AAA13D9B21A8D1AA77C /* Blob.swift */,
+				A56C43A7D393BAE903348CF81A2EEB1A /* Collation.swift */,
+				998CCA84DFAE28F040848B135BC2524F /* Connection.swift */,
+				DB459AB87B79FFC2FC87E526111B9F6B /* CoreFunctions.swift */,
+				BBC740E548BDABEAB78CC83D085325F7 /* CustomFunctions.swift */,
+				85B5371B9083F7077638E12E4D2E59AE /* Expression.swift */,
+				FB5800DDF01A2567824CDF7717C46367 /* Foundation.swift */,
+				E9AD8B373DE4FEA5BD7D2BF4E524AD3F /* fts3_tokenizer.h */,
+				B7F93DAD67B91ED4636DC65F1B18CEAA /* FTS4.swift */,
+				4EFE8BCDDC792DC044F31DFECFC405D2 /* FTS5.swift */,
+				302D3964096785C75FA40E0A083C1464 /* Helpers.swift */,
+				25CD9FFE1B1827F6576BDCF669EA88CD /* Operators.swift */,
+				04EDAD85E22B417EC2C061FE304481C9 /* Query.swift */,
+				885D0ED9AD968BF6918FA91DF4807201 /* RTree.swift */,
+				B52120C648CFE9625469D2828E0AAB44 /* Schema.swift */,
+				A95BD27314E2E13B39A49EB22D446F4C /* Setter.swift */,
+				0925E766E3290920AA47058B886E3D3B /* SQLite.h */,
+				C7A6EB9CE7C7A9E065EB0CBEB1EB15E3 /* SQLite-Bridging.h */,
+				604333945EE7D30F400181FB2AED60C7 /* SQLite-Bridging.m */,
+				329FCA3EFB428E914B770AE128BD93C5 /* Statement.swift */,
+				57A9DD9F402422CB7D82FC2E61A1DF7F /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		0A2270A1C54A4DA76707327899A61496 /* SwiftyBeaver */ = {
+			isa = PBXGroup;
+			children = (
+				F2C73CD467594FC699AB5207782F7D53 /* AES256CBC.swift */,
+				CB5B7233A55DCCF176A8DA357387BA6B /* BaseDestination.swift */,
+				8AC9E4830A708B7E7B79C1F5C2C2AD44 /* ConsoleDestination.swift */,
+				6CF53AA68071EF7C886E88FCEAF5A4BC /* FileDestination.swift */,
+				2F3D4C2AC83DCAA6065333E35FAF667D /* Filter.swift */,
+				D8BD72FEF26D39C23981A0A6860DA925 /* SBPlatformDestination.swift */,
+				9AEB0916197035DB927CCADC82B43D37 /* SwiftyBeaver.swift */,
+				8C1455D42B73816F4958C0053C209460 /* Support Files */,
+			);
+			name = SwiftyBeaver;
+			path = SwiftyBeaver;
+			sourceTree = "<group>";
+		};
+		0CD91EB825A89F298C791A95DB997429 /* Pods-DioGhv */ = {
+			isa = PBXGroup;
+			children = (
+				C4F8523C5B70D8B74DFAF84EB28DE1BA /* Info.plist */,
+				D9CAAF2B674E17A42D83773BC9747388 /* Pods-DioGhv.modulemap */,
+				DAEB49EAE6F7900C4375B21BBED14491 /* Pods-DioGhv-acknowledgements.markdown */,
+				2421A12C58D2D1A9E98F5A9265BE3308 /* Pods-DioGhv-acknowledgements.plist */,
+				7257D4A7E1CD279FBC3740F87A80C08F /* Pods-DioGhv-dummy.m */,
+				A36AB3329EF50D6B4E52C2D2882EE300 /* Pods-DioGhv-frameworks.sh */,
+				FD422F62538755C9BB73D546C4875419 /* Pods-DioGhv-resources.sh */,
+				5AC16A2AC37314E619867A3798E45805 /* Pods-DioGhv-umbrella.h */,
+				288470A73A702B18A57D0EA1C065973A /* Pods-DioGhv.debug.xcconfig */,
+				96C27DFC658FD9844D9554CCF1D6507A /* Pods-DioGhv.release.xcconfig */,
+			);
+			name = "Pods-DioGhv";
+			path = "Target Support Files/Pods-DioGhv";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A80FA51D63BE768D126308FB8017AAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D9B116AFA2DCA0E7A8E3CD373F5CFBD /* Info.plist */,
+				2001FD784FABE607BCFAAF666A46D65E /* SQLite.swift.modulemap */,
+				1CCBC8089F233BF37591C4514CDAF715 /* SQLite.swift.xcconfig */,
+				1EB4EB4B49D731C4C0EDF6731EFEFB92 /* SQLite.swift-dummy.m */,
+				0CB7F2628A762F190B560E64BD0FD145 /* SQLite.swift-prefix.pch */,
+				DAD8F80F54E0C31753BA18D31CB95809 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */,
+				792165F2CA033667D6F57205316D40A1 /* Foundation.framework */,
+				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7BFF06AD35DE16BBD7F551AE56470111 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C02A1CD3745C96C6A15C7BEB086FB46 /* FLEX.modulemap */,
+				EB2AD490D9F58A6E03C6D050F950FA8E /* FLEX.xcconfig */,
+				9F066AB77F55518716A64B4E7D827FF4 /* FLEX-dummy.m */,
+				2B0E9FCC401A906C237FFEA0A07BBC15 /* FLEX-prefix.pch */,
+				9889898A6DA065E2E65A5C0434E2CB58 /* FLEX-umbrella.h */,
+				8923ECD9092D3A700FE042A3D8771F66 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FLEX";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				A811EAC9A7CDAF97E04A9AD798928119 /* Pods */,
+				A003E5FA3133D7D7D85F5042B8FF1C48 /* Products */,
+				BBF3666A776D98E48A73154E4C6CDEAB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C1455D42B73816F4958C0053C209460 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DA6EE6011E1DF65ADB985920DDC9FA7 /* Info.plist */,
+				70BE5B3589F983A3DDBE7B7AD3D64BDA /* SwiftyBeaver.modulemap */,
+				43D0C6FF4D4339910F11224FBDCB1366 /* SwiftyBeaver.xcconfig */,
+				5627BDF09E76984628414925BEAF9551 /* SwiftyBeaver-dummy.m */,
+				2947EE8AE4283F439909F1B9797675E5 /* SwiftyBeaver-prefix.pch */,
+				9B6C870A455202925B42C1CE1677C207 /* SwiftyBeaver-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyBeaver";
+			sourceTree = "<group>";
+		};
+		8C61533B51A472A9E0C3BE15454CBDAA /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				1777D4460FB303AA49BBB7AF2454F473 /* Constraint.swift */,
+				9346254402910BC32B7020DF30641C08 /* ConstraintAttributes.swift */,
+				A1160ACFF1AA0E579F9D559A8C087C76 /* ConstraintConfig.swift */,
+				486233D6EB1EEB8D197CDB2B5AB4A8F7 /* ConstraintConstantTarget.swift */,
+				3C1B5D43D1A58C0FB4ECE6640C1CA1D6 /* ConstraintDescription.swift */,
+				7C275015EF8117E78776A09C1309D680 /* ConstraintDSL.swift */,
+				236E34EFD91A3217159E4E09A766902C /* ConstraintInsets.swift */,
+				D03BDDE0A7D729705597B012C166B0D9 /* ConstraintInsetTarget.swift */,
+				252A0E72273E38343483021F6AB6E3E1 /* ConstraintItem.swift */,
+				90A48044ADABA52E507846F423F9D293 /* ConstraintLayoutGuide.swift */,
+				C4579B9E4BBC3AD2F97CE92E44C48761 /* ConstraintLayoutGuide+Extensions.swift */,
+				4F5575A844E739A624948BA259B0E8F9 /* ConstraintLayoutGuideDSL.swift */,
+				B0465978C214852DEE71D3A85F6EEFD4 /* ConstraintLayoutSupport.swift */,
+				3845288D1E4978AC8C08A47BF89B302E /* ConstraintLayoutSupportDSL.swift */,
+				E1B34C1F12E683E99995BBBA73B84420 /* ConstraintMaker.swift */,
+				C9C23A07D69E96A6AC620CB066D69A62 /* ConstraintMakerEditable.swift */,
+				E61EC2441FEC5910544F0665300175B5 /* ConstraintMakerExtendable.swift */,
+				97483E39A3C733D2706738E7FC0C4165 /* ConstraintMakerFinalizable.swift */,
+				60A7333858BD7DDA0B2ACD7C44DB08DE /* ConstraintMakerPriortizable.swift */,
+				0D0EA1B965BA246345B6D0C84971AA03 /* ConstraintMakerRelatable.swift */,
+				EACE5088A803F5F947B72FDF24D2A353 /* ConstraintMultiplierTarget.swift */,
+				81B63BE9B8DDFEEE44181E6ACB8FFF14 /* ConstraintOffsetTarget.swift */,
+				88D6E346D4D0E2354819AFD8F0A0F9B0 /* ConstraintPriority.swift */,
+				1E6AE4DA4F098E30D867E364772AB0D9 /* ConstraintPriorityTarget.swift */,
+				4A19140FF624F6627DAFA805FAD83E0C /* ConstraintRelatableTarget.swift */,
+				2F1368863602A5844342337AC8AD98D3 /* ConstraintRelation.swift */,
+				CB453E72263FEA27CE8A8CB71DB96592 /* ConstraintView.swift */,
+				A5DD928DF466E78597A2EF570BF85784 /* ConstraintView+Extensions.swift */,
+				4286EDC82425446FB0F01F645B3FE778 /* ConstraintViewDSL.swift */,
+				1239DE25A6BB64B3C6DE47E7F142AF16 /* Debugging.swift */,
+				D808DE2E0AF630E117B24D9CEB0DEBC0 /* LayoutConstraint.swift */,
+				DA7699B2F5D27D164A2EF3EE9B4442FC /* LayoutConstraintItem.swift */,
+				07EF26F2450A254E1B9AE746C4DD3EAC /* UILayoutSupport+Extensions.swift */,
+				DC408ECA1FFD10A5E14F6DDD24A85069 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		A003E5FA3133D7D7D85F5042B8FF1C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789EF583B899064F92A399649BD76F51 /* FLEX.framework */,
+				E400ABB7E45797F8F2337B5D9B500070 /* Pods_DioGhv.framework */,
+				A541A3C21F78858CA82A81E7546695F4 /* Pods_Keyboard.framework */,
+				CE2FDE4CD7F8FB664AA9BEC942E73710 /* SnapKit.framework */,
+				252D587F34DD224D9EA05B38CC2C1D20 /* SQLite.framework */,
+				F4B6C9D79A06FB2826F04B6A69E2E43C /* SwiftyBeaver.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A811EAC9A7CDAF97E04A9AD798928119 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD63AAF1B28F425BDC11B65CB5CCD76A /* FLEX */,
+				8C61533B51A472A9E0C3BE15454CBDAA /* SnapKit */,
+				EF593C73E240DAB59919F27611995EAC /* SQLite.swift */,
+				0A2270A1C54A4DA76707327899A61496 /* SwiftyBeaver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2430B5B1617ED201FF0F93CEEBB1472 /* Pods-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BA7AE64D0EE52F26BBA7AB890D112421 /* Info.plist */,
+				7FD0A10FD08371CCCF090D61818414A1 /* Pods-Keyboard.modulemap */,
+				70CC4A0C691BE8B03179321CE4ABFD34 /* Pods-Keyboard-acknowledgements.markdown */,
+				CF362694C0550CE98349C7ADF522CD8E /* Pods-Keyboard-acknowledgements.plist */,
+				D9C08F51D629720B01DD28FEBF7F8AB0 /* Pods-Keyboard-dummy.m */,
+				D20C35AE4179FACC777448776312EDE5 /* Pods-Keyboard-resources.sh */,
+				1513B8521333B4A5DDA7ACB8A2937512 /* Pods-Keyboard-umbrella.h */,
+				2E77163F5FC3989B22F68C09C9542D8F /* Pods-Keyboard.debug.xcconfig */,
+				ED760A3CB7A8D23D6992A84A989A8274 /* Pods-Keyboard.release.xcconfig */,
+			);
+			name = "Pods-Keyboard";
+			path = "Target Support Files/Pods-Keyboard";
+			sourceTree = "<group>";
+		};
+		BBF3666A776D98E48A73154E4C6CDEAB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD91EB825A89F298C791A95DB997429 /* Pods-DioGhv */,
+				B2430B5B1617ED201FF0F93CEEBB1472 /* Pods-Keyboard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BD63AAF1B28F425BDC11B65CB5CCD76A /* FLEX */ = {
+			isa = PBXGroup;
+			children = (
+				A9927D043787EF1737F23D882EE5E59F /* FLEX.h */,
+				DE034F5F2EF89006EAFB0334F1401D5F /* FLEXArgumentInputColorView.h */,
+				0063A5E4B6466A1979EFBAB63ADE71F6 /* FLEXArgumentInputColorView.m */,
+				F6A7EA2AD7743CF429E0C54AE927B87A /* FLEXArgumentInputDateView.h */,
+				10E7B57EE9488FFC57F98E071F5A700E /* FLEXArgumentInputDateView.m */,
+				75AF4651FDCBD230C17F7CB83BBF4C85 /* FLEXArgumentInputFontsPickerView.h */,
+				EAC312F31BE6E27CFC0C087E5E05388B /* FLEXArgumentInputFontsPickerView.m */,
+				AFD4DFEDC85248759D87258C9BAA8649 /* FLEXArgumentInputFontView.h */,
+				DF631B7AF123B9AF31A06B393F320772 /* FLEXArgumentInputFontView.m */,
+				C54EDF0C3F4E648C5DEDC7CC60DAE801 /* FLEXArgumentInputJSONObjectView.h */,
+				233ACA0AC9D3EEBCC9F60E095D66EC29 /* FLEXArgumentInputJSONObjectView.m */,
+				18BE77FF2F77E190EC43D0F7564B9FC2 /* FLEXArgumentInputNotSupportedView.h */,
+				2DFAB535BB5A4C971232ED4ABFD8CFE5 /* FLEXArgumentInputNotSupportedView.m */,
+				C0B53065D5FBC565C1B796A40C4C5A0E /* FLEXArgumentInputNumberView.h */,
+				92ED8654B29631BC38DCA77AB33F2E4C /* FLEXArgumentInputNumberView.m */,
+				B19033F958BB5A0697D874C3BCFC4AEB /* FLEXArgumentInputStringView.h */,
+				CC6A49FCB81AE2232CD08643A460B571 /* FLEXArgumentInputStringView.m */,
+				4EFA1A9706E2784EAA5EA91CEED28115 /* FLEXArgumentInputStructView.h */,
+				59AF2261F8A5D662D5E4CB7347C4821F /* FLEXArgumentInputStructView.m */,
+				06285C38F2BF9E09D3CA8BB962EC14FC /* FLEXArgumentInputSwitchView.h */,
+				DC8BB76C1DDADFD34B749A68795C113C /* FLEXArgumentInputSwitchView.m */,
+				FED380AD3FD95F1B802E80E3F40EEAED /* FLEXArgumentInputTextView.h */,
+				E17683CE2D10B3AB0904D0F5921C94F7 /* FLEXArgumentInputTextView.m */,
+				F7B966A8602FA69C9921656B987D22F8 /* FLEXArgumentInputView.h */,
+				42F904BAE860E60E27602903EB3F2D4C /* FLEXArgumentInputView.m */,
+				66561EA62987D4E3C851E6C55D02C2BD /* FLEXArgumentInputViewFactory.h */,
+				65282B6EE8568BE770EC1D20F409A695 /* FLEXArgumentInputViewFactory.m */,
+				CE548AAB4E92C91E75CFFF83B6FA9BFC /* FLEXArrayExplorerViewController.h */,
+				EE9466197E70C8F939F30AC765B4C811 /* FLEXArrayExplorerViewController.m */,
+				F1728BCF2EAE9049B75DF7E5B5AB6E74 /* FLEXClassesTableViewController.h */,
+				3B11FD495D52FCB0F7C6B6C56C3A877D /* FLEXClassesTableViewController.m */,
+				2A1C4E1C0EFEC636BA386D1EB2F8665E /* FLEXClassExplorerViewController.h */,
+				1C6A4FD131C2861A3C5F7ECCCD01D5D4 /* FLEXClassExplorerViewController.m */,
+				37FE75DCAA4163805E6580EAC4E39E32 /* FLEXCookiesTableViewController.h */,
+				ADB3B2A7C5E57E25118A4D522F5D5F41 /* FLEXCookiesTableViewController.m */,
+				4B0A7CDA1058134679CD5A3692314C3F /* FLEXDatabaseManager.h */,
+				509EE0E5E65EBB9C009FB81EAF78BFA1 /* FLEXDefaultEditorViewController.h */,
+				51104ED33A249E9E879D8726AFDAC402 /* FLEXDefaultEditorViewController.m */,
+				FA20FADFF856A4D1FD73F310B7D9C1F4 /* FLEXDefaultsExplorerViewController.h */,
+				54BCF17718CA931E0D7E288753B127A8 /* FLEXDefaultsExplorerViewController.m */,
+				8609B878A054B569A27787DB49D0BCEE /* FLEXDictionaryExplorerViewController.h */,
+				6D350C18639736C0F8EAB687C1E7223C /* FLEXDictionaryExplorerViewController.m */,
+				2F26337DBB06DDFE3041B78232ECEEBC /* FLEXExplorerToolbar.h */,
+				00D425801B447EADF6C385E4298D8D56 /* FLEXExplorerToolbar.m */,
+				66A22C755C35EF44B66199E9255938AD /* FLEXExplorerViewController.h */,
+				3E1AE4DE5743D8D72B391A1856CCF168 /* FLEXExplorerViewController.m */,
+				2C35B7B2754DD040DB1F183417CF54D3 /* FLEXFieldEditorView.h */,
+				76FC8388FA5C9F2D03A944D0CB221F40 /* FLEXFieldEditorView.m */,
+				39815564F5DE5924C21CCDA201001EF0 /* FLEXFieldEditorViewController.h */,
+				D9CB5B0E3E9633C32AF3595AA188F33A /* FLEXFieldEditorViewController.m */,
+				65A3374FE7F9055AC187A9D6D53E9057 /* FLEXFileBrowserFileOperationController.h */,
+				FA0B15A8577F13EF55BF275A7C0BC649 /* FLEXFileBrowserFileOperationController.m */,
+				3656B0E6368E13A735F4CE2D5EE37AE7 /* FLEXFileBrowserSearchOperation.h */,
+				E4363F59271C94A2AAB5C24CE390AA54 /* FLEXFileBrowserSearchOperation.m */,
+				51B92D9836A26BDB8F5D0046D5070877 /* FLEXFileBrowserTableViewController.h */,
+				E335DDDE1F9E6BF5464A6895A1DB6C40 /* FLEXFileBrowserTableViewController.m */,
+				1FDCCDFC7ED2170543FF4C38E5EE636D /* FLEXGlobalsTableViewController.h */,
+				A6F4DE3A253353EF77BB135C2A6FAE0E /* FLEXGlobalsTableViewController.m */,
+				5B73B80EE84776B202C45DA8921C18D1 /* FLEXGlobalsTableViewControllerEntry.h */,
+				267402201393224C84EE9E39D69AD5FA /* FLEXGlobalsTableViewControllerEntry.m */,
+				2730DBB60ABB3C214E9EE9768C889EC4 /* FLEXHeapEnumerator.h */,
+				86E79E7D2A97D78F769FD5543F16469C /* FLEXHeapEnumerator.m */,
+				2B18EB6533FEEE3E0A1A336B4A7A5F18 /* FLEXHierarchyTableViewCell.h */,
+				80C73146768576F0513FE0B2A5F6A81D /* FLEXHierarchyTableViewCell.m */,
+				5FDCFCF14626199495FDE16B9A8A4533 /* FLEXHierarchyTableViewController.h */,
+				71BF31E7E73CA26EF01666A3C5195622 /* FLEXHierarchyTableViewController.m */,
+				164485AA80534BA0AC2C37A87D07D4B2 /* FLEXImageExplorerViewController.h */,
+				8ABC189A21A4999CEC7853980C1E4645 /* FLEXImageExplorerViewController.m */,
+				F5AF86A7D0F4EEA8AB499A32906D43F3 /* FLEXImagePreviewViewController.h */,
+				9BBBBAE4621F6BEF345BA698BC8E6540 /* FLEXImagePreviewViewController.m */,
+				0BFDAA5A4E25B809A24A0388DAFC5FF8 /* FLEXInstancesTableViewController.h */,
+				89E57096D3AA8A3C559F5741D9445E89 /* FLEXInstancesTableViewController.m */,
+				7AE2D461A43B013B126CAF94D1727AB1 /* FLEXIvarEditorViewController.h */,
+				8E7BAAAD95DC0F5D6730AE57E1A511BB /* FLEXIvarEditorViewController.m */,
+				F87F33E93D1EB7B006B8F1D535ADCDF0 /* FLEXKeyboardHelpViewController.h */,
+				0573816209E0457D458478373D108C0D /* FLEXKeyboardHelpViewController.m */,
+				E6587189CECBB60C3F25C95A9F0112B9 /* FLEXKeyboardShortcutManager.h */,
+				9DA751D73692F391CDC35E3CD2CBDF20 /* FLEXKeyboardShortcutManager.m */,
+				EB66CFD5D5E4534F3C6F919B3D2FBC24 /* FLEXLayerExplorerViewController.h */,
+				15910D4392C6D73AA86A4D93CBC5ABF9 /* FLEXLayerExplorerViewController.m */,
+				E8814CCA7C2FC8A136B249FA2D998025 /* FLEXLibrariesTableViewController.h */,
+				E9D6537C799C2551334464630349440D /* FLEXLibrariesTableViewController.m */,
+				CF36D4F313C8AB5306A4267D27568C0C /* FLEXLiveObjectsTableViewController.h */,
+				3C960532D403ECFACFA9EF2A13D11E2B /* FLEXLiveObjectsTableViewController.m */,
+				4B3B94129560E1F2B4D21D42A266A6DC /* FLEXManager.h */,
+				F36648C06697BAF0DE14EB1F0DB36C1A /* FLEXManager.m */,
+				E547BAC4506C426E56F4DD65DEBC49D5 /* FLEXManager+Private.h */,
+				BB9057C3C861A98C91FC7336C6E258E2 /* FLEXMethodCallingViewController.h */,
+				9729E8B9CEB3C67EDD5B8B131FC1154E /* FLEXMethodCallingViewController.m */,
+				DC8B6D8CA62308D6561A8D512F59B048 /* FLEXMultiColumnTableView.h */,
+				90FF2D80813F5C2B370E6324AA70A821 /* FLEXMultiColumnTableView.m */,
+				D6007DE5DF941CDA816738BEDB973B64 /* FLEXMultilineTableViewCell.h */,
+				1F8C5C63B7A6DB820118C6430A994EAB /* FLEXMultilineTableViewCell.m */,
+				DE8E0D43D6093EAFB9F52A58B34054EC /* FLEXNetworkCurlLogger.h */,
+				45E2DF4859949FBAA3BC24657EB75E3F /* FLEXNetworkCurlLogger.m */,
+				9931465DE936A33CCDBF50688DDCB06A /* FLEXNetworkHistoryTableViewController.h */,
+				27CAAB5F87F43AC89CAD8898944ECED8 /* FLEXNetworkHistoryTableViewController.m */,
+				CFAE0081B525428A67894F4E79F5B9AD /* FLEXNetworkObserver.h */,
+				A01A68B5EAB0FB870425A192FCB02846 /* FLEXNetworkObserver.m */,
+				70AF703DDC65D18D3DD12CD41F153EED /* FLEXNetworkRecorder.h */,
+				30CC7ECE3886AFABBAB96EF0D708DC22 /* FLEXNetworkRecorder.m */,
+				1BC3467A137B3362524EE8C8AC308B8B /* FLEXNetworkSettingsTableViewController.h */,
+				BFBDE282596CAB86B73661F9F02AAB38 /* FLEXNetworkSettingsTableViewController.m */,
+				D8F1BDCE3BB9CE18DE3BA44512181299 /* FLEXNetworkTransaction.h */,
+				D0239DED8A2B850E18E80FA6EBF6B730 /* FLEXNetworkTransaction.m */,
+				D5F34B3310D28ADDC9D6DD7D4E75A6FF /* FLEXNetworkTransactionDetailTableViewController.h */,
+				854CB923DED052671E7E92CA94659E6E /* FLEXNetworkTransactionDetailTableViewController.m */,
+				8825E5F193CADBF8489C96CD4AD62BB8 /* FLEXNetworkTransactionTableViewCell.h */,
+				ACAB9619FDF87AC8E54681DC2342FF5B /* FLEXNetworkTransactionTableViewCell.m */,
+				7081E287BBFB8535DBE99F11B025EF8B /* FLEXObjectExplorerFactory.h */,
+				2CCF1A5B7E027842CE949535B3263E6F /* FLEXObjectExplorerFactory.m */,
+				AFF61B59A7DB548ADD089C6FF2E18FB3 /* FLEXObjectExplorerViewController.h */,
+				F27440A9BE92A97655484E5B4002529B /* FLEXObjectExplorerViewController.m */,
+				DA8812219820F39621701CA688CE09D0 /* FLEXPropertyEditorViewController.h */,
+				D1EFADA318BF919F82FD7DF0BB0F12FA /* FLEXPropertyEditorViewController.m */,
+				452EE8BE978F5A499147FB91A153AFF4 /* FLEXRealmDatabaseManager.h */,
+				49A8F7EDE263AB2FA301EAB2957B6DED /* FLEXRealmDatabaseManager.m */,
+				0CFD6AAEB97531C39AB9493ACEA2BFEE /* FLEXRealmDefines.h */,
+				107E4CE5E55435FBA1EFB35C6CA0825F /* FLEXResources.h */,
+				4565CB493699ADB31C5EA3E68B03F8C9 /* FLEXResources.m */,
+				25C3251B34C17FCB1A3E05484ADF0518 /* FLEXRuntimeUtility.h */,
+				EF8512AB9FA1B55DB742DD825AB172E6 /* FLEXRuntimeUtility.m */,
+				DB607E833FFA94F419AF518895623E2C /* FLEXSetExplorerViewController.h */,
+				4557E327F95BC5D113EA286725D15EAC /* FLEXSetExplorerViewController.m */,
+				CF69EAEFB6D4957B89E5488404964A47 /* FLEXSQLiteDatabaseManager.h */,
+				A6EE9C36A16BD0257826D10242B60E13 /* FLEXSQLiteDatabaseManager.m */,
+				635FD63C2E0F0F0A2AB78DF301234C39 /* FLEXSystemLogMessage.h */,
+				AF9151B0EED37B47F4ED76D59A7AA3AA /* FLEXSystemLogMessage.m */,
+				07DBF96AE9FD120C71ACD3F7634AA128 /* FLEXSystemLogTableViewCell.h */,
+				340ED71361202DB1A64023BE4E455F4D /* FLEXSystemLogTableViewCell.m */,
+				6D4D15D5DFA19BB339E850F432F1FC1F /* FLEXSystemLogTableViewController.h */,
+				9BB74E34F28485D4B60BAFE0011A2233 /* FLEXSystemLogTableViewController.m */,
+				EE45550CF4B5301755F84F7FBB7F3506 /* FLEXTableColumnHeader.h */,
+				6D473BD9C0C1C0F704E8233B194BCAF4 /* FLEXTableColumnHeader.m */,
+				A84DDFC134BA4C18D3C1118DA654F281 /* FLEXTableContentCell.h */,
+				7B6E6D9A2E3E48B1E9D6A9E42CD49C73 /* FLEXTableContentCell.m */,
+				B531CDA80E3E587483E27AAD8A688655 /* FLEXTableContentViewController.h */,
+				A7D00A2BEB006EC7D9F66E5BD23B06F3 /* FLEXTableContentViewController.m */,
+				63D5A9BE12146749AD3E7905E9E2C094 /* FLEXTableLeftCell.h */,
+				6FE47697A8663686C5A3AFF35B608A01 /* FLEXTableLeftCell.m */,
+				7134154F23BF8D831CCF26AE74847BA4 /* FLEXTableListViewController.h */,
+				D2685FC14421E2F13E232F0001111BF3 /* FLEXTableListViewController.m */,
+				888E0485FC2E2413F9629119D7F5EBD8 /* FLEXToolbarItem.h */,
+				A2C12DF985B82E23229C9B12E9A79A26 /* FLEXToolbarItem.m */,
+				808120838204D1FE270552D74CF0C4F4 /* FLEXUtility.h */,
+				1CC1E54B400C9B0DBCC324B67737C944 /* FLEXUtility.m */,
+				98003DBF3DA2862C0D42BBFCFAB1E46D /* FLEXViewControllerExplorerViewController.h */,
+				827836F87F91523E5EF49F46C0365641 /* FLEXViewControllerExplorerViewController.m */,
+				EFD4D9DF67E3C93207FE26DD66FD3024 /* FLEXViewExplorerViewController.h */,
+				24A0F2F836EEC97DB1BD2E382AF68B28 /* FLEXViewExplorerViewController.m */,
+				80E9F5A9695B90CBF2067BA170FD2623 /* FLEXWebViewController.h */,
+				9CB6DEC44888D2B4877AA83962EE0E19 /* FLEXWebViewController.m */,
+				5D7964FFF729E331706C0E3E6B39D18D /* FLEXWindow.h */,
+				BC5F07367D8063A0C97834E313ECC789 /* FLEXWindow.m */,
+				7BFF06AD35DE16BBD7F551AE56470111 /* Support Files */,
+			);
+			name = FLEX;
+			path = FLEX;
+			sourceTree = "<group>";
+		};
+		DC408ECA1FFD10A5E14F6DDD24A85069 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F5E3C8DD6A00E0715386F0BC1B34E2 /* Info.plist */,
+				D4B714676B5236DE425197CBA16479FE /* SnapKit.modulemap */,
+				802A2F9EE65113A01C363935A2EE4079 /* SnapKit.xcconfig */,
+				94B6A828F08A7F95EC08753796087FE6 /* SnapKit-dummy.m */,
+				EA5927319ADC052C187C18CDF9A412CD /* SnapKit-prefix.pch */,
+				F1340FE8F7DCD3C05CFD91AA5A20188A /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		EF593C73E240DAB59919F27611995EAC /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				0608AFE74A4E77C6A481C9242B6EABB1 /* standard */,
+				1A80FA51D63BE768D126308FB8017AAB /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B62B8D53EFB2C8087FCBCCF72E9B7A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABFFE7898F23AABAD4FF49334279B68 /* fts3_tokenizer.h in Headers */,
+				51D552DA12706050568DE17B431CE21E /* SQLite-Bridging.h in Headers */,
+				BD9145E9B966EEC29B0DFBB400D4622C /* SQLite.h in Headers */,
+				1ED9F454A2B3E807F7D8936697932B10 /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456E58FE7A304A4509FA735C6F886D61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D420728D0E6205F129D183A6CD9BFF /* FLEX-umbrella.h in Headers */,
+				B2690F06A5310E996A29B34F9E49E5C4 /* FLEX.h in Headers */,
+				818DDA72ADA19210FF6689903AF5B885 /* FLEXArgumentInputColorView.h in Headers */,
+				E5769A2CEBC479A8A46F8992BE2FCE24 /* FLEXArgumentInputDateView.h in Headers */,
+				72C207AF1910B6F171D5C4EFF8F7E9A0 /* FLEXArgumentInputFontsPickerView.h in Headers */,
+				F661E37B75C7EC4115D8F5FE67201FFE /* FLEXArgumentInputFontView.h in Headers */,
+				CF4F46322DB29E73E9B582B81A966081 /* FLEXArgumentInputJSONObjectView.h in Headers */,
+				D814F855FCE4AEE578E77CCF924368FC /* FLEXArgumentInputNotSupportedView.h in Headers */,
+				F6FBA378CA3A9976EDE5F999860C7E48 /* FLEXArgumentInputNumberView.h in Headers */,
+				7853B8240AC7D8F1BA4861CA98136590 /* FLEXArgumentInputStringView.h in Headers */,
+				0A7047939239917E7010D8DA6CF22C40 /* FLEXArgumentInputStructView.h in Headers */,
+				47FBA27CAF1EAD72AF0D304F768E7A9E /* FLEXArgumentInputSwitchView.h in Headers */,
+				060D49CF80F7594CBC3CC04177ABD229 /* FLEXArgumentInputTextView.h in Headers */,
+				0D4EB0FD52ACB4FB09B529EFA9A430FC /* FLEXArgumentInputView.h in Headers */,
+				BE98EA7E3012D9F4F859CC68D5E822FE /* FLEXArgumentInputViewFactory.h in Headers */,
+				9E087A5B325769F8BB0C6D71FA3480A8 /* FLEXArrayExplorerViewController.h in Headers */,
+				E6B1F9328490B3B4838312F2A0DA248F /* FLEXClassesTableViewController.h in Headers */,
+				905715B6AA3470E4DDADF025E9ACA78B /* FLEXClassExplorerViewController.h in Headers */,
+				E4911490337414C47DD1395208B0A85A /* FLEXCookiesTableViewController.h in Headers */,
+				61A2C1504421793336A80DA0EFCF7494 /* FLEXDatabaseManager.h in Headers */,
+				A7CEDE2469902E34184EF21A61FCE1F2 /* FLEXDefaultEditorViewController.h in Headers */,
+				532D4C956B94C366FFCF017AA8652B11 /* FLEXDefaultsExplorerViewController.h in Headers */,
+				055F635F7677C8DD3C2C796AA2247FBF /* FLEXDictionaryExplorerViewController.h in Headers */,
+				722A8428E6F7A77BCA12E241D8A5E250 /* FLEXExplorerToolbar.h in Headers */,
+				548BFE2355136A356ED165B0913C7532 /* FLEXExplorerViewController.h in Headers */,
+				3E8C8E48200D3E28B9210410F3A7E670 /* FLEXFieldEditorView.h in Headers */,
+				E91CAD491109AF2DBBE6A8C020C8A298 /* FLEXFieldEditorViewController.h in Headers */,
+				BD05EAF4B5549828E8269943F44C9EC8 /* FLEXFileBrowserFileOperationController.h in Headers */,
+				5637DCDC2759140835DDFB1D3FB4C5B8 /* FLEXFileBrowserSearchOperation.h in Headers */,
+				08A4E0D87A5A1E4AC57DE4A59670B94D /* FLEXFileBrowserTableViewController.h in Headers */,
+				127C9D0DA7ED97AC041327BE74DF9F9A /* FLEXGlobalsTableViewController.h in Headers */,
+				518EBC3E626C6511A35C45589E9651F4 /* FLEXGlobalsTableViewControllerEntry.h in Headers */,
+				06E31F8A639C5A6A131E2C51AA8C0AB0 /* FLEXHeapEnumerator.h in Headers */,
+				215C55B6C77E6212746AC4EB5E9A9891 /* FLEXHierarchyTableViewCell.h in Headers */,
+				196E97428E4C6F87B24745FC8F1518D9 /* FLEXHierarchyTableViewController.h in Headers */,
+				BA040AFE00D4326C792ABACD02DF09B3 /* FLEXImageExplorerViewController.h in Headers */,
+				434ECF1278A354463EDEA96480007910 /* FLEXImagePreviewViewController.h in Headers */,
+				893E7753AF852DA3230132C3CCDA0EB1 /* FLEXInstancesTableViewController.h in Headers */,
+				BFC6257046AD8769D64E5947E7AB37B0 /* FLEXIvarEditorViewController.h in Headers */,
+				BD376D4ED0C8C444CB2E37F1E7211032 /* FLEXKeyboardHelpViewController.h in Headers */,
+				5920A526757714698F1158FC951218C4 /* FLEXKeyboardShortcutManager.h in Headers */,
+				FE37D7338560592816B14D0A1BD0704B /* FLEXLayerExplorerViewController.h in Headers */,
+				CE0E6B46AEA1BF8D982F492040C1AC25 /* FLEXLibrariesTableViewController.h in Headers */,
+				5B00C1C775BCB16805D313EE77220F36 /* FLEXLiveObjectsTableViewController.h in Headers */,
+				E0F3887B73ECADB5991E14AE91518653 /* FLEXManager+Private.h in Headers */,
+				6935FDCA3AE592C8CF11FFD4BAF1A45E /* FLEXManager.h in Headers */,
+				FE61AD44354B104B45411B8FA0D1B928 /* FLEXMethodCallingViewController.h in Headers */,
+				22BDC19834E751A93ACD2FFF87805415 /* FLEXMultiColumnTableView.h in Headers */,
+				BF9F1A550620CE89194B39CD775102C2 /* FLEXMultilineTableViewCell.h in Headers */,
+				BAF13783D3245B8C6589DF2528A2B814 /* FLEXNetworkCurlLogger.h in Headers */,
+				AEB69BBDDDA09981D715289AC0C5E7BA /* FLEXNetworkHistoryTableViewController.h in Headers */,
+				26B967CCF03D2D527D8568E2FF758550 /* FLEXNetworkObserver.h in Headers */,
+				340BBEAAB087711A03E97F3CBF13E619 /* FLEXNetworkRecorder.h in Headers */,
+				4FD8E4ACB6708AD51C0C42F91C188E34 /* FLEXNetworkSettingsTableViewController.h in Headers */,
+				B70F5D6FB2D91148F24B9444A75FA03F /* FLEXNetworkTransaction.h in Headers */,
+				51CE11BC40C9EF654264A81039FC4134 /* FLEXNetworkTransactionDetailTableViewController.h in Headers */,
+				9220826427093086248150191A003F9D /* FLEXNetworkTransactionTableViewCell.h in Headers */,
+				203CB8B2A419AA793AA617508B7ABCF4 /* FLEXObjectExplorerFactory.h in Headers */,
+				B368BF8DBE9CBAF219211F6C5DD430A7 /* FLEXObjectExplorerViewController.h in Headers */,
+				5E08B90F4B73CDE4273763C006B3CB98 /* FLEXPropertyEditorViewController.h in Headers */,
+				E44DE3A91A79381775B645F5461AD86E /* FLEXRealmDatabaseManager.h in Headers */,
+				80B510B62387AC9C83D193D2BB11655A /* FLEXRealmDefines.h in Headers */,
+				99762194FDE835E1B93B7A7B50622C64 /* FLEXResources.h in Headers */,
+				7A7BD3332466C063D75C527E249BC8CD /* FLEXRuntimeUtility.h in Headers */,
+				80DB7EF96DEB378A215943DAC18496B5 /* FLEXSetExplorerViewController.h in Headers */,
+				FA53B291F4B4117BA680547EF43FE91E /* FLEXSQLiteDatabaseManager.h in Headers */,
+				31B079DECEF980039302C8893CB69449 /* FLEXSystemLogMessage.h in Headers */,
+				C04815EEEED3921522AF954A623EAFF5 /* FLEXSystemLogTableViewCell.h in Headers */,
+				8EA0BB6AF0BCC93A7EA28541BAD9855E /* FLEXSystemLogTableViewController.h in Headers */,
+				F32071A66262F02008CAE809D3B00F13 /* FLEXTableColumnHeader.h in Headers */,
+				17273A2E51D1316B7AB6E92C916C2191 /* FLEXTableContentCell.h in Headers */,
+				D57ED622E979CB4645FB6E12EA23627C /* FLEXTableContentViewController.h in Headers */,
+				9C640710F98A537C95D11B1F38878881 /* FLEXTableLeftCell.h in Headers */,
+				8B29C9610A0596B4A1187D43CEC797B5 /* FLEXTableListViewController.h in Headers */,
+				C7244B4B77431DFE2B325D32BA9163C9 /* FLEXToolbarItem.h in Headers */,
+				FA6616042902BB7EE89EE323E07FCF66 /* FLEXUtility.h in Headers */,
+				C3BEAF593F582070812F218E42A64E04 /* FLEXViewControllerExplorerViewController.h in Headers */,
+				4383C55C91CA79C0184D94CFE77EE862 /* FLEXViewExplorerViewController.h in Headers */,
+				077610199435AA2CD9C07A60395EACEC /* FLEXWebViewController.h in Headers */,
+				0CA8895DC1FD30548578F1C3C7C6E37B /* FLEXWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7926D2F7DD0AA07506DBF55AF598C8A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E90CE4E17C246DA6D10862AE80A02D /* Pods-DioGhv-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7C9F890E7AA4FDA020D984D85AC6E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A99C82629175A92D01020785255ADC /* Pods-Keyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B452815ABF4EE2F0ED7D7E8EB60AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCE6596974A2A8751CEF901B6748B22 /* SwiftyBeaver-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65A5CF070023F5C0124F35B52EE1A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CC17BC6986F3D5BDD84D824060BC02 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		35FEC954840D3D78C6409F917C77026E /* SwiftyBeaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3847E6F64217E3CF062BD7E8A7FFF242 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
+			buildPhases = (
+				8A899AACED999BF7FAEBC9F1635F11D9 /* Sources */,
+				59287A38B2826900B6BA89930ED97B24 /* Frameworks */,
+				E92B452815ABF4EE2F0ED7D7E8EB60AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBeaver;
+			productName = SwiftyBeaver;
+			productReference = F4B6C9D79A06FB2826F04B6A69E2E43C /* SwiftyBeaver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68A07EF405FD9BCB32A62DB85FB63511 /* FLEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715E7066D6C0418ED32DDC738AE3C17F /* Build configuration list for PBXNativeTarget "FLEX" */;
+			buildPhases = (
+				77FF95C05C64BEDF3E3FE02074343938 /* Sources */,
+				DF435BB8F7DDA1B2BE34C696D8FE8116 /* Frameworks */,
+				456E58FE7A304A4509FA735C6F886D61 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLEX;
+			productName = FLEX;
+			productReference = 789EF583B899064F92A399649BD76F51 /* FLEX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73D5F9E80E487CBF5499BE5890C8521F /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB4A8DC58E45762543C0D33B6CBFFCBB /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				611366FB25333646F5B2F504897B5700 /* Sources */,
+				7F274153987E96EE57CEF9B30AAD7FDB /* Frameworks */,
+				0B62B8D53EFB2C8087FCBCCF72E9B7A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = 252D587F34DD224D9EA05B38CC2C1D20 /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8C9B57651A4A5E5557DB8187B537E57 /* Pods-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34F1659DC1E3B8CD648F872885D8B1B /* Build configuration list for PBXNativeTarget "Pods-Keyboard" */;
+			buildPhases = (
+				20440F86D28692B6C6D8FA9C48578C45 /* Sources */,
+				B3D064A25D71187EDDBFCFAC2AB9A268 /* Frameworks */,
+				AC7C9F890E7AA4FDA020D984D85AC6E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7FA08CB3A13DDAF4D63B5DCD3697CE9 /* PBXTargetDependency */,
+				468644B484387A3C43C41F19014D8492 /* PBXTargetDependency */,
+				B9717FE13066DB1A2D51906FB32722FC /* PBXTargetDependency */,
+			);
+			name = "Pods-Keyboard";
+			productName = "Pods-Keyboard";
+			productReference = A541A3C21F78858CA82A81E7546695F4 /* Pods_Keyboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DACECC4CB701847971007199E91D59F4 /* Pods-DioGhv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 325082830FA3D29FC4D976E8C0B0AFC1 /* Build configuration list for PBXNativeTarget "Pods-DioGhv" */;
+			buildPhases = (
+				7BD71DDE509105D5599D597034A98A9B /* Sources */,
+				438FFD9E1F6676E589815CC1BD6D5D9C /* Frameworks */,
+				7926D2F7DD0AA07506DBF55AF598C8A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C2846C34F9DCC16C904D98BA2D1251 /* PBXTargetDependency */,
+				E6337D7F290B4ED40A187B5C0BEB6E2D /* PBXTargetDependency */,
+				D69076164DE561C5058E9A7823BEAD2A /* PBXTargetDependency */,
+				120B6C330306E15AB91D24D9C90ABDFB /* PBXTargetDependency */,
+			);
+			name = "Pods-DioGhv";
+			productName = "Pods-DioGhv";
+			productReference = E400ABB7E45797F8F2337B5D9B500070 /* Pods_DioGhv.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F495433905764E4E9D9ACEF470786FAA /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC571CE8ECE0BA0962E5C568B7BE5276 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				37B307F86B722D31D9334D0F1501AE46 /* Sources */,
+				CCC265B91BDB7A3377640BF6C7E92EBD /* Frameworks */,
+				ED65A5CF070023F5C0124F35B52EE1A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = CE2FDE4CD7F8FB664AA9BEC942E73710 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A003E5FA3133D7D7D85F5042B8FF1C48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A07EF405FD9BCB32A62DB85FB63511 /* FLEX */,
+				DACECC4CB701847971007199E91D59F4 /* Pods-DioGhv */,
+				D8C9B57651A4A5E5557DB8187B537E57 /* Pods-Keyboard */,
+				F495433905764E4E9D9ACEF470786FAA /* SnapKit */,
+				73D5F9E80E487CBF5499BE5890C8521F /* SQLite.swift */,
+				35FEC954840D3D78C6409F917C77026E /* SwiftyBeaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20440F86D28692B6C6D8FA9C48578C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042D6ECD0E7F47C1A675CFC3A0263BDE /* Pods-Keyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B307F86B722D31D9334D0F1501AE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E785EA3359BBD983FCCEBE01F6318B /* Constraint.swift in Sources */,
+				8FA216C9EAC5526681209C36146B7E21 /* ConstraintAttributes.swift in Sources */,
+				FC24515BD767B2022CCAF87DC315DCB2 /* ConstraintConfig.swift in Sources */,
+				14771356D638FA93661BE6F43B425DDA /* ConstraintConstantTarget.swift in Sources */,
+				1D98F5A627E84C21655EFA64F8E8B6A8 /* ConstraintDescription.swift in Sources */,
+				9ADECBB9B74CB8BE50B0DFB9C74C3EB6 /* ConstraintDSL.swift in Sources */,
+				F6002FA5FCE071585394D66E2FB61EEC /* ConstraintInsets.swift in Sources */,
+				00D62A5ED14FA61B400311FF57564079 /* ConstraintInsetTarget.swift in Sources */,
+				7A8E66F985DB6C58732A02F576F1C290 /* ConstraintItem.swift in Sources */,
+				985F02D301CB99899DCE284D3949EF8B /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				172D7C61C3BA0AF6DEAAEB62C3F6287D /* ConstraintLayoutGuide.swift in Sources */,
+				7A9A93E19F92C9CB4A65D579595F8145 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				F3C7CAB923D3937A47300433E40FE1D8 /* ConstraintLayoutSupport.swift in Sources */,
+				2F3195E8F6560EDB171FE36AB3693945 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				C1F3EE9F7469EF77447D5E62240B6C0E /* ConstraintMaker.swift in Sources */,
+				649DE22CF84BE640E28D53B67B95B69B /* ConstraintMakerEditable.swift in Sources */,
+				FCA129EEB05B46FB087DFB46C8746592 /* ConstraintMakerExtendable.swift in Sources */,
+				E81D4274AEAB3650C2F2D6B5E0530FB7 /* ConstraintMakerFinalizable.swift in Sources */,
+				31A633FE07C1BDF6D5B854B1E68DB92A /* ConstraintMakerPriortizable.swift in Sources */,
+				A8FA562F8CE31CC1EF89388AA5C34020 /* ConstraintMakerRelatable.swift in Sources */,
+				99CAE818B9E7C12F496BA3D15F841BB6 /* ConstraintMultiplierTarget.swift in Sources */,
+				22AC86AA07247DF03D135582FCE0BEFF /* ConstraintOffsetTarget.swift in Sources */,
+				06EFEA3B9B6835A950A22015BC513B93 /* ConstraintPriority.swift in Sources */,
+				2D6EFE7B104E0FE3733D07C974C64CDE /* ConstraintPriorityTarget.swift in Sources */,
+				1E14FC269D728CFF838C729603FEB229 /* ConstraintRelatableTarget.swift in Sources */,
+				A623C0A7208865B4E93B619851DDAEC0 /* ConstraintRelation.swift in Sources */,
+				E37B9E773092B6C72739979054D32DAC /* ConstraintView+Extensions.swift in Sources */,
+				CAEDB797873E9CC6F82E973E1469C25D /* ConstraintView.swift in Sources */,
+				9C554901CB7606FDDE8DE55B90773774 /* ConstraintViewDSL.swift in Sources */,
+				FC80D4AE3D61597ED42F73AAAD55B079 /* Debugging.swift in Sources */,
+				019643774105E0913E7D1EF56382A55B /* LayoutConstraint.swift in Sources */,
+				080C68C9D87B2E6B08F8D939EB209C81 /* LayoutConstraintItem.swift in Sources */,
+				7DE2747DDBDCE9892172FF7C35C5B9C4 /* SnapKit-dummy.m in Sources */,
+				733C3F9AA14E28F45B2AEB2C5BC5C60D /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611366FB25333646F5B2F504897B5700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1442F1C189A8A2155402EB027E606D9 /* AggregateFunctions.swift in Sources */,
+				00198C0DD2D92A53B60443526408953B /* Blob.swift in Sources */,
+				6F6678F9FC64B3979E8B2D6F74640AAA /* Collation.swift in Sources */,
+				297E018E1C8771F373AE31952180D47B /* Connection.swift in Sources */,
+				027BC6F5F6DB002C36D3F9283DBEC0A0 /* CoreFunctions.swift in Sources */,
+				3D9A228B383FBDB6DDD7E77FBD3E2562 /* CustomFunctions.swift in Sources */,
+				2C0B8CEFB31CB49D927476F3ECB0D187 /* Expression.swift in Sources */,
+				553DB2678B91ED6271B62F6DC6A18525 /* Foundation.swift in Sources */,
+				49BEF1866199D7D5E155E744E48F70E5 /* FTS4.swift in Sources */,
+				972057D0D516D16444C6106126BE3669 /* FTS5.swift in Sources */,
+				6258DF293F4DE21DD45CDF4182FA330B /* Helpers.swift in Sources */,
+				9EDA6140544716068682E0F5BD275FDF /* Operators.swift in Sources */,
+				51DA28993B49AF1F9EA62F557E11FB21 /* Query.swift in Sources */,
+				7C0EBA71AB8D0FD80E30BABC97AD0FDE /* RTree.swift in Sources */,
+				85335ADE786B93CB913910E624788647 /* Schema.swift in Sources */,
+				431E9E0082F3DC6C964E78096B6948BB /* Setter.swift in Sources */,
+				095A3758204469530F040E5FFFA82571 /* SQLite-Bridging.m in Sources */,
+				AD133A45592196A23198678E5A9B3D24 /* SQLite.swift-dummy.m in Sources */,
+				986CA5CD64A41297B133F086C3FDFE05 /* Statement.swift in Sources */,
+				7BE2D0A9BA4DBE9EF7B469377A725553 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FF95C05C64BEDF3E3FE02074343938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D80D15C77086E7F5D7FEDB50AE5090 /* FLEX-dummy.m in Sources */,
+				972E4C5AD62BFF7DAEAF05CAFFF71240 /* FLEXArgumentInputColorView.m in Sources */,
+				065F0748995E30C3DEC892FAE3EAA043 /* FLEXArgumentInputDateView.m in Sources */,
+				D07D50696A944B3B5F9CD6999C9222E7 /* FLEXArgumentInputFontsPickerView.m in Sources */,
+				4E834F4DDA89DE9A7692FEE9893196CB /* FLEXArgumentInputFontView.m in Sources */,
+				7A7827A1F13950595FB61F404AA373E1 /* FLEXArgumentInputJSONObjectView.m in Sources */,
+				65C40B07DFB5A97109912E3DE7E283D1 /* FLEXArgumentInputNotSupportedView.m in Sources */,
+				2305F75728195A0EAB118C952C85A278 /* FLEXArgumentInputNumberView.m in Sources */,
+				DC76EEC9D1B7C60BB38597903120D8D8 /* FLEXArgumentInputStringView.m in Sources */,
+				35FA1829D104AB76E8F758E0843CAA20 /* FLEXArgumentInputStructView.m in Sources */,
+				A9DCD99FD9DF3520E9972386FCBB64A7 /* FLEXArgumentInputSwitchView.m in Sources */,
+				CB8B90ED8549440FBB078F1FD043355C /* FLEXArgumentInputTextView.m in Sources */,
+				22508174FBEC204CAA507D4FF3A7B7FA /* FLEXArgumentInputView.m in Sources */,
+				9C1B8E2434893949D083EC627B4C4341 /* FLEXArgumentInputViewFactory.m in Sources */,
+				F6669A0B58E09E0FAF534A3871E7FF93 /* FLEXArrayExplorerViewController.m in Sources */,
+				1EA6F12826241795F04EDE0E68D9B292 /* FLEXClassesTableViewController.m in Sources */,
+				F6BA9DA8F971F508FAC503262B051E6E /* FLEXClassExplorerViewController.m in Sources */,
+				A74A1E090E817202AE77FCABF81176EC /* FLEXCookiesTableViewController.m in Sources */,
+				08B037D039F3C171DA88A0ABFE69FBE4 /* FLEXDefaultEditorViewController.m in Sources */,
+				9152CA998C402A945B2E17A57C1C1AD1 /* FLEXDefaultsExplorerViewController.m in Sources */,
+				599B6D6005F8826EE0D0E1B72D2CEFE5 /* FLEXDictionaryExplorerViewController.m in Sources */,
+				C40B66AE3A78D2C8C42196891F9D1DFF /* FLEXExplorerToolbar.m in Sources */,
+				3776EE2EF487756CFC5DB63D31CCE110 /* FLEXExplorerViewController.m in Sources */,
+				8521AC4293588C4CE204FAFB9A7C6B9C /* FLEXFieldEditorView.m in Sources */,
+				D71087B484E22F219C744F5C3EE785EE /* FLEXFieldEditorViewController.m in Sources */,
+				BB1E68E18FACA7607B58A46125E7A18D /* FLEXFileBrowserFileOperationController.m in Sources */,
+				BCD7F150FE136B2F060AC2EDC5943E49 /* FLEXFileBrowserSearchOperation.m in Sources */,
+				465BDDD0874C1694C169D37B638B907C /* FLEXFileBrowserTableViewController.m in Sources */,
+				99F991C96E36F5BF066D7A2BD58C5460 /* FLEXGlobalsTableViewController.m in Sources */,
+				C61163665EE41A73E7713F5E795C3057 /* FLEXGlobalsTableViewControllerEntry.m in Sources */,
+				DEFD2A9BFF9E8B0C24CF9F866C04A824 /* FLEXHeapEnumerator.m in Sources */,
+				D7E1EFD84F550170FE9D0815A2B24362 /* FLEXHierarchyTableViewCell.m in Sources */,
+				0F2D38E0D1CFC31893BC56AA777AC5F6 /* FLEXHierarchyTableViewController.m in Sources */,
+				7D28466B3DF18782870D55C823914039 /* FLEXImageExplorerViewController.m in Sources */,
+				3A8FB54A3B00A0262EB4772685EA7C89 /* FLEXImagePreviewViewController.m in Sources */,
+				B884D5ACB531B5FBC87D7F600EFDF716 /* FLEXInstancesTableViewController.m in Sources */,
+				71E70B8367220921AACF0AD7DEB76E9C /* FLEXIvarEditorViewController.m in Sources */,
+				38DC925D5C7278EBEA92CE5E7F95DAE8 /* FLEXKeyboardHelpViewController.m in Sources */,
+				82DA63BB97214670373155FB9FC159EE /* FLEXKeyboardShortcutManager.m in Sources */,
+				08037C97E01706CA497944F36B6D7B4E /* FLEXLayerExplorerViewController.m in Sources */,
+				608A322EF4A2BC563AE5986AE5C86E7E /* FLEXLibrariesTableViewController.m in Sources */,
+				DCE438D8C2613CDB46E15AEFD0F68728 /* FLEXLiveObjectsTableViewController.m in Sources */,
+				8C9D23FE5C42A650838B3266638E7C19 /* FLEXManager.m in Sources */,
+				3A28A53F16DC11AE5AD778ADC8B25CC0 /* FLEXMethodCallingViewController.m in Sources */,
+				E0B6E71E9AC1BABDF087FBDEB3ED7D16 /* FLEXMultiColumnTableView.m in Sources */,
+				CE40214C5AC598A60AF6F39145D79F8E /* FLEXMultilineTableViewCell.m in Sources */,
+				6B5C92AF6FC1158B0CF563194B40DD9D /* FLEXNetworkCurlLogger.m in Sources */,
+				D8E2C1D3D587610E756AB0B53ADEBE3F /* FLEXNetworkHistoryTableViewController.m in Sources */,
+				7F75B587F24C1E621254EBE2C2A0EB52 /* FLEXNetworkObserver.m in Sources */,
+				9ED9BCD7D5D6E4A98900D17EAF637A91 /* FLEXNetworkRecorder.m in Sources */,
+				DFFE679DB160C46126AD18FB0A7502DA /* FLEXNetworkSettingsTableViewController.m in Sources */,
+				35B515DE786E6FAB61B73D7A24513C06 /* FLEXNetworkTransaction.m in Sources */,
+				492040111A94D088720542F8A1894013 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
+				AAAEA22F2A1F52D97C8B79DF3C3132F7 /* FLEXNetworkTransactionTableViewCell.m in Sources */,
+				7F52F1349A65FA07F373265FD8FD08C2 /* FLEXObjectExplorerFactory.m in Sources */,
+				C9D08CD77EBC4AF11868434A66A6C3E9 /* FLEXObjectExplorerViewController.m in Sources */,
+				D818350B67EDFC8A46EEE165EC830C98 /* FLEXPropertyEditorViewController.m in Sources */,
+				6D87BC5BF8C9EAB8386655AFFC42ADA4 /* FLEXRealmDatabaseManager.m in Sources */,
+				718227E529ED5AA65C7DC63D71156807 /* FLEXResources.m in Sources */,
+				F083D53EBCF6D3AA884DFD50BE9219C0 /* FLEXRuntimeUtility.m in Sources */,
+				F30AB0EB3BD13D514BDF7F0AE5191BAE /* FLEXSetExplorerViewController.m in Sources */,
+				062ECA609F58C2FE186E250FB82E434D /* FLEXSQLiteDatabaseManager.m in Sources */,
+				A66F3DC8FDBFC8C05B18C7102267F190 /* FLEXSystemLogMessage.m in Sources */,
+				B0B1B794E057CACE21475BBC9F5A955C /* FLEXSystemLogTableViewCell.m in Sources */,
+				8DD5512DC1F63352A15F69FF0F00E29F /* FLEXSystemLogTableViewController.m in Sources */,
+				B80C98A2BCBDEE277C0E5E2F2FA8779C /* FLEXTableColumnHeader.m in Sources */,
+				80D43E953BC331999BA8BA1F514C3CDD /* FLEXTableContentCell.m in Sources */,
+				CCD51B1D46140AF4B51F715F0DCD003B /* FLEXTableContentViewController.m in Sources */,
+				984C2161C4AFEB85B719808D24D0D6EA /* FLEXTableLeftCell.m in Sources */,
+				CA79387FDF19FEF179E92241E2044A00 /* FLEXTableListViewController.m in Sources */,
+				E7E626EEC13643A2CE152B4FF1BF8590 /* FLEXToolbarItem.m in Sources */,
+				6AF40B413D855F5FABD6F8693A82BE81 /* FLEXUtility.m in Sources */,
+				17CCFD8724B39AD08EABD882D97EAA90 /* FLEXViewControllerExplorerViewController.m in Sources */,
+				11DCB9F6366F83E8DCEC8F74D19EB133 /* FLEXViewExplorerViewController.m in Sources */,
+				494B861D33FC75D7F4D04F6566A37E37 /* FLEXWebViewController.m in Sources */,
+				D1EFED9BB6CEAD388B710E6825F678FC /* FLEXWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD71DDE509105D5599D597034A98A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97AF6A659CF876299A0242A2E47E013 /* Pods-DioGhv-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A899AACED999BF7FAEBC9F1635F11D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA17F576404B0738D272A961D4E35F07 /* AES256CBC.swift in Sources */,
+				61C498D2427EC3FC264C9F989F23381B /* BaseDestination.swift in Sources */,
+				F4CFDE05EECF8B34CF19CC4957A89821 /* ConsoleDestination.swift in Sources */,
+				A1A02F599266B8A16ADF77D86EE72A23 /* FileDestination.swift in Sources */,
+				2A080204A8051373041FCD90FE2DF1BA /* Filter.swift in Sources */,
+				CF667DC2810C7B08F2A1A0C91CCFB583 /* SBPlatformDestination.swift in Sources */,
+				FC9203253E0AFD1E23AFFEFCD95DEA2F /* SwiftyBeaver-dummy.m in Sources */,
+				EB3D4F4D471F0B365EA6A779A4AD0BB1 /* SwiftyBeaver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		120B6C330306E15AB91D24D9C90ABDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBeaver;
+			target = 35FEC954840D3D78C6409F917C77026E /* SwiftyBeaver */;
+			targetProxy = E760F0D33DD0EFC603BAAA1E1B667EA7 /* PBXContainerItemProxy */;
+		};
+		468644B484387A3C43C41F19014D8492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = F495433905764E4E9D9ACEF470786FAA /* SnapKit */;
+			targetProxy = B873F560150123B542EB440CEB8CE319 /* PBXContainerItemProxy */;
+		};
+		82C2846C34F9DCC16C904D98BA2D1251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLEX;
+			target = 68A07EF405FD9BCB32A62DB85FB63511 /* FLEX */;
+			targetProxy = E9DCBBF4AC53DC0F6F14D020C39D73C3 /* PBXContainerItemProxy */;
+		};
+		B9717FE13066DB1A2D51906FB32722FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBeaver;
+			target = 35FEC954840D3D78C6409F917C77026E /* SwiftyBeaver */;
+			targetProxy = F9423FE4A395763A8C3849666B45775F /* PBXContainerItemProxy */;
+		};
+		C7FA08CB3A13DDAF4D63B5DCD3697CE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 73D5F9E80E487CBF5499BE5890C8521F /* SQLite.swift */;
+			targetProxy = 5A78B7338669EBB1C41226F086F2961F /* PBXContainerItemProxy */;
+		};
+		D69076164DE561C5058E9A7823BEAD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = F495433905764E4E9D9ACEF470786FAA /* SnapKit */;
+			targetProxy = D1E0A9B10BA4102E770FC84994A7B8A1 /* PBXContainerItemProxy */;
+		};
+		E6337D7F290B4ED40A187B5C0BEB6E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 73D5F9E80E487CBF5499BE5890C8521F /* SQLite.swift */;
+			targetProxy = 1BDAA2D57F91B53DAF431E005A3A7D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E34F52F79E356EB65C1529A88023ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802A2F9EE65113A01C363935A2EE4079 /* SnapKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		16B6404B67DD69B1697DB8969547764A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2AD490D9F58A6E03C6D050F950FA8E /* FLEX.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FLEX/FLEX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLEX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLEX/FLEX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FLEX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18E0B67EFF8B8416C94014B94ED1753E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C27DFC658FD9844D9554CCF1D6507A /* Pods-DioGhv.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DioGhv/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DioGhv/Pods-DioGhv.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DioGhv;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CD660EBA0C6F0CF45D246E8B20AB0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288470A73A702B18A57D0EA1C065973A /* Pods-DioGhv.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DioGhv/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DioGhv/Pods-DioGhv.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DioGhv;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5533DA596A8148AEFA09A7891C98B2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2AD490D9F58A6E03C6D050F950FA8E /* FLEX.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FLEX/FLEX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLEX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLEX/FLEX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FLEX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59F87ACA3A560D72A1B797150E71FEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCBC8089F233BF37591C4514CDAF715 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EA401000E5ACFC3DC41359B6AAE0010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCBC8089F233BF37591C4514CDAF715 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B242101CA2CB0043C72A08659CFEDF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802A2F9EE65113A01C363935A2EE4079 /* SnapKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE52AAEAC6CCCA6491D0E53CC8890325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D0C6FF4D4339910F11224FBDCB1366 /* SwiftyBeaver.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C6E657040032C274611855B54D9C0045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E77163F5FC3989B22F68C09C9542D8F /* Pods-Keyboard.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Keyboard/Pods-Keyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB7726DD8D0E7C4FB42B146ADEBADA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D0C6FF4D4339910F11224FBDCB1366 /* SwiftyBeaver.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDE39107B2DB717CB3094E4E2CB6250F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED760A3CB7A8D23D6992A84A989A8274 /* Pods-Keyboard.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Keyboard/Pods-Keyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		325082830FA3D29FC4D976E8C0B0AFC1 /* Build configuration list for PBXNativeTarget "Pods-DioGhv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD660EBA0C6F0CF45D246E8B20AB0EA /* Debug */,
+				18E0B67EFF8B8416C94014B94ED1753E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3847E6F64217E3CF062BD7E8A7FFF242 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE52AAEAC6CCCA6491D0E53CC8890325 /* Debug */,
+				EDB7726DD8D0E7C4FB42B146ADEBADA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715E7066D6C0418ED32DDC738AE3C17F /* Build configuration list for PBXNativeTarget "FLEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B6404B67DD69B1697DB8969547764A /* Debug */,
+				5533DA596A8148AEFA09A7891C98B2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB4A8DC58E45762543C0D33B6CBFFCBB /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F87ACA3A560D72A1B797150E71FEBA /* Debug */,
+				7EA401000E5ACFC3DC41359B6AAE0010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34F1659DC1E3B8CD648F872885D8B1B /* Build configuration list for PBXNativeTarget "Pods-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E657040032C274611855B54D9C0045 /* Debug */,
+				EDE39107B2DB717CB3094E4E2CB6250F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC571CE8ECE0BA0962E5C568B7BE5276 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B242101CA2CB0043C72A08659CFEDF77 /* Debug */,
+				0E34F52F79E356EB65C1529A88023ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
