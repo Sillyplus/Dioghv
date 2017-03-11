@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SQLite
 
 class Dboard: KeyboardViewController {
     
@@ -21,6 +22,17 @@ class Dboard: KeyboardViewController {
         
         let candidateSelectedNotification = Notification.Name.init(rawValue: "CandidateSelectedNotification")
         NotificationCenter.default.addObserver(self, selector: #selector(Dboard.candidateSelected(_:)), name: candidateSelectedNotification, object: nil)
+        
+        // Init DB if Needed
+        do {
+            let dbName = "Dboard.sqlite3"
+            let containerPath = Utilities.appGroupContainerPath()!
+            print(containerPath)
+            let db = try Connection(containerPath + "/" + dbName)
+            print(db)
+        } catch {
+            print("connect DB failed")
+        }
 
     }
     

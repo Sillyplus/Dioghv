@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
+		3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D335D1E7399C70037B998 /* HomeViewController.swift */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
+		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
+		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
+		3BAE438D1E744F62003D0D32 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438C1E744F62003D0D32 /* DBManager.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
 		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
@@ -36,7 +40,6 @@
 		4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46919DF811E00F789E1 /* KeyboardViewController.swift */; };
 		4EC2A46E19DF811E00F789E1 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46A19DF811E00F789E1 /* KeyboardLayout.swift */; };
 		4EC2A47019DF811E00F789E1 /* ForwardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46C19DF811E00F789E1 /* ForwardingView.swift */; };
-		4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7599A19F75A0D00B4E6ED /* Utilities.swift */; };
 		4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD78A19E0DF15004D4974 /* Shapes.swift */; };
 		E33A2B66D47A3E5226F7A86C /* Pods_DioGhv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCC03FC1A9B98314F9A0717 /* Pods_DioGhv.framework */; };
 /* End PBXBuildFile section */
@@ -99,7 +102,13 @@
 
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6D335D1E7399C70037B998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
+		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
+		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		3B9A2D2B1E739644009D7EB5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
+		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
+		3BAE438C1E744F62003D0D32 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Utility/DBManager.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
 		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
@@ -129,7 +138,6 @@
 		4EC2A46919DF811E00F789E1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		4EC2A46A19DF811E00F789E1 /* KeyboardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
 		4EC2A46C19DF811E00F789E1 /* ForwardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardingView.swift; sourceTree = "<group>"; };
-		4EE7599A19F75A0D00B4E6ED /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4EEFD78A19E0DF15004D4974 /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		7259BD701FE4C01EDE650772 /* Pods-DioGhv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DioGhv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DioGhv/Pods-DioGhv.debug.xcconfig"; sourceTree = "<group>"; };
 		AE5CDA9078C20A567890DE5F /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B9A2D2A1E73962E009D7EB5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A2D2B1E739644009D7EB5 /* Utilities.swift */,
+				3BAE438C1E744F62003D0D32 /* DBManager.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		3BB87A8A1E6EA9F900711FED /* Dboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +198,9 @@
 			children = (
 				3BCD67871E6E9E0800135DFE /* Controller */,
 				3BCD67891E6E9E0800135DFE /* Model */,
-				3BCD678A1E6E9E0800135DFE /* Supporting Files */,
 				3BCD678E1E6E9E0800135DFE /* View */,
+				3B9A2D2A1E73962E009D7EB5 /* Utility */,
+				3BCD678A1E6E9E0800135DFE /* Supporting Files */,
 			);
 			path = DioGhv;
 			sourceTree = "<group>";
@@ -191,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCD67881E6E9E0800135DFE /* ViewController.swift */,
+				3B6D335D1E7399C70037B998 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +224,7 @@
 		3BCD678A1E6E9E0800135DFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
 				3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */,
 				3BCD678C1E6E9E0800135DFE /* Images.xcassets */,
 				3BCD678D1E6E9E0800135DFE /* Info.plist */,
@@ -297,6 +317,7 @@
 		4E807DBB19461DC700D875D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */,
 				4E52A6D51A06BADA006A08CE /* Media.xcassets */,
 				4E807DBC19461DC700D875D1 /* Info.plist */,
 			);
@@ -323,7 +344,7 @@
 		4EE7599519F759F300B4E6ED /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				4EE7599A19F75A0D00B4E6ED /* Utilities.swift */,
+				3BAE438A1E744CAB003D0D32 /* Utilities.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -440,11 +461,21 @@
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 8CVTM26ZE7;
 						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4E807DB819461DC700D875D1 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 8CVTM26ZE7;
 						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4E8EF38019F95D74009CBF5D = {
 						CreatedOnToolsVersion = 6.1;
@@ -584,8 +615,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BAE438D1E744F62003D0D32 /* DBManager.swift in Sources */,
+				3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */,
 				3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */,
 				3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */,
+				3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,12 +635,12 @@
 				4E60A13A1979FA5C00854CC8 /* KeyboardKeyBackground.swift in Sources */,
 				4E60A13C1979FA8E00854CC8 /* KeyboardConnector.swift in Sources */,
 				4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */,
-				4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */,
 				3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */,
 				4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */,
 				3BCD67961E6EA21300135DFE /* Key.swift in Sources */,
 				4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */,
 				3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */,
+				3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
 				3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */,
 				3BB87A871E6EA78000711FED /* Page.swift in Sources */,
@@ -753,6 +787,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DioGhv/DioGhv.entitlements;
 				DEVELOPMENT_TEAM = 8CVTM26ZE7;
 				INFOPLIST_FILE = "$(SRCROOT)/DioGhv/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -770,6 +805,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DioGhv/DioGhv.entitlements;
 				DEVELOPMENT_TEAM = 8CVTM26ZE7;
 				INFOPLIST_FILE = "$(SRCROOT)/DioGhv/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -785,6 +821,7 @@
 			baseConfigurationReference = 202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
 				DEVELOPMENT_TEAM = 8CVTM26ZE7;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -801,6 +838,7 @@
 			baseConfigurationReference = AE5CDA9078C20A567890DE5F /* Pods-Keyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
 				DEVELOPMENT_TEAM = 8CVTM26ZE7;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
