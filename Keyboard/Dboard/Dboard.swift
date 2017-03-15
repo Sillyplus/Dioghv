@@ -55,6 +55,37 @@ class Dboard: KeyboardViewController {
     
     override func setupKeys() {
         super.setupKeys()
+        
+        for page in keyboard.pages {
+            for rowKeys in page.rows {
+                for key in rowKeys {
+                    if let keyModel = self.layout?.viewForKey(key) {
+                        if key.type == .backspace {
+                            keyModel.removeTarget(self, action: #selector(KeyboardViewController.backspaceDown(_:)), for: .touchDown)
+                            keyModel.addTarget(self, action: #selector(Dboard.backspaceDown(_:)), for: .touchDown)
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
+    override func backspaceDown(_ sender: KeyboardKey) {
+        self.cancelBackspaceTimers()
+        
+        if currentInputString == "" {
+            self.textDocumentProxy.deleteBackward()
+        } else {
+            currentInputString = currentInputString.substring(to: currentInputString.index(before: currentInputString.endIndex))
+            self.updateBanner()
+        }
+        
+        self.setCapsIfNeeded()
+        
+        // trigger for subsequent deletes
+        self.backspaceDelayTimer = Timer.scheduledTimer(timeInterval: backspaceDelay - backspaceRepeat, target: self, selector: #selector(KeyboardViewController.backspaceDelayCallback), userInfo: nil, repeats: false)
     }
     
     override func createBanner() -> ExtraView? {
