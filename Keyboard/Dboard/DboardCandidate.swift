@@ -129,20 +129,20 @@ extension DboardCandidateView {
         let size = CGSize()
         let fontAttributes = [NSFontAttributeName: btn.titleLabel!.font]
         let r = s.boundingRect(with: size, options: .usesFontLeading, attributes: fontAttributes as Any as? [String : Any], context: nil)
-        btn.frame = CGRect(x: r.origin.x, y: r.origin.y, width: r.size.width + 10, height: r.size.height)
+        btn.frame = CGRect(x: r.origin.x, y: r.origin.y, width: r.size.width + 20, height: r.size.height)
         
         self.scrollView.addSubview(btn)
         
     }
     
     func clearBanner() {
+        
         self.scrollView.subviews.forEach { $0.removeFromSuperview() }
         self.inputKeyLabel.text = ""
+        
     }
     
     func tapBtn(btn: UIButton) {
-        
-//        print(btn.titleLabel!.text ?? "titleLabel Not exist")
         
         let candidateString = btn.titleLabel!.text!
         let candidateSelectedNotification = Notification.Name.init(rawValue: "CandidateSelectedNotification")

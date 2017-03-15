@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 import SnapKit
 import SQLite
 
@@ -23,15 +24,33 @@ class HomeViewController: UIViewController {
     
     @IBAction func testBtnClicked(_ sender: Any) {
         
+        
+        let fileURL = Bundle.main.url(forResource: "dieziu.dict", withExtension: ".yaml")
         do {
-            let dbName = "Dboard.sqlite3"
-            let containerPath = Utilities.appGroupContainerPath()!
-            print(containerPath)
-            let db = try Connection(containerPath + "/" + dbName)
-            print(db)
+            self.textView.text = self.textView.text + "\(String(describing: fileURL)) \n"
+            let file = try String(contentsOf: fileURL!, encoding: .utf8)
+            let db = DBManager.singleton.connection
+            if db != nil {
+                DBManager.dropTable(named: "dieziu")
+                let dieziu = DBManager.createTable(named: "dieziu")
+                file.enumerateLines(invoking: { (line, ioB) in
+                    let comps = line.components(separatedBy: " ")
+                    do {
+                        try db!.run(dieziu!.insert(DBManager.nameEx <- comps[0], DBManager.pronunciationEx <- comps[1]))
+                    } catch {
+                        self.textView.text = self.textView.text + "insert failed \n"
+                    }
+                })
+                do {
+                    self.textView.text = self.textView.text + "\(try db!.scalar(dieziu!.count)) \n"
+                }
+            } else {
+                self.textView.text = self.textView.text + "db connected failed \n"
+            }
         } catch {
-            print("connect DB failed")
+            self.textView.text = self.textView.text + "file read failed \n"
         }
+
         
     }
     
@@ -39,7 +58,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let db = DBManager.default.connection
+        let db = DBManager.singleton.connection
         if db != nil {
             
         } else {

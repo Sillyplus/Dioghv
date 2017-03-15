@@ -22,17 +22,6 @@ class Dboard: KeyboardViewController {
         
         let candidateSelectedNotification = Notification.Name.init(rawValue: "CandidateSelectedNotification")
         NotificationCenter.default.addObserver(self, selector: #selector(Dboard.candidateSelected(_:)), name: candidateSelectedNotification, object: nil)
-        
-        // Init DB if Needed
-        do {
-            let dbName = "Dboard.sqlite3"
-            let containerPath = Utilities.appGroupContainerPath()!
-            print(containerPath)
-            let db = try Connection(containerPath + "/" + dbName)
-            print(db)
-        } catch {
-            print("connect DB failed")
-        }
 
     }
     
@@ -44,10 +33,20 @@ class Dboard: KeyboardViewController {
         
         let textDocumentProxy = self.textDocumentProxy
         
+        print(key)
+        
         switch key.type {
         case .character:
-            currentInputString += key.lowercaseOutput!
+            currentInputString += self.shiftState != .disabled ? key.uppercaseKeyCap! : key.lowercaseOutput!
             updateBanner()
+        case .return:
+            if currentInputString != "" {
+                textDocumentProxy.insertText(currentInputString)
+                self.currentInputString = ""
+                updateBanner()
+            } else {
+                textDocumentProxy.insertText(key.lowercaseOutput!)
+            }
         default:
             textDocumentProxy.insertText(key.lowercaseOutput!)
         }
@@ -69,16 +68,27 @@ extension Dboard {
     func candidatesBy(_ inputString: String) -> [String] {
         var ret = [String]()
         
-        if inputString != "" {
-            ret.append("你好")
-            ret.append("世界")
-            ret.append("食茶")
-            ret.append("潮汕话")
-            ret.append("测试")
-            ret.append("謎語")
-            ret.append("汕頭")
-            ret.append("潮語")
-            ret.append("更新")
+        if inputString == "" {
+            return ret
+        }
+        
+        let db = DBManager.singleton.connection
+        if db != nil {
+            let dieziu = Table("dieziu")
+            var likeString = "%"
+            for c in inputString.characters {
+                likeString = likeString  + "\(c)" + "%"
+            }
+            let query = dieziu.filter(DBManager.pronunciationEx .like(likeString)).order(DBManager.frequencyEx.desc).limit(20)
+            print(query)
+            do {
+                for row in try db!.prepare(query) {
+                    ret.append(row[DBManager.nameEx])
+                }
+            } catch {
+                print("Data Prepare Failed")
+            }
+            
         }
         
         return ret

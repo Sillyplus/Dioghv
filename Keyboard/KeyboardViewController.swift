@@ -102,9 +102,10 @@ class KeyboardViewController: UIInputViewController {
             kSmallLowercase: false
         ])
         
-        self.keyboard = Keyboard.defaultKeyboard()
+//        self.keyboard = Keyboard.defaultKeyboard()
+        self.keyboard = Keyboard.dKeyboard()
         
-        self.shiftState = .disabled
+        self.shiftState = .enabled
         self.currentMode = 0
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -301,14 +302,13 @@ class KeyboardViewController: UIInputViewController {
             for rowKeys in page.rows { // TODO: quick hack
                 for key in rowKeys {
                     if let keyView = self.layout?.viewForKey(key) {
-                        keyView.removeTarget(nil, action: nil, for: UIControlEvents.allEvents)
+                        keyView.removeTarget(nil, action: nil, for: .allEvents)
                         
                         switch key.type {
                         case Key.KeyType.keyboardChange:
                             keyView.addTarget(self, action: #selector(KeyboardViewController.advanceTapped(_:)), for: .touchUpInside)
                         case Key.KeyType.backspace:
-                            let cancelEvents: UIControlEvents = [UIControlEvents.touchUpInside, UIControlEvents.touchUpInside, UIControlEvents.touchDragExit, UIControlEvents.touchUpOutside, UIControlEvents.touchCancel, UIControlEvents.touchDragOutside]
-                            
+                            let cancelEvents: UIControlEvents = [.touchUpInside, .touchUpInside, .touchDragExit, .touchUpOutside, .touchCancel, .touchDragOutside]
                             keyView.addTarget(self, action: #selector(KeyboardViewController.backspaceDown(_:)), for: .touchDown)
                             keyView.addTarget(self, action: #selector(KeyboardViewController.backspaceUp(_:)), for: cancelEvents)
                         case Key.KeyType.shift:
@@ -443,11 +443,9 @@ class KeyboardViewController: UIInputViewController {
             // auto exit from special char subkeyboard
             if model.type == Key.KeyType.space || model.type == Key.KeyType.return {
                 self.currentMode = 0
-            }
-            else if model.lowercaseOutput == "'" {
+            } else if model.lowercaseOutput == "'" {
                 self.currentMode = 0
-            }
-            else if model.type == Key.KeyType.character {
+            } else if model.type == Key.KeyType.character {
                 self.currentMode = 0
             }
             

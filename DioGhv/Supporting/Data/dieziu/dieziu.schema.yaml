@@ -1,0 +1,177 @@
+# Rime schema
+# encoding: UTF-8 w/o BOM
+
+schema:
+  schema_id: dieziu
+  name: 潮語拼音〔潮州〕
+  version: "2016.03.27"
+  author:
+    - 騰達 <dieghv@126.com>
+  description: |
+    潮語拼音輸入法
+    項目主頁 http://kahaani.github.io/dieghv
+    拼音教程 http://kahaani.github.io/gatian
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: half_shape
+    states: [ 全角, 半角 ]
+  - name: ascii_punct
+    states: [ ，。, ，． ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    # 去掉聲調
+    - xform/[1-8]//
+
+    # 針對潮州新派的模糊音
+    - derive/am/ang/
+    - derive/ap/ak/
+    - derive/em/eng/
+    - derive/ep/ek/
+    - derive/im/ing/
+    - derive/ip/ik/
+
+    # 兼容漢語拼音的拼寫習慣
+    - derive/au/ao/
+
+    # 顎化聲母
+    - derive/zi/ji/
+    - derive/ci/qi/
+    - derive/si/xi/
+
+    # 便捷鍵
+    - derive/ng/f/
+
+    # 允許省略音節尾的鼻化符號
+    - derive/^(.+)n$/$1/
+    # 允許省略音節尾的喉塞符號
+    - derive/^(.+)h$/$1/
+
+    # 首字母簡拼
+    - abbrev/^([a-z]).+$/$1/
+    # 聲母簡拼
+    - abbrev/^(bh).+$/$1/
+    - abbrev/^(gh).+$/$1/
+    - abbrev/^(ng).+$/$1/
+
+translator:
+  dictionary: dieziu
+  spelling_hints: 5
+  preedit_format:
+    # 便捷鍵還原
+    - xform/f/ng/
+
+  comment_format: &comment_rules
+    # 將鼻化符號顯示成上標
+    - xform/n(\d|\>)/ⁿ$1/
+
+    # 將聲調顯示成上標
+    - xlit/12345678/¹²³⁴⁵⁶⁷⁸/
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔漢語拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format: *comment_rules
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
+
+
+
+
+# 增補詞語，按字母序排列
+鴨母𥺴	ah4 bho2 liem3
+翁姐	ang1 zia2
+牡丹	bhou2 duan1
+薄荷	bo7 ho3
+手䘼	ciu2 ung2
+豆仁	dau7 ring5
+地豆	di7 dau7
+潮語	die5 ghv2
+鉸刀	ga1 do1
+家己	ga1 gi7
+家己人	ga1 gi7 nang5
+鉸毛	ga1 mo5
+工夫茶	gang1 hu1 de5
+交代	gau1 dai3
+弓蕉	geng1 zie1
+雞翁	goi1 ang1
+穀雨	gok4 u2
+杠杆	gong3 hang2
+現在	hing7 zai6
+雨遮	hou6 zia1
+雨水	hou6 zui2
+煩惱	hueng5 lo2
+煩惱	hueng5 nau2
+粉纖	hung2 ciem1
+開元	kai1 ngang5
+工課	kang1 kue3
+鬧熱	lau7 riek8
+蓮霧	liem1 bhu7
+𨻧隍	liu5 ng5
+曼谷	mang6 gok8
+明年	me5 ni5
+麻秧	mua5 ng2
+沙茶	sa1 de5
+師父	sai1 be6
+石榴	sieh8 liu5
+纖須	siem1 su1
+石叻	sik8 lak8
+新婦	sim1 bu6
+什麽	sim6 moh4
+什麼	sim6 moh4
+先生	sing1 sen1
+沙𧌊	sua1 me1
+頭毛	tau5 mo5
+雨水	u2 zui2
+粘米	ziem1 bhi2
+狀元	zo6 ngueng5
+節氣	zoih4 ki3
+節令	zoih4 leng6

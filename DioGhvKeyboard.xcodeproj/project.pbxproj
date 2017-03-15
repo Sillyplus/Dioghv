@@ -8,9 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
+		3B69C3E91E779F7200CFD1E8 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C3E81E779F7200CFD1E8 /* DBManager.swift */; };
 		3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D335D1E7399C70037B998 /* HomeViewController.swift */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
+		3BA31F131E7999F60073DBEF /* dieziu.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F021E7999F60073DBEF /* dieziu.dict.yaml */; };
+		3BA31F141E7999F60073DBEF /* dieziu.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F031E7999F60073DBEF /* dieziu.schema.yaml */; };
+		3BA31F151E7999F60073DBEF /* dioion.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F051E7999F60073DBEF /* dioion.dict.yaml */; };
+		3BA31F161E7999F60073DBEF /* dioion.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F061E7999F60073DBEF /* dioion.schema.yaml */; };
+		3BA31F171E7999F60073DBEF /* gekion.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F081E7999F60073DBEF /* gekion.dict.yaml */; };
+		3BA31F181E7999F60073DBEF /* gekion.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F091E7999F60073DBEF /* gekion.schema.yaml */; };
+		3BA31F191E7999F60073DBEF /* riaupeng.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F0B1E7999F60073DBEF /* riaupeng.dict.yaml */; };
+		3BA31F1A1E7999F60073DBEF /* riaupeng.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F0C1E7999F60073DBEF /* riaupeng.schema.yaml */; };
+		3BA31F1B1E7999F60073DBEF /* suantau.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F0E1E7999F60073DBEF /* suantau.dict.yaml */; };
+		3BA31F1C1E7999F60073DBEF /* suantau.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F0F1E7999F60073DBEF /* suantau.schema.yaml */; };
+		3BA31F1D1E7999F60073DBEF /* tenghai.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F111E7999F60073DBEF /* tenghai.dict.yaml */; };
+		3BA31F1E1E7999F60073DBEF /* tenghai.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
 		3BAE438D1E744F62003D0D32 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438C1E744F62003D0D32 /* DBManager.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
@@ -102,11 +115,25 @@
 
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = DboardPlayground.playground; path = Utility/DboardPlayground.playground; sourceTree = "<group>"; };
+		3B69C3E81E779F7200CFD1E8 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Utility/DBManager.swift; sourceTree = "<group>"; };
 		3B6D335D1E7399C70037B998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
 		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		3B9A2D2B1E739644009D7EB5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
+		3BA31F021E7999F60073DBEF /* dieziu.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dieziu.dict.yaml; sourceTree = "<group>"; };
+		3BA31F031E7999F60073DBEF /* dieziu.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dieziu.schema.yaml; sourceTree = "<group>"; };
+		3BA31F051E7999F60073DBEF /* dioion.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dioion.dict.yaml; sourceTree = "<group>"; };
+		3BA31F061E7999F60073DBEF /* dioion.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dioion.schema.yaml; sourceTree = "<group>"; };
+		3BA31F081E7999F60073DBEF /* gekion.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gekion.dict.yaml; sourceTree = "<group>"; };
+		3BA31F091E7999F60073DBEF /* gekion.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gekion.schema.yaml; sourceTree = "<group>"; };
+		3BA31F0B1E7999F60073DBEF /* riaupeng.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = riaupeng.dict.yaml; sourceTree = "<group>"; };
+		3BA31F0C1E7999F60073DBEF /* riaupeng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = riaupeng.schema.yaml; sourceTree = "<group>"; };
+		3BA31F0E1E7999F60073DBEF /* suantau.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suantau.dict.yaml; sourceTree = "<group>"; };
+		3BA31F0F1E7999F60073DBEF /* suantau.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suantau.schema.yaml; sourceTree = "<group>"; };
+		3BA31F111E7999F60073DBEF /* tenghai.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tenghai.dict.yaml; sourceTree = "<group>"; };
+		3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tenghai.schema.yaml; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
 		3BAE438C1E744F62003D0D32 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Utility/DBManager.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
@@ -180,8 +207,76 @@
 			children = (
 				3B9A2D2B1E739644009D7EB5 /* Utilities.swift */,
 				3BAE438C1E744F62003D0D32 /* DBManager.swift */,
+				3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		3BA31F001E7999F60073DBEF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F011E7999F60073DBEF /* dieziu */,
+				3BA31F041E7999F60073DBEF /* dioion */,
+				3BA31F071E7999F60073DBEF /* gekion */,
+				3BA31F0A1E7999F60073DBEF /* riaupeng */,
+				3BA31F0D1E7999F60073DBEF /* suantau */,
+				3BA31F101E7999F60073DBEF /* tenghai */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BA31F011E7999F60073DBEF /* dieziu */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F021E7999F60073DBEF /* dieziu.dict.yaml */,
+				3BA31F031E7999F60073DBEF /* dieziu.schema.yaml */,
+			);
+			path = dieziu;
+			sourceTree = "<group>";
+		};
+		3BA31F041E7999F60073DBEF /* dioion */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F051E7999F60073DBEF /* dioion.dict.yaml */,
+				3BA31F061E7999F60073DBEF /* dioion.schema.yaml */,
+			);
+			path = dioion;
+			sourceTree = "<group>";
+		};
+		3BA31F071E7999F60073DBEF /* gekion */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F081E7999F60073DBEF /* gekion.dict.yaml */,
+				3BA31F091E7999F60073DBEF /* gekion.schema.yaml */,
+			);
+			path = gekion;
+			sourceTree = "<group>";
+		};
+		3BA31F0A1E7999F60073DBEF /* riaupeng */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F0B1E7999F60073DBEF /* riaupeng.dict.yaml */,
+				3BA31F0C1E7999F60073DBEF /* riaupeng.schema.yaml */,
+			);
+			path = riaupeng;
+			sourceTree = "<group>";
+		};
+		3BA31F0D1E7999F60073DBEF /* suantau */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F0E1E7999F60073DBEF /* suantau.dict.yaml */,
+				3BA31F0F1E7999F60073DBEF /* suantau.schema.yaml */,
+			);
+			path = suantau;
+			sourceTree = "<group>";
+		};
+		3BA31F101E7999F60073DBEF /* tenghai */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F111E7999F60073DBEF /* tenghai.dict.yaml */,
+				3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */,
+			);
+			path = tenghai;
 			sourceTree = "<group>";
 		};
 		3BB87A8A1E6EA9F900711FED /* Dboard */ = {
@@ -224,6 +319,7 @@
 		3BCD678A1E6E9E0800135DFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3BA31F001E7999F60073DBEF /* Data */,
 				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
 				3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */,
 				3BCD678C1E6E9E0800135DFE /* Images.xcassets */,
@@ -345,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				3BAE438A1E744CAB003D0D32 /* Utilities.swift */,
+				3B69C3E81E779F7200CFD1E8 /* DBManager.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -509,8 +606,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA31F161E7999F60073DBEF /* dioion.schema.yaml in Resources */,
+				3BA31F1E1E7999F60073DBEF /* tenghai.schema.yaml in Resources */,
+				3BA31F1D1E7999F60073DBEF /* tenghai.dict.yaml in Resources */,
+				3BA31F141E7999F60073DBEF /* dieziu.schema.yaml in Resources */,
+				3BA31F131E7999F60073DBEF /* dieziu.dict.yaml in Resources */,
 				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,
+				3BA31F1C1E7999F60073DBEF /* suantau.schema.yaml in Resources */,
 				3BCD67901E6E9E0800135DFE /* Main.storyboard in Resources */,
+				3BA31F191E7999F60073DBEF /* riaupeng.dict.yaml in Resources */,
+				3BA31F151E7999F60073DBEF /* dioion.dict.yaml in Resources */,
+				3BA31F171E7999F60073DBEF /* gekion.dict.yaml in Resources */,
+				3BA31F181E7999F60073DBEF /* gekion.schema.yaml in Resources */,
+				3BA31F1B1E7999F60073DBEF /* suantau.dict.yaml in Resources */,
+				3BA31F1A1E7999F60073DBEF /* riaupeng.schema.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +751,7 @@
 				3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */,
 				3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
+				3B69C3E91E779F7200CFD1E8 /* DBManager.swift in Sources */,
 				3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */,
 				3BB87A871E6EA78000711FED /* Page.swift in Sources */,
 				4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */,
