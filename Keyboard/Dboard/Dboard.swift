@@ -33,11 +33,9 @@ class Dboard: KeyboardViewController {
         
         let textDocumentProxy = self.textDocumentProxy
         
-        print(key)
-        
         switch key.type {
         case .character:
-            currentInputString += self.shiftState != .disabled ? key.uppercaseKeyCap! : key.lowercaseOutput!
+            currentInputString += (self.shiftState != .disabled ? key.uppercaseKeyCap! : key.lowercaseOutput!)
             updateBanner()
         case .return:
             if currentInputString != "" {
@@ -61,8 +59,10 @@ class Dboard: KeyboardViewController {
                 for key in rowKeys {
                     if let keyModel = self.layout?.viewForKey(key) {
                         if key.type == .backspace {
-                            keyModel.removeTarget(self, action: #selector(KeyboardViewController.backspaceDown(_:)), for: .touchDown)
+                            keyModel.removeTarget(self, action: nil, for: .touchDown)
                             keyModel.addTarget(self, action: #selector(Dboard.backspaceDown(_:)), for: .touchDown)
+                            keyModel.addTarget(self, action: #selector(KeyboardViewController.highlightKey(_:)), for: .touchDown)
+                            keyModel.addTarget(self, action: #selector(KeyboardViewController.playKeySound), for: .touchDown)
                         }
                     }
                 }
