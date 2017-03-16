@@ -71,7 +71,6 @@ class Dboard: KeyboardViewController {
         
     }
     
-    
     override func backspaceDown(_ sender: KeyboardKey) {
         self.cancelBackspaceTimers()
         
@@ -85,8 +84,25 @@ class Dboard: KeyboardViewController {
         self.setCapsIfNeeded()
         
         // trigger for subsequent deletes
-        self.backspaceDelayTimer = Timer.scheduledTimer(timeInterval: backspaceDelay - backspaceRepeat, target: self, selector: #selector(KeyboardViewController.backspaceDelayCallback), userInfo: nil, repeats: false)
+        self.backspaceDelayTimer = Timer.scheduledTimer(timeInterval: backspaceDelay - backspaceRepeat, target: self, selector: #selector(Dboard.backspaceDelayCallback), userInfo: nil, repeats: false)
     }
+    
+    override func backspaceDelayCallback() {
+        self.backspaceDelayTimer = nil
+        self.backspaceRepeatTimer = Timer.scheduledTimer(timeInterval: backspaceRepeat, target: self, selector: #selector(Dboard.backspaceRepeatCallback), userInfo: nil, repeats: true)
+    }
+    
+    override func backspaceRepeatCallback() {
+        self.playKeySound()
+        if currentInputString == "" {
+            self.textDocumentProxy.deleteBackward()
+        } else {
+            currentInputString = currentInputString.substring(to: currentInputString.index(before: currentInputString.endIndex))
+            self.updateBanner()
+        }
+        self.setCapsIfNeeded()
+    }
+    
     
     override func createBanner() -> ExtraView? {
         return DboardCandidateView(globalColors: type(of: self).globalColors, darkMode: false, solidColorMode: false)
