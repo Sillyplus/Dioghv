@@ -101,6 +101,11 @@ class DboardCandidateView: ExtraView {
             }
         }
         
+        if candidateStringCurrentPosition == 0.0 {
+            contentSize = CGSize(width: candidateStringCurrentPosition, height: contentSize.height)
+            self.scrollView.contentSize = contentSize
+        }
+        
     }
     
 }
