@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
-		3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D335D1E7399C70037B998 /* HomeViewController.swift */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
 		3BA31F131E7999F60073DBEF /* dieziu.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F021E7999F60073DBEF /* dieziu.dict.yaml */; };
@@ -30,13 +29,13 @@
 		3BA31F3A1E7B85580073DBEF /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F391E7B85580073DBEF /* DBManager.swift */; };
 		3BA31F3C1E7B86080073DBEF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3B1E7B86080073DBEF /* Utility.swift */; };
 		3BA31F3E1E7B89CB0073DBEF /* DboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */; };
+		3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
 		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
 		3BB87A8C1E6EAA6300711FED /* Dboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8B1E6EAA6300711FED /* Dboard.swift */; };
 		3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */; };
-		3BCD67901E6E9E0800135DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD67851E6E9E0800135DFE /* Main.storyboard */; };
 		3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67881E6E9E0800135DFE /* ViewController.swift */; };
 		3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */; };
 		3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD678C1E6E9E0800135DFE /* Images.xcassets */; };
@@ -110,7 +109,6 @@
 
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		3B6D335D1E7399C70037B998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
 		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
@@ -136,13 +134,13 @@
 		3BA31F391E7B85580073DBEF /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		3BA31F3B1E7B86080073DBEF /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DboardManager.swift; sourceTree = "<group>"; };
+		3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
 		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
 		3BB87A8B1E6EAA6300711FED /* Dboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dboard.swift; path = Dboard/Dboard.swift; sourceTree = "<group>"; };
 		3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DboardCandidate.swift; path = Dboard/DboardCandidate.swift; sourceTree = "<group>"; };
-		3BCD67861E6E9E0800135DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BCD67881E6E9E0800135DFE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCD678C1E6E9E0800135DFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -332,7 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCD67881E6E9E0800135DFE /* ViewController.swift */,
-				3B6D335D1E7399C70037B998 /* HomeViewController.swift */,
+				3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,11 +345,11 @@
 		3BCD678A1E6E9E0800135DFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BA31F001E7999F60073DBEF /* Data */,
-				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
 				3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */,
 				3BCD678C1E6E9E0800135DFE /* Images.xcassets */,
+				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
 				3BCD678D1E6E9E0800135DFE /* Info.plist */,
+				3BA31F001E7999F60073DBEF /* Data */,
 			);
 			name = "Supporting Files";
 			path = Supporting;
@@ -360,7 +358,6 @@
 		3BCD678E1E6E9E0800135DFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3BCD67851E6E9E0800135DFE /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -638,7 +635,6 @@
 				3BA31F131E7999F60073DBEF /* dieziu.dict.yaml in Resources */,
 				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,
 				3BA31F1C1E7999F60073DBEF /* suantau.schema.yaml in Resources */,
-				3BCD67901E6E9E0800135DFE /* Main.storyboard in Resources */,
 				3BA31F191E7999F60073DBEF /* riaupeng.dict.yaml in Resources */,
 				3BA31F151E7999F60073DBEF /* dioion.dict.yaml in Resources */,
 				3BA31F171E7999F60073DBEF /* gekion.dict.yaml in Resources */,
@@ -785,7 +781,7 @@
 				3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */,
 				3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */,
 				3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */,
-				3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */,
+				3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,18 +830,6 @@
 			targetProxy = 4E807DC219461DC700D875D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3BCD67851E6E9E0800135DFE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BCD67861E6E9E0800135DFE /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3BA31F2E1E7B817A0073DBEF /* Debug */ = {
