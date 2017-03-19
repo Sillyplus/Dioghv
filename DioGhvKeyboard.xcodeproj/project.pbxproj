@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
-		3B69C3E91E779F7200CFD1E8 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B69C3E81E779F7200CFD1E8 /* DBManager.swift */; };
 		3B6D335E1E7399C70037B998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D335D1E7399C70037B998 /* HomeViewController.swift */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
@@ -24,8 +23,14 @@
 		3BA31F1C1E7999F60073DBEF /* suantau.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F0F1E7999F60073DBEF /* suantau.schema.yaml */; };
 		3BA31F1D1E7999F60073DBEF /* tenghai.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F111E7999F60073DBEF /* tenghai.dict.yaml */; };
 		3BA31F1E1E7999F60073DBEF /* tenghai.schema.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */; };
+		3BA31F281E7B817A0073DBEF /* DboardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA31F261E7B817A0073DBEF /* DboardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA31F2B1E7B817A0073DBEF /* DboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; };
+		3BA31F2C1E7B817A0073DBEF /* DboardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3BA31F301E7B82010073DBEF /* DboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; };
+		3BA31F3A1E7B85580073DBEF /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F391E7B85580073DBEF /* DBManager.swift */; };
+		3BA31F3C1E7B86080073DBEF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3B1E7B86080073DBEF /* Utility.swift */; };
+		3BA31F3E1E7B89CB0073DBEF /* DboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
-		3BAE438D1E744F62003D0D32 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438C1E744F62003D0D32 /* DBManager.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
 		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
@@ -46,18 +51,22 @@
 		4E60A13A1979FA5C00854CC8 /* KeyboardKeyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60A1391979FA5C00854CC8 /* KeyboardKeyBackground.swift */; };
 		4E60A13C1979FA8E00854CC8 /* KeyboardConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60A13B1979FA8E00854CC8 /* KeyboardConnector.swift */; };
 		4E807DC119461DC700D875D1 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E807DB919461DC700D875D1 /* Keyboard.appex */; };
-		4E8EF38619F95D75009CBF5D /* KeyboardFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8EF38519F95D75009CBF5D /* KeyboardFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E8EF39819F95D75009CBF5D /* KeyboardFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */; };
-		4E8EF39919F95D75009CBF5D /* KeyboardFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4E8EF3A019F95D93009CBF5D /* KeyboardFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */; };
 		4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46919DF811E00F789E1 /* KeyboardViewController.swift */; };
 		4EC2A46E19DF811E00F789E1 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46A19DF811E00F789E1 /* KeyboardLayout.swift */; };
 		4EC2A47019DF811E00F789E1 /* ForwardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A46C19DF811E00F789E1 /* ForwardingView.swift */; };
 		4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD78A19E0DF15004D4974 /* Shapes.swift */; };
+		D88A83DF7C81C5BD93E06AC3 /* Pods_DboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C1740F435C8051A57081E4 /* Pods_DboardKit.framework */; };
 		E33A2B66D47A3E5226F7A86C /* Pods_DioGhv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCC03FC1A9B98314F9A0717 /* Pods_DioGhv.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3BA31F291E7B817A0073DBEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E807D8B19461D9000D875D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA31F231E7B817A0073DBEF;
+			remoteInfo = DboardKit;
+		};
 		4E807DBF19461DC700D875D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4E807D8B19461D9000D875D1 /* Project object */;
@@ -72,20 +81,6 @@
 			remoteGlobalIDString = 4E807DB819461DC700D875D1;
 			remoteInfo = Keyboard;
 		};
-		4E8EF39619F95D75009CBF5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4E807D8B19461D9000D875D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E8EF38019F95D74009CBF5D;
-			remoteInfo = KeyboardFramework;
-		};
-		4E8EF3A119F95D9C009CBF5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4E807D8B19461D9000D875D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E8EF38019F95D74009CBF5D;
-			remoteInfo = KeyboardFramework;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,7 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4E8EF39919F95D75009CBF5D /* KeyboardFramework.framework in Embed Frameworks */,
+				3BA31F2C1E7B817A0073DBEF /* DboardKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +111,6 @@
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = DboardPlayground.playground; path = Utility/DboardPlayground.playground; sourceTree = "<group>"; };
-		3B69C3E81E779F7200CFD1E8 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Utility/DBManager.swift; sourceTree = "<group>"; };
 		3B6D335D1E7399C70037B998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
@@ -134,8 +128,16 @@
 		3BA31F0F1E7999F60073DBEF /* suantau.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suantau.schema.yaml; sourceTree = "<group>"; };
 		3BA31F111E7999F60073DBEF /* tenghai.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tenghai.dict.yaml; sourceTree = "<group>"; };
 		3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tenghai.schema.yaml; sourceTree = "<group>"; };
+		3BA31F241E7B817A0073DBEF /* DboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA31F261E7B817A0073DBEF /* DboardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DboardKit.h; sourceTree = "<group>"; };
+		3BA31F271E7B817A0073DBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA31F331E7B84E60073DBEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BA31F351E7B84EE0073DBEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BA31F371E7B84F40073DBEF /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DioGhvKeyboard-bmmfgfglomxgfwcuhyjwrmouwuzj/Build/Products/Debug-iphoneos/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
+		3BA31F391E7B85580073DBEF /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		3BA31F3B1E7B86080073DBEF /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DboardManager.swift; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
-		3BAE438C1E744F62003D0D32 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Utility/DBManager.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
 		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
@@ -159,26 +161,34 @@
 		4E807DB919461DC700D875D1 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E807DBC19461DC700D875D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E807DC81946209600D875D1 /* KeyboardKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKey.swift; sourceTree = "<group>"; };
-		4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E8EF38419F95D75009CBF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E8EF38519F95D75009CBF5D /* KeyboardFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardFramework.h; sourceTree = "<group>"; };
 		4EC2A46919DF811E00F789E1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		4EC2A46A19DF811E00F789E1 /* KeyboardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
 		4EC2A46C19DF811E00F789E1 /* ForwardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardingView.swift; sourceTree = "<group>"; };
 		4EEFD78A19E0DF15004D4974 /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		7259BD701FE4C01EDE650772 /* Pods-DioGhv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DioGhv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DioGhv/Pods-DioGhv.debug.xcconfig"; sourceTree = "<group>"; };
+		75C1740F435C8051A57081E4 /* Pods_DboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5CDA9078C20A567890DE5F /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		B9868C63FC98E9A0580C47E8 /* Pods-DboardKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DboardKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DboardKit/Pods-DboardKit.release.xcconfig"; sourceTree = "<group>"; };
+		D9FA5143277EA313583C0F75 /* Pods-DboardKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DboardKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DboardKit/Pods-DboardKit.debug.xcconfig"; sourceTree = "<group>"; };
 		E1835FD89DAF691C46EEF6CD /* Pods-DioGhv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DioGhv.release.xcconfig"; path = "Pods/Target Support Files/Pods-DioGhv/Pods-DioGhv.release.xcconfig"; sourceTree = "<group>"; };
 		EFCC03FC1A9B98314F9A0717 /* Pods_DioGhv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DioGhv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3BA31F201E7B817A0073DBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88A83DF7C81C5BD93E06AC3 /* Pods_DboardKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E807D9019461D9000D875D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8EF39819F95D75009CBF5D /* KeyboardFramework.framework in Frameworks */,
+				3BA31F2B1E7B817A0073DBEF /* DboardKit.framework in Frameworks */,
 				E33A2B66D47A3E5226F7A86C /* Pods_DioGhv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,15 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8EF3A019F95D93009CBF5D /* KeyboardFramework.framework in Frameworks */,
+				3BA31F301E7B82010073DBEF /* DboardKit.framework in Frameworks */,
 				398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E8EF37D19F95D74009CBF5D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				3B9A2D2B1E739644009D7EB5 /* Utilities.swift */,
-				3BAE438C1E744F62003D0D32 /* DBManager.swift */,
 				3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */,
 			);
 			name = Utility;
@@ -277,6 +279,34 @@
 				3BA31F121E7999F60073DBEF /* tenghai.schema.yaml */,
 			);
 			path = tenghai;
+			sourceTree = "<group>";
+		};
+		3BA31F251E7B817A0073DBEF /* DboardKit */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F321E7B83710073DBEF /* Source */,
+				3BA31F311E7B835F0073DBEF /* Support File */,
+			);
+			path = DboardKit;
+			sourceTree = "<group>";
+		};
+		3BA31F311E7B835F0073DBEF /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F271E7B817A0073DBEF /* Info.plist */,
+			);
+			name = "Support File";
+			sourceTree = "<group>";
+		};
+		3BA31F321E7B83710073DBEF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3BA31F261E7B817A0073DBEF /* DboardKit.h */,
+				3BA31F391E7B85580073DBEF /* DBManager.swift */,
+				3BA31F3B1E7B86080073DBEF /* Utility.swift */,
+				3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		3BB87A8A1E6EA9F900711FED /* Dboard */ = {
@@ -380,7 +410,7 @@
 			children = (
 				3BCD67831E6E9E0800135DFE /* DioGhv */,
 				4E807DBA19461DC700D875D1 /* Keyboard */,
-				4E8EF38219F95D75009CBF5D /* KeyboardFramework */,
+				3BA31F251E7B817A0073DBEF /* DboardKit */,
 				4E807D9419461D9000D875D1 /* Products */,
 				8AD1A33FBBBF2C9E17403013 /* Pods */,
 				511467B29F87C46F055E00F2 /* Frameworks */,
@@ -392,7 +422,7 @@
 			children = (
 				4E807D9319461D9000D875D1 /* DioGhv.app */,
 				4E807DB919461DC700D875D1 /* Keyboard.appex */,
-				4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */,
+				3BA31F241E7B817A0073DBEF /* DboardKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,28 +450,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4E8EF38219F95D75009CBF5D /* KeyboardFramework */ = {
-			isa = PBXGroup;
-			children = (
-				4E8EF38519F95D75009CBF5D /* KeyboardFramework.h */,
-				4E8EF38319F95D75009CBF5D /* Supporting Files */,
-			);
-			path = KeyboardFramework;
-			sourceTree = "<group>";
-		};
-		4E8EF38319F95D75009CBF5D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4E8EF38419F95D75009CBF5D /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		4EE7599519F759F300B4E6ED /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				3BAE438A1E744CAB003D0D32 /* Utilities.swift */,
-				3B69C3E81E779F7200CFD1E8 /* DBManager.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -449,8 +461,12 @@
 		511467B29F87C46F055E00F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BA31F371E7B84F40073DBEF /* SQLite.framework */,
+				3BA31F351E7B84EE0073DBEF /* UIKit.framework */,
+				3BA31F331E7B84E60073DBEF /* Foundation.framework */,
 				EFCC03FC1A9B98314F9A0717 /* Pods_DioGhv.framework */,
 				F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */,
+				75C1740F435C8051A57081E4 /* Pods_DboardKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -462,6 +478,8 @@
 				E1835FD89DAF691C46EEF6CD /* Pods-DioGhv.release.xcconfig */,
 				202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */,
 				AE5CDA9078C20A567890DE5F /* Pods-Keyboard.release.xcconfig */,
+				D9FA5143277EA313583C0F75 /* Pods-DboardKit.debug.xcconfig */,
+				B9868C63FC98E9A0580C47E8 /* Pods-DboardKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -469,17 +487,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E8EF37E19F95D74009CBF5D /* Headers */ = {
+		3BA31F211E7B817A0073DBEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8EF38619F95D75009CBF5D /* KeyboardFramework.h in Headers */,
+				3BA31F281E7B817A0073DBEF /* DboardKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3BA31F231E7B817A0073DBEF /* DboardKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA31F2D1E7B817A0073DBEF /* Build configuration list for PBXNativeTarget "DboardKit" */;
+			buildPhases = (
+				A31DB912B77BABEC5FF2C3E3 /* [CP] Check Pods Manifest.lock */,
+				3BA31F1F1E7B817A0073DBEF /* Sources */,
+				3BA31F201E7B817A0073DBEF /* Frameworks */,
+				3BA31F211E7B817A0073DBEF /* Headers */,
+				3BA31F221E7B817A0073DBEF /* Resources */,
+				B71C74F86242A4244F7CB9DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DboardKit;
+			productName = DboardKit;
+			productReference = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4E807D9219461D9000D875D1 /* DioGhv */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E807DAF19461D9000D875D1 /* Build configuration list for PBXNativeTarget "DioGhv" */;
@@ -498,7 +536,7 @@
 			dependencies = (
 				4E807DC019461DC700D875D1 /* PBXTargetDependency */,
 				4E807DC319461DC700D875D1 /* PBXTargetDependency */,
-				4E8EF39719F95D75009CBF5D /* PBXTargetDependency */,
+				3BA31F2A1E7B817A0073DBEF /* PBXTargetDependency */,
 			);
 			name = DioGhv;
 			productName = TastyImitationKeyboard;
@@ -518,30 +556,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				4E8EF3A219F95D9C009CBF5D /* PBXTargetDependency */,
 			);
 			name = Keyboard;
 			productName = Keyboard;
 			productReference = 4E807DB919461DC700D875D1 /* Keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		4E8EF38019F95D74009CBF5D /* KeyboardFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4E8EF39A19F95D75009CBF5D /* Build configuration list for PBXNativeTarget "KeyboardFramework" */;
-			buildPhases = (
-				4E8EF37C19F95D74009CBF5D /* Sources */,
-				4E8EF37D19F95D74009CBF5D /* Frameworks */,
-				4E8EF37E19F95D74009CBF5D /* Headers */,
-				4E8EF37F19F95D74009CBF5D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KeyboardFramework;
-			productName = KeyboardFramework;
-			productReference = 4E8EF38119F95D74009CBF5D /* KeyboardFramework.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -554,6 +573,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
+					3BA31F231E7B817A0073DBEF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8CVTM26ZE7;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
 					4E807D9219461D9000D875D1 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 8CVTM26ZE7;
@@ -574,11 +599,6 @@
 							};
 						};
 					};
-					4E8EF38019F95D74009CBF5D = {
-						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 8CVTM26ZE7;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 4E807D8E19461D9000D875D1 /* Build configuration list for PBXProject "DioGhvKeyboard" */;
@@ -596,12 +616,19 @@
 			targets = (
 				4E807D9219461D9000D875D1 /* DioGhv */,
 				4E807DB819461DC700D875D1 /* Keyboard */,
-				4E8EF38019F95D74009CBF5D /* KeyboardFramework */,
+				3BA31F231E7B817A0073DBEF /* DboardKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3BA31F221E7B817A0073DBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E807D9119461D9000D875D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,13 +656,6 @@
 			files = (
 				4E52A6DA1A06C198006A08CE /* DefaultSettings.xib in Resources */,
 				4E52A6D61A06BADA006A08CE /* Media.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E8EF37F19F95D74009CBF5D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +722,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A31DB912B77BABEC5FF2C3E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B71C74F86242A4244F7CB9DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DboardKit/Pods-DboardKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F6F214EC14223DE665F17C50 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -720,11 +770,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3BA31F1F1E7B817A0073DBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA31F3C1E7B86080073DBEF /* Utility.swift in Sources */,
+				3BA31F3A1E7B85580073DBEF /* DBManager.swift in Sources */,
+				3BA31F3E1E7B89CB0073DBEF /* DboardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E807D8F19461D9000D875D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BAE438D1E744F62003D0D32 /* DBManager.swift in Sources */,
 				3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */,
 				3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */,
 				3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */,
@@ -751,7 +810,6 @@
 				3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */,
 				3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
-				3B69C3E91E779F7200CFD1E8 /* DBManager.swift in Sources */,
 				3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */,
 				3BB87A871E6EA78000711FED /* Page.swift in Sources */,
 				4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */,
@@ -759,16 +817,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E8EF37C19F95D74009CBF5D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3BA31F2A1E7B817A0073DBEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA31F231E7B817A0073DBEF /* DboardKit */;
+			targetProxy = 3BA31F291E7B817A0073DBEF /* PBXContainerItemProxy */;
+		};
 		4E807DC019461DC700D875D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4E807DB819461DC700D875D1 /* Keyboard */;
@@ -778,16 +834,6 @@
 			isa = PBXTargetDependency;
 			target = 4E807DB819461DC700D875D1 /* Keyboard */;
 			targetProxy = 4E807DC219461DC700D875D1 /* PBXContainerItemProxy */;
-		};
-		4E8EF39719F95D75009CBF5D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4E8EF38019F95D74009CBF5D /* KeyboardFramework */;
-			targetProxy = 4E8EF39619F95D75009CBF5D /* PBXContainerItemProxy */;
-		};
-		4E8EF3A219F95D9C009CBF5D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4E8EF38019F95D74009CBF5D /* KeyboardFramework */;
-			targetProxy = 4E8EF3A119F95D9C009CBF5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -804,6 +850,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3BA31F2E1E7B817A0073DBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9FA5143277EA313583C0F75 /* Pods-DboardKit.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8CVTM26ZE7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = DboardKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillyplus.DboardKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BA31F2F1E7B817A0073DBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9868C63FC98E9A0580C47E8 /* Pods-DboardKit.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8CVTM26ZE7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DboardKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sillyplus.DboardKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4E807DAD19461D9000D875D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -960,66 +1074,18 @@
 			};
 			name = Release;
 		};
-		4E8EF39B19F95D75009CBF5D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KeyboardFramework/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = sillyplus.KeyboardFramework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E8EF39C19F95D75009CBF5D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KeyboardFramework/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = sillyplus.KeyboardFramework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3BA31F2D1E7B817A0073DBEF /* Build configuration list for PBXNativeTarget "DboardKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA31F2E1E7B817A0073DBEF /* Debug */,
+				3BA31F2F1E7B817A0073DBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E807D8E19461D9000D875D1 /* Build configuration list for PBXProject "DioGhvKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1043,15 +1109,6 @@
 			buildConfigurations = (
 				4E807DC519461DC700D875D1 /* Debug */,
 				4E807DC619461DC700D875D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4E8EF39A19F95D75009CBF5D /* Build configuration list for PBXNativeTarget "KeyboardFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E8EF39B19F95D75009CBF5D /* Debug */,
-				4E8EF39C19F95D75009CBF5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

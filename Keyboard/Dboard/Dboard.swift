@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import SQLite
+import DboardKit
 
 class Dboard: KeyboardViewController {
     
@@ -115,28 +116,29 @@ extension Dboard {
     func candidatesBy(_ inputString: String) -> [String] {
         var ret = [String]()
         
-        if inputString == "" {
-            return ret
-        }
-        
-        let db = DBManager.singleton.connection
-        if db != nil {
-            let dieziu = Table("dieziu")
-            var likeString = "%"
-            for c in inputString.characters {
-                likeString = likeString  + "\(c)" + "%"
-            }
-            let query = dieziu.filter(DBManager.pronunciationEx .like(likeString)).order(DBManager.frequencyEx.desc).limit(20)
-            print(query)
-            do {
-                for row in try db!.prepare(query) {
-                    ret.append(row[DBManager.nameEx])
-                }
-            } catch {
-                print("Data Prepare Failed")
-            }
-            
-        }
+//        
+//        if inputString == "" {
+//            return ret
+//        }
+//        
+//        let db = DBManager.singleton.connection
+//        if db != nil {
+//            let dieziu = Table("dieziu")
+//            var likeString = "%"
+//            for c in inputString.characters {
+//                likeString = likeString  + "\(c)" + "%"
+//            }
+//            let query = dieziu.filter(DBManager.pronunciationEx .like(likeString)).order(DBManager.frequencyEx.desc).limit(20)
+//            print(query)
+//            do {
+//                for row in try db!.prepare(query) {
+//                    ret.append(row[DBManager.nameEx])
+//                }
+//            } catch {
+//                print("Data Prepare Failed")
+//            }
+//            
+//        }
         
         return ret
     }

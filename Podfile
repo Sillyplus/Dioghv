@@ -14,3 +14,8 @@ target 'Keyboard' do
     pod 'SQLite.swift', '~> 0.11.2'
     pod 'SwiftyBeaver', '~> 1.1'
 end
+
+target 'DboardKit' do
+    pod 'SQLite.swift', '~> 0.11.2'
+    pod 'SwiftyBeaver', '~> 1.1'
+end

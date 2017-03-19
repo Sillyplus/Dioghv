@@ -2,32 +2,32 @@
 //  DBManager.swift
 //  DioGhvKeyboard
 //
-//  Created by silly on 11/03/2017.
+//  Created by silly on 17/03/2017.
 //  Copyright © 2017 Apple. All rights reserved.
 //
 
 import Foundation
 import SQLite
 
-class DBManager {
+public class DBManager {
     
     // Table Columns
-    static let idEx = Expression<Int64>("id")
-    static let nameEx = Expression<String>("name")
-    static let pronunciationEx = Expression<String>("pron")
-    static let frequencyEx = Expression<Double>("freq")
+    public static let idEx = Expression<Int64>("id")
+    public static let nameEx = Expression<String>("name")
+    public static let pronunciationEx = Expression<String>("pron")
+    public static let frequencyEx = Expression<Double>("freq")
     
-    var connection: Connection?
+    public var connection: Connection?
     
     private init() {
         do {
-            self.connection = try Connection(Utilities.appGroupContainerPath()! + "/" + "Dboard.sqlite3")
+            self.connection = try Connection(Utility.appGroupContainerPath()! + "/" + "Dboard.sqlite3")
         } catch {
             self.connection = nil
         }
     }
-
-    static let singleton: DBManager = {
+    
+    public static let singleton: DBManager = {
         let instance = DBManager()
         return instance
     }()
@@ -36,7 +36,7 @@ class DBManager {
 
 extension DBManager {
     
-    class func createTable(named name: String) -> Table? {
+    public class func createTable(named name: String) -> Table? {
         let db = DBManager.singleton.connection
         if db != nil {
             let table = Table(name)
@@ -58,7 +58,7 @@ extension DBManager {
         }
     }
     
-    class func dropTable(named name: String) {
+    public class func dropTable(named name: String) {
         let db = DBManager.singleton.connection
         if db != nil {
             let table = Table(name)
