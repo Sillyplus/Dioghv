@@ -110,7 +110,6 @@
 
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = DboardPlayground.playground; path = Utility/DboardPlayground.playground; sourceTree = "<group>"; };
 		3B6D335D1E7399C70037B998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
@@ -209,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				3B9A2D2B1E739644009D7EB5 /* Utilities.swift */,
-				3B5358281E74EE0300D4CEC6 /* DboardPlayground.playground */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
