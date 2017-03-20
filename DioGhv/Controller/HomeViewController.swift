@@ -143,6 +143,42 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
+        switch indexPath.section {
+        case 0:
+            let _ = "Donothing"
+        case 1:
+            switch indexPath.row {
+            case 0:
+                let _ = "Donothing"
+            case 1:
+                let _ = "Donothing"
+            case 2:
+                let _ = "Donothing"
+            default:
+                fatalError("Unoknow Row At Section 1")
+            }
+        case 2:
+            switch indexPath.row {
+            case 0:
+                let _ = "Donothing"
+            case 1:
+                let _ = "Donothing"
+            default:
+                fatalError("Unknow Cell At Section 2")
+            }
+        case 3:
+            switch indexPath.row {
+            case 0:
+                let _ = "Donothing"
+            case 1:
+                let _ = "Donothing"
+            default:
+                fatalError("Unknow Cell At Section 3")
+            }
+        default:
+            fatalError("Unknow Section")
+        }
+        
     }
     
 }
