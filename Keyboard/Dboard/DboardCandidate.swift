@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-
+import DboardKit
 
 class DboardCandidateView: ExtraView {
     
@@ -112,28 +112,28 @@ class DboardCandidateView: ExtraView {
 
 extension DboardCandidateView {
     
-    
-    func updateBanner(candidateList: [String], inputKeyString:String) {
+    func updateBanner(candidateList: [Candy], inputKeyString:String) {
         
         self.inputKeyLabel.text = inputKeyString
         self.scrollView.subviews.forEach { $0.removeFromSuperview() }
-        for s in candidateList {
-            self.addString(s: s)
+        for candy in candidateList {
+            self.addCandy(c: candy)
         }
         self.setNeedsLayout()
         
     }
     
-    func addString(s:String) {
+    func addCandy(c: Candy) {
         
-        let btn:UIButton = CandidateButton(type: .custom)
-        btn.setTitle(s, for: .normal)
+        let btn: CandidateButton = CandidateButton(type: .custom)
+        btn.setTitle(c.word, for: .normal)
         btn.setTitleColor(UIColor.black, for: .normal)
-        btn.addTarget(self, action: #selector(DboardCandidateView.tapBtn(btn:)), for: .touchUpInside)
+        btn.candy = c
+        btn.addTarget(self, action: #selector(DboardCandidateView.tapCandy(btn:)), for: .touchUpInside)
         
         let size = CGSize()
         let fontAttributes = [NSFontAttributeName: btn.titleLabel!.font]
-        let r = s.boundingRect(with: size, options: .usesFontLeading, attributes: fontAttributes as Any as? [String : Any], context: nil)
+        let r = c.word.boundingRect(with: size, options: .usesFontLeading, attributes: fontAttributes as Any as? [String : Any], context: nil)
         btn.frame = CGRect(x: r.origin.x, y: r.origin.y, width: r.size.width + 20, height: r.size.height)
         
         self.scrollView.addSubview(btn)
@@ -147,11 +147,11 @@ extension DboardCandidateView {
         
     }
     
-    func tapBtn(btn: UIButton) {
+    func tapCandy(btn: CandidateButton) {
         
-        let candidateString = btn.titleLabel!.text!
+        let candy = btn.candy
         let candidateSelectedNotification = Notification.Name.init(rawValue: "CandidateSelectedNotification")
-        NotificationCenter.default.post(name: candidateSelectedNotification, object: nil, userInfo: ["DboardCandidate": candidateString])
+        NotificationCenter.default.post(name: candidateSelectedNotification, object: nil, userInfo: ["DboardCandidate": candy])
         
     }
 

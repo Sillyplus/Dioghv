@@ -1,5 +1,5 @@
 //
-//  DBManager.swift
+//  Zeus.swift
 //  DioGhvKeyboard
 //
 //  Created by silly on 17/03/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import SQLite
 
-public class DBManager {
+public class Zeus {
     
     // Table Columns
     public static let idEx = Expression<Int64>("id")
@@ -22,30 +22,31 @@ public class DBManager {
     private init() {
         do {
             self.connection = try Connection(Utility.appGroupContainerPath()! + "/" + "Dboard.sqlite3")
+            print(self.connection ?? "No Connection")
         } catch {
             self.connection = nil
         }
     }
     
-    public static let singleton: DBManager = {
-        let instance = DBManager()
+    public static let singleton: Zeus = {
+        let instance = Zeus()
         return instance
     }()
     
 }
 
-extension DBManager {
+extension Zeus {
     
     public class func createTable(named name: String) -> Table? {
-        let db = DBManager.singleton.connection
+        let db = Zeus.singleton.connection
         if db != nil {
             let table = Table(name)
             do {
                 try db!.run(table.create(ifNotExists: true) { t in
-                    t.column(DBManager.idEx, primaryKey: true)
-                    t.column(DBManager.nameEx)
-                    t.column(DBManager.pronunciationEx)
-                    t.column(DBManager.frequencyEx, defaultValue: 0.0)
+                    t.column(Zeus.idEx, primaryKey: true)
+                    t.column(Zeus.nameEx)
+                    t.column(Zeus.pronunciationEx)
+                    t.column(Zeus.frequencyEx, defaultValue: 0.0)
                 })
                 return table
             } catch {
@@ -59,7 +60,7 @@ extension DBManager {
     }
     
     public class func dropTable(named name: String) {
-        let db = DBManager.singleton.connection
+        let db = Zeus.singleton.connection
         if db != nil {
             let table = Table(name)
             do {

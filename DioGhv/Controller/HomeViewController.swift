@@ -149,7 +149,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             switch indexPath.row {
             case 0:
-                let _ = "Donothing"
+                let baseSettingVC = BaseSettingViewController()
+                self.show(baseSettingVC, sender: self)
             case 1:
                 let _ = "Donothing"
             case 2:

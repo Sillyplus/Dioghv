@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import SQLite
 import DboardKit
 
 class Dboard: KeyboardViewController {
@@ -113,33 +112,12 @@ class Dboard: KeyboardViewController {
 
 extension Dboard {
     
-    func candidatesBy(_ inputString: String) -> [String] {
-        var ret = [String]()
+    func candidatesBy(_ inputString: String) -> [Candy] {
+        var ret: [Candy] = []
         
-//        
-//        if inputString == "" {
-//            return ret
-//        }
-//        
-//        let db = DBManager.singleton.connection
-//        if db != nil {
-//            let dieziu = Table("dieziu")
-//            var likeString = "%"
-//            for c in inputString.characters {
-//                likeString = likeString  + "\(c)" + "%"
-//            }
-//            let query = dieziu.filter(DBManager.pronunciationEx .like(likeString)).order(DBManager.frequencyEx.desc).limit(20)
-//            print(query)
-//            do {
-//                for row in try db!.prepare(query) {
-//                    ret.append(row[DBManager.nameEx])
-//                }
-//            } catch {
-//                print("Data Prepare Failed")
-//            }
-//            
-//        }
-        
+        let hermes = Hermes.default
+        ret = hermes.candidates(with: inputString)
+
         return ret
     }
     
@@ -151,9 +129,14 @@ extension Dboard {
     func candidateSelected(_ notification: Notification) {
         
         let userInfo = notification.userInfo
-        let candidateString = userInfo!["DboardCandidate"] as! String
+        let candy = userInfo!["DboardCandidate"] as! Candy
         let textDocumentProxy = self.textDocumentProxy
-        textDocumentProxy.insertText(candidateString)
+        textDocumentProxy.insertText(candy.word)
+        
+        let hermes = Hermes.default
+        hermes.confirm(selected: candy.id)
+        print("Candy: \(candy)")
+        
         currentInputString = ""
         updateBanner()
         

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
+		3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
 		3BA31F131E7999F60073DBEF /* dieziu.dict.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3BA31F021E7999F60073DBEF /* dieziu.dict.yaml */; };
@@ -26,10 +27,10 @@
 		3BA31F2B1E7B817A0073DBEF /* DboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; };
 		3BA31F2C1E7B817A0073DBEF /* DboardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BA31F301E7B82010073DBEF /* DboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA31F241E7B817A0073DBEF /* DboardKit.framework */; };
-		3BA31F3A1E7B85580073DBEF /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F391E7B85580073DBEF /* DBManager.swift */; };
+		3BA31F3A1E7B85580073DBEF /* Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F391E7B85580073DBEF /* Zeus.swift */; };
 		3BA31F3C1E7B86080073DBEF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3B1E7B86080073DBEF /* Utility.swift */; };
-		3BA31F3E1E7B89CB0073DBEF /* DboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */; };
 		3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */; };
+		3BA31F421E7F57350073DBEF /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F411E7F57350073DBEF /* Hermes.swift */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
@@ -109,6 +110,7 @@
 
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSettingViewController.swift; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
 		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
@@ -131,10 +133,10 @@
 		3BA31F331E7B84E60073DBEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BA31F351E7B84EE0073DBEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3BA31F371E7B84F40073DBEF /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DioGhvKeyboard-bmmfgfglomxgfwcuhyjwrmouwuzj/Build/Products/Debug-iphoneos/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
-		3BA31F391E7B85580073DBEF /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		3BA31F391E7B85580073DBEF /* Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zeus.swift; sourceTree = "<group>"; };
 		3BA31F3B1E7B86080073DBEF /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DboardManager.swift; sourceTree = "<group>"; };
 		3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3BA31F411E7F57350073DBEF /* Hermes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
@@ -297,10 +299,10 @@
 		3BA31F321E7B83710073DBEF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3BA31F261E7B817A0073DBEF /* DboardKit.h */,
-				3BA31F391E7B85580073DBEF /* DBManager.swift */,
+				3BA31F411E7F57350073DBEF /* Hermes.swift */,
+				3BA31F391E7B85580073DBEF /* Zeus.swift */,
 				3BA31F3B1E7B86080073DBEF /* Utility.swift */,
-				3BA31F3D1E7B89CB0073DBEF /* DboardManager.swift */,
+				3BA31F261E7B817A0073DBEF /* DboardKit.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -331,6 +333,7 @@
 			children = (
 				3BCD67881E6E9E0800135DFE /* ViewController.swift */,
 				3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */,
+				3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -769,8 +772,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA31F3C1E7B86080073DBEF /* Utility.swift in Sources */,
-				3BA31F3A1E7B85580073DBEF /* DBManager.swift in Sources */,
-				3BA31F3E1E7B89CB0073DBEF /* DboardManager.swift in Sources */,
+				3BA31F3A1E7B85580073DBEF /* Zeus.swift in Sources */,
+				3BA31F421E7F57350073DBEF /* Hermes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +785,7 @@
 				3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */,
 				3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */,
 				3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */,
+				3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
