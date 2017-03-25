@@ -14,8 +14,17 @@ class BaseSettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.navigationItem.title = "基础设置"
         
-//        Zeus.createTable(named: "test")
+        // each language a databse
+        // each local language a table 
+        
+        // create database
+        // generate vocabulary
+        // no location prefer
+        // reset database
+        // switch databse
+        //
     }
 
     override func didReceiveMemoryWarning() {
