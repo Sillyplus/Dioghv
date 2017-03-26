@@ -1,5 +1,6 @@
 PODS:
   - FLEX (2.4.0)
+  - PKHUD (4.2.0)
   - SnapKit (3.2.0)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
@@ -8,16 +9,18 @@ PODS:
 
 DEPENDENCIES:
   - FLEX (~> 2.4.0)
+  - PKHUD (~> 4.0)
   - SnapKit (~> 3.0)
   - SQLite.swift (~> 0.11.2)
   - SwiftyBeaver (~> 1.1)
 
 SPEC CHECKSUMS:
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  PKHUD: 48af884cf00c2213b0313b739d914e6cab1c0f5e
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
   SwiftyBeaver: 949aa1439b8fa3667f68555cfef65de46a70ccde
 
-PODFILE CHECKSUM: b78c5fe127c5ba61c2707039e3267ffb263ed694
+PODFILE CHECKSUM: ab056934a1bfc94962ce380b4eacfd9d9df26e40
 
 COCOAPODS: 1.2.0

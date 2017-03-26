@@ -16,12 +16,16 @@ class BaseSettingViewController: UIViewController {
     var settingTable: UITableView = UITableView()
     var traditionalSwitch: UISwitch = UISwitch()
     var chineseTypeCell: UITableViewCell = UITableViewCell()
+    
     var suantauAreaCell: UITableViewCell = UITableViewCell()
     var dieziuAreaCell: UITableViewCell = UITableViewCell()
     var dioionAreaCell: UITableViewCell = UITableViewCell()
     var gekionAreaCell: UITableViewCell = UITableViewCell()
     var riaupengAreaCell: UITableViewCell = UITableViewCell()
     var tenghaiAreaCell: UITableViewCell = UITableViewCell()
+    
+    var buildCell: UITableViewCell = UITableViewCell()
+    
     var resetCell: UITableViewCell = UITableViewCell()
     
     var selectedIndex: Int {
@@ -61,6 +65,8 @@ class BaseSettingViewController: UIViewController {
         riaupengAreaCell.textLabel?.text = "饶平音"
         tenghaiAreaCell.textLabel?.text = "澄海音"
 
+        buildCell.textLabel?.text = "创建词库"
+        buildCell.textLabel?.textAlignment = .center
         
         resetCell.textLabel?.text = "重置数据"
         resetCell.textLabel?.textAlignment = .center
@@ -88,7 +94,7 @@ class BaseSettingViewController: UIViewController {
 extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -98,6 +104,8 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
         case 1:
             return 6
         case 2:
+            return 1
+        case 3:
             return 1
         default:
             fatalError("Unknow Sections")
@@ -176,9 +184,16 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
         case 2:
             switch indexPath.row {
             case 0:
-                return self.resetCell
+                return self.buildCell
             default:
                 fatalError("Unknow Cell At Section 2")
+            }
+        case 3:
+            switch indexPath.row {
+            case 0:
+                return self.resetCell
+            default:
+                fatalError("Unknow Cell At Section 3")
             }
         default:
             fatalError("Unknow Section")
@@ -202,9 +217,16 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
         case 2:
             switch indexPath.row {
             case 0:
-                self.showResetAlert()
+                self.showBuildAlert()
             default:
                 fatalError("Unknow Cell At Section 2")
+            }
+        case 3:
+            switch indexPath.row {
+            case 0:
+                self.showResetAlert()
+            default:
+                fatalError("Unknow Cell At Section 3")
             }
         default:
             fatalError("Unknow Section")
@@ -222,6 +244,19 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
             print("确认重置")
         }))
         self.present(alert, animated: true) { 
+            // Do Something after alert presented
+        }
+    }
+    
+    func showBuildAlert() {
+        let alert = UIAlertController(title: "生成词库", message: "根据当前语言创建词库，此操作可能需消耗较多时间，请耐心等待", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { (action) in
+            // Do nothing
+        }))
+        alert.addAction(UIAlertAction(title: "确认", style: .default, handler: { (action) in
+            print("确认生成")
+        }))
+        self.present(alert, animated: true) {
             // Do Something after alert presented
         }
     }
