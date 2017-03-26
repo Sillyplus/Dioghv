@@ -7,7 +7,7 @@ target 'DioGhv' do
     pod 'FLEX', '~> 2.4.0', :configurations => ['Debug']
     pod 'SQLite.swift', '~> 0.11.2'
     pod 'SwiftyBeaver', '~> 1.1'
-    pod 'PKHUD', '~> 4.0'
+    pod 'PKHUD', '~> 4.2'
 end
 
 target 'Keyboard' do

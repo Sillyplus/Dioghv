@@ -8,6 +8,7 @@
 
 import UIKit
 import DboardKit
+import PKHUD
 
 class BaseSettingViewController: UIViewController {
     
