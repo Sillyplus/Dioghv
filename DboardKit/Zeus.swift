@@ -9,6 +9,12 @@
 import Foundation
 import SQLite
 
+public enum DboardBuildState {
+    case success
+    case failed
+    case exist
+}
+
 public enum DboardChineseType: Int {
     case simplified
     case traditional
@@ -81,6 +87,89 @@ public class Zeus {
 }
 
 extension Zeus {
+    
+     class func stringNameBy(PrimaryArea area: DboardPrimaryArea, AndType type: DboardChineseType) -> String {
+        var ret = ""
+        switch area {
+        case .dieziu:
+            ret = "dieziu"
+        case .dioion:
+            ret = "dioion"
+        case .gekion:
+            ret = "gekion"
+        case .riaupeng:
+            ret = "riaupeng"
+        case .suantau:
+            ret = "suantau"
+        case .tenghai:
+            ret = "tenghai"
+        }
+        switch type {
+        case .simplified:
+            ret += "_s"
+        case .traditional:
+            ret += "_t"
+        }
+        return ret
+    }
+    
+    public class func buildSource(WithPrimaryArea area: DboardPrimaryArea, AndType type: DboardChineseType) -> DboardBuildState {
+        
+        let tableName = Zeus.stringNameBy(PrimaryArea: area, AndType: type)
+        let fileName = "dict_" + tableName
+        let bundle = Bundle(for: Zeus.self)
+        let filePath = bundle.path(forResource: fileName, ofType: ".txt")
+        do {
+            let content = try String(contentsOfFile: filePath!, encoding: .utf8)
+            let table = Zeus.createTable(named: tableName)!
+            let db = Zeus.singleton.connection!
+            // check if table already exist and have data
+            if let _ = try db.pluck(table) {
+                return DboardBuildState.exist
+            }
+            // otherwise create data
+            for row in content.components(separatedBy: .newlines) {
+                let data = row.components(separatedBy: " ")
+                if data.count < 2 {
+                    continue
+                }
+                let word = data[0]
+                let pron = data[1]
+                do {
+                    try db.run(table.insert(Zeus.nameEx <- word, Zeus.pronunciationEx <- pron))
+                } catch {
+                    print("Insert \(word): \(pron) Failed")
+                    return DboardBuildState.failed
+                }
+            }
+            var vocabularyFileName = ""
+            switch type {
+            case .simplified:
+                vocabularyFileName = "vocabulary_s"
+            case .traditional:
+                vocabularyFileName = "vocabulary_t"
+            }
+            let vocabularyFilePath = bundle.path(forResource: vocabularyFileName, ofType: ".txt")
+            let vocabularyContent = try String(contentsOfFile: vocabularyFilePath!, encoding: .utf8)
+            for vocabulary in vocabularyContent.components(separatedBy: .newlines) {
+                var vocabularyPron = ""
+                for word in vocabulary.characters {
+                    if let wordRow = try db.pluck(table.filter(Zeus.nameEx == "\(word)")) {
+                        vocabularyPron += wordRow[Zeus.pronunciationEx]
+                    }
+                }
+                if vocabularyPron.characters.count > 0 {
+                    try db.run(table.insert(Zeus.nameEx <- vocabulary, Zeus.pronunciationEx <- vocabularyPron))
+                }
+            }
+            return DboardBuildState.success
+        } catch {
+            print("Read Source Failed")
+            return DboardBuildState.failed
+        }
+
+    }
+    
     
     public class func createTable(named name: String) -> Table? {
         let db = Zeus.singleton.connection

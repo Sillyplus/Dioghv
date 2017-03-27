@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
 		3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */; };
+		3B4ABD4A1E88BF1700D73EFA /* dict_dieziu_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD371E88BF1700D73EFA /* dict_dieziu_s.txt */; };
+		3B4ABD4B1E88BF1700D73EFA /* dict_dieziu_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD381E88BF1700D73EFA /* dict_dieziu_t.txt */; };
+		3B4ABD4C1E88BF1700D73EFA /* dict_dioion_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD3A1E88BF1700D73EFA /* dict_dioion_s.txt */; };
+		3B4ABD4D1E88BF1700D73EFA /* dict_dioion_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD3B1E88BF1700D73EFA /* dict_dioion_t.txt */; };
+		3B4ABD4E1E88BF1700D73EFA /* dict_gekion_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD3D1E88BF1700D73EFA /* dict_gekion_s.txt */; };
+		3B4ABD4F1E88BF1700D73EFA /* dict_gekion_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD3E1E88BF1700D73EFA /* dict_gekion_t.txt */; };
+		3B4ABD501E88BF1700D73EFA /* dict_riaupeng_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD401E88BF1700D73EFA /* dict_riaupeng_s.txt */; };
+		3B4ABD511E88BF1700D73EFA /* dict_riaupeng_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD411E88BF1700D73EFA /* dict_riaupeng_t.txt */; };
+		3B4ABD521E88BF1700D73EFA /* dict_suantau_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD431E88BF1700D73EFA /* dict_suantau_s.txt */; };
+		3B4ABD531E88BF1700D73EFA /* dict_suantau_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD441E88BF1700D73EFA /* dict_suantau_t.txt */; };
+		3B4ABD541E88BF1700D73EFA /* dict_tenghai_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD461E88BF1700D73EFA /* dict_tenghai_s.txt */; };
+		3B4ABD551E88BF1700D73EFA /* dict_tenghai_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD471E88BF1700D73EFA /* dict_tenghai_t.txt */; };
+		3B4ABD561E88BF1700D73EFA /* vocabulary_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */; };
+		3B4ABD571E88BF1700D73EFA /* vocabulary_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
 		3BA31F281E7B817A0073DBEF /* DboardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA31F261E7B817A0073DBEF /* DboardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,19 +43,6 @@
 		3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */; };
 		3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD678C1E6E9E0800135DFE /* Images.xcassets */; };
 		3BCD67961E6EA21300135DFE /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67951E6EA21300135DFE /* Key.swift */; };
-		3BED98971E865241000EFF2B /* dict_dieziu_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98851E865241000EFF2B /* dict_dieziu_s */; };
-		3BED98981E865241000EFF2B /* dict_dieziu_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98861E865241000EFF2B /* dict_dieziu_t */; };
-		3BED98991E865241000EFF2B /* dict_dioion_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98881E865241000EFF2B /* dict_dioion_s */; };
-		3BED989A1E865241000EFF2B /* dict_dioion_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98891E865241000EFF2B /* dict_dioion_t */; };
-		3BED989B1E865241000EFF2B /* dict_gekion_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED988B1E865241000EFF2B /* dict_gekion_s */; };
-		3BED989C1E865241000EFF2B /* dict_gekion_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED988C1E865241000EFF2B /* dict_gekion_t */; };
-		3BED989D1E865241000EFF2B /* dict_riaupeng_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED988E1E865241000EFF2B /* dict_riaupeng_s */; };
-		3BED989E1E865241000EFF2B /* dict_riaupeng_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED988F1E865241000EFF2B /* dict_riaupeng_t */; };
-		3BED989F1E865241000EFF2B /* dict_suantau_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98911E865241000EFF2B /* dict_suantau_s */; };
-		3BED98A01E865241000EFF2B /* dict_suantau_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98921E865241000EFF2B /* dict_suantau_t */; };
-		3BED98A11E865241000EFF2B /* dict_tenghai_s in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98941E865241000EFF2B /* dict_tenghai_s */; };
-		3BED98A21E865241000EFF2B /* dict_tenghai_t in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98951E865241000EFF2B /* dict_tenghai_t */; };
-		3BED98A31E865241000EFF2B /* vocabulary in Resources */ = {isa = PBXBuildFile; fileRef = 3BED98961E865241000EFF2B /* vocabulary */; };
 		4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E807DC81946209600D875D1 /* KeyboardKey.swift */; };
 		4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */; };
 		4E52A6D21A06A61F006A08CE /* ImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52A6D11A06A61F006A08CE /* ImageKey.swift */; };
@@ -112,6 +113,20 @@
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSettingViewController.swift; sourceTree = "<group>"; };
+		3B4ABD371E88BF1700D73EFA /* dict_dieziu_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_s.txt; sourceTree = "<group>"; };
+		3B4ABD381E88BF1700D73EFA /* dict_dieziu_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_t.txt; sourceTree = "<group>"; };
+		3B4ABD3A1E88BF1700D73EFA /* dict_dioion_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dioion_s.txt; sourceTree = "<group>"; };
+		3B4ABD3B1E88BF1700D73EFA /* dict_dioion_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dioion_t.txt; sourceTree = "<group>"; };
+		3B4ABD3D1E88BF1700D73EFA /* dict_gekion_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_gekion_s.txt; sourceTree = "<group>"; };
+		3B4ABD3E1E88BF1700D73EFA /* dict_gekion_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_gekion_t.txt; sourceTree = "<group>"; };
+		3B4ABD401E88BF1700D73EFA /* dict_riaupeng_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_riaupeng_s.txt; sourceTree = "<group>"; };
+		3B4ABD411E88BF1700D73EFA /* dict_riaupeng_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_riaupeng_t.txt; sourceTree = "<group>"; };
+		3B4ABD431E88BF1700D73EFA /* dict_suantau_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_suantau_s.txt; sourceTree = "<group>"; };
+		3B4ABD441E88BF1700D73EFA /* dict_suantau_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_suantau_t.txt; sourceTree = "<group>"; };
+		3B4ABD461E88BF1700D73EFA /* dict_tenghai_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_tenghai_s.txt; sourceTree = "<group>"; };
+		3B4ABD471E88BF1700D73EFA /* dict_tenghai_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_tenghai_t.txt; sourceTree = "<group>"; };
+		3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary_s.txt; sourceTree = "<group>"; };
+		3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary_t.txt; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
 		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
@@ -137,19 +152,6 @@
 		3BCD678C1E6E9E0800135DFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BCD678D1E6E9E0800135DFE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCD67951E6EA21300135DFE /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Model/Key.swift; sourceTree = "<group>"; };
-		3BED98851E865241000EFF2B /* dict_dieziu_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_s; sourceTree = "<group>"; };
-		3BED98861E865241000EFF2B /* dict_dieziu_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_t; sourceTree = "<group>"; };
-		3BED98881E865241000EFF2B /* dict_dioion_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dioion_s; sourceTree = "<group>"; };
-		3BED98891E865241000EFF2B /* dict_dioion_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dioion_t; sourceTree = "<group>"; };
-		3BED988B1E865241000EFF2B /* dict_gekion_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_gekion_s; sourceTree = "<group>"; };
-		3BED988C1E865241000EFF2B /* dict_gekion_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_gekion_t; sourceTree = "<group>"; };
-		3BED988E1E865241000EFF2B /* dict_riaupeng_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_riaupeng_s; sourceTree = "<group>"; };
-		3BED988F1E865241000EFF2B /* dict_riaupeng_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_riaupeng_t; sourceTree = "<group>"; };
-		3BED98911E865241000EFF2B /* dict_suantau_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_suantau_s; sourceTree = "<group>"; };
-		3BED98921E865241000EFF2B /* dict_suantau_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_suantau_t; sourceTree = "<group>"; };
-		3BED98941E865241000EFF2B /* dict_tenghai_s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_tenghai_s; sourceTree = "<group>"; };
-		3BED98951E865241000EFF2B /* dict_tenghai_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_tenghai_t; sourceTree = "<group>"; };
-		3BED98961E865241000EFF2B /* vocabulary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary; sourceTree = "<group>"; };
 		4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
 		4E52A6D11A06A61F006A08CE /* ImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKey.swift; sourceTree = "<group>"; };
 		4E52A6D31A06A626006A08CE /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4ABD351E88BF1700D73EFA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD361E88BF1700D73EFA /* dieziu */,
+				3B4ABD391E88BF1700D73EFA /* dioion */,
+				3B4ABD3C1E88BF1700D73EFA /* gekion */,
+				3B4ABD3F1E88BF1700D73EFA /* riaupeng */,
+				3B4ABD421E88BF1700D73EFA /* suantau */,
+				3B4ABD451E88BF1700D73EFA /* tenghai */,
+				3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */,
+				3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		3B4ABD361E88BF1700D73EFA /* dieziu */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD371E88BF1700D73EFA /* dict_dieziu_s.txt */,
+				3B4ABD381E88BF1700D73EFA /* dict_dieziu_t.txt */,
+			);
+			path = dieziu;
+			sourceTree = "<group>";
+		};
+		3B4ABD391E88BF1700D73EFA /* dioion */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD3A1E88BF1700D73EFA /* dict_dioion_s.txt */,
+				3B4ABD3B1E88BF1700D73EFA /* dict_dioion_t.txt */,
+			);
+			path = dioion;
+			sourceTree = "<group>";
+		};
+		3B4ABD3C1E88BF1700D73EFA /* gekion */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD3D1E88BF1700D73EFA /* dict_gekion_s.txt */,
+				3B4ABD3E1E88BF1700D73EFA /* dict_gekion_t.txt */,
+			);
+			path = gekion;
+			sourceTree = "<group>";
+		};
+		3B4ABD3F1E88BF1700D73EFA /* riaupeng */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD401E88BF1700D73EFA /* dict_riaupeng_s.txt */,
+				3B4ABD411E88BF1700D73EFA /* dict_riaupeng_t.txt */,
+			);
+			path = riaupeng;
+			sourceTree = "<group>";
+		};
+		3B4ABD421E88BF1700D73EFA /* suantau */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD431E88BF1700D73EFA /* dict_suantau_s.txt */,
+				3B4ABD441E88BF1700D73EFA /* dict_suantau_t.txt */,
+			);
+			path = suantau;
+			sourceTree = "<group>";
+		};
+		3B4ABD451E88BF1700D73EFA /* tenghai */ = {
+			isa = PBXGroup;
+			children = (
+				3B4ABD461E88BF1700D73EFA /* dict_tenghai_s.txt */,
+				3B4ABD471E88BF1700D73EFA /* dict_tenghai_t.txt */,
+			);
+			path = tenghai;
+			sourceTree = "<group>";
+		};
 		3B9A2D2A1E73962E009D7EB5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +288,7 @@
 		3BA31F251E7B817A0073DBEF /* DboardKit */ = {
 			isa = PBXGroup;
 			children = (
+				3B4ABD351E88BF1700D73EFA /* data */,
 				3BA31F321E7B83710073DBEF /* Source */,
 				3BA31F311E7B835F0073DBEF /* Support File */,
 			);
@@ -283,7 +355,6 @@
 		3BCD678A1E6E9E0800135DFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BED98831E865241000EFF2B /* Source */,
 				3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */,
 				3BCD678C1E6E9E0800135DFE /* Images.xcassets */,
 				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
@@ -298,74 +369,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3BED98831E865241000EFF2B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3BED98841E865241000EFF2B /* dieziu */,
-				3BED98871E865241000EFF2B /* dioion */,
-				3BED988A1E865241000EFF2B /* gekion */,
-				3BED988D1E865241000EFF2B /* riaupeng */,
-				3BED98901E865241000EFF2B /* suantau */,
-				3BED98931E865241000EFF2B /* tenghai */,
-				3BED98961E865241000EFF2B /* vocabulary */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		3BED98841E865241000EFF2B /* dieziu */ = {
-			isa = PBXGroup;
-			children = (
-				3BED98851E865241000EFF2B /* dict_dieziu_s */,
-				3BED98861E865241000EFF2B /* dict_dieziu_t */,
-			);
-			path = dieziu;
-			sourceTree = "<group>";
-		};
-		3BED98871E865241000EFF2B /* dioion */ = {
-			isa = PBXGroup;
-			children = (
-				3BED98881E865241000EFF2B /* dict_dioion_s */,
-				3BED98891E865241000EFF2B /* dict_dioion_t */,
-			);
-			path = dioion;
-			sourceTree = "<group>";
-		};
-		3BED988A1E865241000EFF2B /* gekion */ = {
-			isa = PBXGroup;
-			children = (
-				3BED988B1E865241000EFF2B /* dict_gekion_s */,
-				3BED988C1E865241000EFF2B /* dict_gekion_t */,
-			);
-			path = gekion;
-			sourceTree = "<group>";
-		};
-		3BED988D1E865241000EFF2B /* riaupeng */ = {
-			isa = PBXGroup;
-			children = (
-				3BED988E1E865241000EFF2B /* dict_riaupeng_s */,
-				3BED988F1E865241000EFF2B /* dict_riaupeng_t */,
-			);
-			path = riaupeng;
-			sourceTree = "<group>";
-		};
-		3BED98901E865241000EFF2B /* suantau */ = {
-			isa = PBXGroup;
-			children = (
-				3BED98911E865241000EFF2B /* dict_suantau_s */,
-				3BED98921E865241000EFF2B /* dict_suantau_t */,
-			);
-			path = suantau;
-			sourceTree = "<group>";
-		};
-		3BED98931E865241000EFF2B /* tenghai */ = {
-			isa = PBXGroup;
-			children = (
-				3BED98941E865241000EFF2B /* dict_tenghai_s */,
-				3BED98951E865241000EFF2B /* dict_tenghai_t */,
-			);
-			path = tenghai;
 			sourceTree = "<group>";
 		};
 		4E6AEE4F19D2484B00931E8F /* Views */ = {
@@ -627,6 +630,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4ABD561E88BF1700D73EFA /* vocabulary_s.txt in Resources */,
+				3B4ABD4C1E88BF1700D73EFA /* dict_dioion_s.txt in Resources */,
+				3B4ABD531E88BF1700D73EFA /* dict_suantau_t.txt in Resources */,
+				3B4ABD501E88BF1700D73EFA /* dict_riaupeng_s.txt in Resources */,
+				3B4ABD521E88BF1700D73EFA /* dict_suantau_s.txt in Resources */,
+				3B4ABD511E88BF1700D73EFA /* dict_riaupeng_t.txt in Resources */,
+				3B4ABD4A1E88BF1700D73EFA /* dict_dieziu_s.txt in Resources */,
+				3B4ABD571E88BF1700D73EFA /* vocabulary_t.txt in Resources */,
+				3B4ABD4B1E88BF1700D73EFA /* dict_dieziu_t.txt in Resources */,
+				3B4ABD541E88BF1700D73EFA /* dict_tenghai_s.txt in Resources */,
+				3B4ABD4E1E88BF1700D73EFA /* dict_gekion_s.txt in Resources */,
+				3B4ABD4F1E88BF1700D73EFA /* dict_gekion_t.txt in Resources */,
+				3B4ABD551E88BF1700D73EFA /* dict_tenghai_t.txt in Resources */,
+				3B4ABD4D1E88BF1700D73EFA /* dict_dioion_t.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,20 +651,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BED98A31E865241000EFF2B /* vocabulary in Resources */,
-				3BED989A1E865241000EFF2B /* dict_dioion_t in Resources */,
-				3BED98A21E865241000EFF2B /* dict_tenghai_t in Resources */,
-				3BED98991E865241000EFF2B /* dict_dioion_s in Resources */,
-				3BED989F1E865241000EFF2B /* dict_suantau_s in Resources */,
-				3BED98981E865241000EFF2B /* dict_dieziu_t in Resources */,
-				3BED989E1E865241000EFF2B /* dict_riaupeng_t in Resources */,
-				3BED98A01E865241000EFF2B /* dict_suantau_t in Resources */,
-				3BED989C1E865241000EFF2B /* dict_gekion_t in Resources */,
-				3BED98A11E865241000EFF2B /* dict_tenghai_s in Resources */,
-				3BED98971E865241000EFF2B /* dict_dieziu_s in Resources */,
 				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,
-				3BED989B1E865241000EFF2B /* dict_gekion_s in Resources */,
-				3BED989D1E865241000EFF2B /* dict_riaupeng_s in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

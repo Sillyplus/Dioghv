@@ -255,11 +255,31 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
             // Do nothing
         }))
         alert.addAction(UIAlertAction(title: "确认", style: .default, handler: { (action) in
-            print("确认生成")
+            HUD.show(.progress)
+            self.delay(1, closure: {
+                // Update DB here 
+                let area = Zeus.singleton.primaryArea!
+                let type = Zeus.singleton.chineseType!
+                let buildState = Zeus.buildSource(WithPrimaryArea: area, AndType: type)
+                switch buildState {
+                case .success:
+                    HUD.flash(.success, delay: 1)
+                    print("确认生成")
+                case .failed:
+                    HUD.flash(.error, delay: 1)
+                    print("生成失败")
+                case .exist:
+                    HUD.flash(.labeledSuccess(title: "数据已存在", subtitle: nil))
+                }
+            })
         }))
         self.present(alert, animated: true) {
-            // Do Something after alert presented
+            // Do nothing
         }
+    }
+    
+    func delay(_ delay: Double, closure:@escaping () -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
     
 }
