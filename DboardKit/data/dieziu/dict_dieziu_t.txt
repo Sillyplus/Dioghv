@@ -149,7 +149,6 @@
 砟 za3
 詐 za3
 鮓 za3
-𠷿 zah4
 卡 zah8
 柵 zah8
 炸 zah8
@@ -971,7 +970,6 @@
 蔽 bi6
 被 bi6
 閉 bi6
-𢲾 bi6
 贔 bi6
 鞴 bi6
 鞁 bi6
@@ -2487,7 +2485,6 @@
 八 boih4
 批 poi1
 買 bhoi2
-𠁞 bhoi6
 賣 bhoi7
 堤 doi1
 底 doi2
@@ -2647,7 +2644,6 @@
 糊 gou5
 靠 gou6
 箍 kou1
-𥸱 kou1
 圈 kou1
 苦 kou2
 許 kou2
@@ -3614,7 +3610,6 @@
 痛 tong3
 慟 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3725,7 +3720,6 @@
 空 kong3
 鞚 kong3
 柝 kok4
-𣟄 kok4
 哭 kok4
 嚳 kok4
 梏 kok4
@@ -3979,7 +3973,6 @@
 騁 peng3
 珀 pek4
 碧 pek4
-𤏡 pek4
 劈 pek4
 匐 pek4
 擗 pek4
@@ -4950,7 +4943,6 @@
 約 ieh4
 姚 ie5
 窯 ie5
-𡩴 ie5
 窯 ie5
 藥 ieh8
 表 bie1
@@ -5652,7 +5644,6 @@
 壤 riang2
 瀼 riang2
 攘 riang2
-𧟄 riang2
 禳 riang2
 釀 riang2
 攘 riang5
@@ -6520,7 +6511,6 @@
 鋇 bue6
 掊 bue6
 倍 bue6
-𦮷 bue6
 焙 bue7
 坯 pue1
 胚 pue1
@@ -7171,7 +7161,6 @@
 魃 buek8
 鼥 buek8
 鵓 buek8
-𥎱 buek8
 藩 pueng1
 藩 pueng1
 墦 pueng1
@@ -8438,8 +8427,6 @@
 線 suan3
 饊 suan3
 腺 suan5
-
-#  補字音，按字母序排列
 啊 a7
 放 bang3
 瓣 bang7
@@ -8509,7 +8496,6 @@
 留 lau5
 流 lau5
 叻 leh4
-𥺴 liem3
 唔 m6
 蠓 mang2
 暝 me5

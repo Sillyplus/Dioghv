@@ -149,7 +149,6 @@
 砟 za3
 诈 za3
 鲊 za3
-𠷿 zah4
 卡 zah8
 栅 zah8
 炸 zah8
@@ -369,7 +368,6 @@
 螺 lo5
 瘰 lo5
 蠃 lo5
-𫌨 lo5
 牢 lo5
 漯 lo5
 落 loh8
@@ -466,7 +464,6 @@
 枣 zo2
 做 zo3
 作 zoh4
-𪮖 zoh4
 槽 zo5
 佐 zo6
 助 zo6
@@ -971,7 +968,6 @@
 蔽 bi6
 被 bi6
 闭 bi6
-𢲾 bi6
 赑 bi6
 鞴 bi6
 鞁 bi6
@@ -2326,7 +2322,6 @@
 茭 gau1
 句 gau1
 蛟 gau1
-𫐖 gau1
 郊 gau1
 钩 gau1
 槔 gau1
@@ -2523,13 +2518,11 @@
 蟹 hoi6
 节 zoih4
 截 zoih8
-𦭶 soi1
 嘶 soi1
 洗 soi2
 洒 soi2
 洒 soi2
 细 soi3
-𩐅 soih4
 乌 ou1
 钨 ou1
 妪 ou2
@@ -3014,14 +3007,12 @@
 奸 gang1
 奸 gang1
 蕑 gang1
-𫈉 gang1
 冈 gang1
 岗 gang1
 工 gang1
 杆 gang1
 江 gang1
 竿 gang1
-𥐻 gang1
 纲 gang1
 罡 gang1
 艰 gang1
@@ -3401,7 +3392,6 @@
 磕 kap4
 阖 kap4
 岩 ngam5
-𪨷 ngam5
 岩 ngam5
 癌 ngam5
 蚶 ham1
@@ -3699,7 +3689,6 @@
 杠 gong3
 汞 gong3
 赣 gong3
-𫎬 gong3
 灨 gong3
 供 gong3
 啯 gok4
@@ -3810,7 +3799,6 @@
 纵 zong3
 疭 zong3
 嘱 zok4
-𣃁 zok4
 瞩 zok4
 㔉 zok4
 祝 zok4
@@ -3979,7 +3967,6 @@
 骋 peng3
 珀 pek4
 碧 pek4
-𤏡 pek4
 劈 pek4
 匐 pek4
 擗 pek4
@@ -4249,7 +4236,6 @@
 掯 keng2
 啃 keng2
 庆 keng3
-𦼖 keng3
 罄 keng3
 磬 keng3
 曲 kek4
@@ -4722,7 +4708,6 @@
 芨 gip8
 钦 kim1
 嵚 kim1
-𡼲 kim1
 衾 kim1
 衿 kim1
 襟 kim1
@@ -4950,7 +4935,6 @@
 约 ieh4
 姚 ie5
 窑 ie5
-𡩴 ie5
 窑 ie5
 药 ieh8
 表 bie1
@@ -5365,10 +5349,8 @@
 窍 kiou3
 乔 kiou5
 侨 kiou5
-𫏋 kiou5
 荞 kiou5
 鞒 kiou5
-𥁢 kiou5
 荍 kiou5
 翘 kiou5
 橇 kiou5
@@ -6063,7 +6045,6 @@
 魇 iem3
 压 iep4
 擪 iep4
-𢬍 iep4
 靥 iep4
 盐 iem5
 炎 iem7
@@ -6185,7 +6166,6 @@
 芡 kiem6
 俨 ngiem2
 䶮 ngiem2
-𤞤 ngiem2
 严 ngiem5
 阎 ngiem5
 酽 ngiem5
@@ -6244,7 +6224,6 @@
 苫 siem2
 闪 siem2
 陕 siem2
-𥅴 siem2
 睒 siem2
 涩 siep4
 霎 siep4
@@ -6425,7 +6404,6 @@
 辣 luah8
 柯 gua1
 呱 gua1
-𧿼 gua1
 割 guah4
 渴 guah4
 葛 guah4
@@ -6520,7 +6498,6 @@
 钡 bue6
 掊 bue6
 倍 bue6
-𦮷 bue6
 焙 bue7
 坯 pue1
 胚 pue1
@@ -6661,7 +6638,6 @@
 逶 ui2
 韪 ui2
 喂 ui2
-𫗪 ui2
 畏 ui3
 谓 ui3
 为 ui5
@@ -6806,7 +6782,6 @@
 腓 hui1
 菲 hui1
 辉 hui1
-𪸩 hui1
 霏 hui1
 啡 hui1
 隳 hui1
@@ -7171,7 +7146,6 @@
 魃 buek8
 鼥 buek8
 鹁 buek8
-𥎱 buek8
 藩 pueng1
 藩 pueng1
 墦 pueng1
@@ -7240,7 +7214,6 @@
 鸾 lueng5
 峦 lueng5
 滦 lueng5
-𪢮 lueng5
 孪 lueng5
 栾 lueng5
 乱 lueng6
@@ -8438,8 +8411,6 @@
 线 suan3
 馓 suan3
 腺 suan5
-
-#  补字音，按字母序排列
 啊 a7
 放 bang3
 瓣 bang7
@@ -8509,7 +8480,6 @@
 留 lau5
 流 lau5
 叻 leh4
-𥺴 liem3
 唔 m6
 蠓 mang2
 暝 me5

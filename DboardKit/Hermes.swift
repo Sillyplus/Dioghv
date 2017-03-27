@@ -52,13 +52,14 @@ extension Hermes {
             return ret
         }
         
+        let tableName = Zeus.stringNameBy(PrimaryArea: Zeus.singleton.primaryArea!, AndType: Zeus.singleton.chineseType!)
         if let db = dbM.connection {
-            let tb = Table("dieziu")
+            let tb = Table(tableName)
             var likeString = "%"
             for c in str.characters {
                 likeString = likeString + "\(c)" + "%"
             }
-            let query = tb.filter(Zeus.pronunciationEx.like(likeString)).order(Zeus.frequencyEx.desc).limit(20)
+            let query = tb.filter(Zeus.pronunciationEx.like(likeString)).order(Zeus.frequencyEx.desc).limit(30)
             
             do {
                 for row in try db.prepare(query) {

@@ -149,7 +149,6 @@
 砟 za3
 诈 za3
 鲊 za3
-𠷿 zah4
 卡 zah8
 栅 zah8
 炸 zah8
@@ -369,7 +368,6 @@
 螺 lo5
 瘰 lo5
 蠃 lo5
-𫌨 lo5
 牢 lo5
 漯 lo5
 落 loh8
@@ -3482,7 +3480,6 @@
 𢶍 sap4
 靸 sap4
 飒 sap4
-𧐔 sap4
 翁 ong1
 嗡 ong1
 䩺 ong1
@@ -3614,7 +3611,6 @@
 痛 tong3
 恸 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3699,7 +3695,6 @@
 杠 gong3
 汞 gong3
 赣 gong3
-𫎬 gong3
 灨 gong3
 供 gong3
 啯 gok4
@@ -3725,7 +3720,6 @@
 空 kong3
 鞚 kong3
 柝 kok4
-𣟄 kok4
 哭 kok4
 喾 kok4
 梏 kok4
@@ -3811,7 +3805,6 @@
 疭 zong3
 怂 zong3
 嘱 zok4
-𣃁 zok4
 瞩 zok4
 㔉 zok4
 祝 zok4
@@ -4123,7 +4116,6 @@
 惕 tek4
 慝 tek4
 趯 tek4
-𫛶 tek4
 鷘 tek4
 陟 tek4
 骘 tek4
@@ -4254,7 +4246,6 @@
 掯 keng2
 啃 keng2
 庆 keng3
-𦼖 keng3
 罄 keng3
 磬 keng3
 曲 kek4
@@ -8438,8 +8429,6 @@
 线 suan3
 馓 suan3
 腺 suan5
-
-#  补字音，按字母序排列
 啊 a7
 办 bain7
 瓣 bain7
@@ -8553,7 +8542,6 @@
 悬 ngui5
 染 ni2
 奶 ni6
-𥺴 nim3
 两 no6
 馁 nui2
 厄 oh4

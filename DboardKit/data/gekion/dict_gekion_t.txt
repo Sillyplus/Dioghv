@@ -149,7 +149,6 @@
 砟 za3
 詐 za3
 鮓 za3
-𠷿 zah4
 卡 zah8
 柵 zah8
 炸 zah8
@@ -2525,13 +2524,11 @@
 蟹 hoi6
 節 zoih4
 截 zoih8
-𦭶 soi1
 嘶 soi1
 洗 soi2
 灑 soi2
 灑 soi2
 細 soi3
-𩐅 soih4
 烏 ou1
 鎢 ou1
 嫗 ou2
@@ -2674,7 +2671,6 @@
 糊 gou5
 靠 gou6
 箍 kou1
-𥸱 kou1
 圈 kou1
 苦 kou2
 許 kou2
@@ -2915,7 +2911,6 @@
 洞 dang7
 峝 dang7
 峒 dang7
-繨 dak8
 值 dak8
 度 dak8
 踱 dak8
@@ -3041,14 +3036,12 @@
 奸 gang1
 奸 gang1
 蕑 gang1
-蕳 gang1
 岡 gang1
 崗 gang1
 工 gang1
 杆 gang1
 江 gang1
 竿 gang1
-碙 gang1
 綱 gang1
 罡 gang1
 艱 gang1
@@ -3334,10 +3327,8 @@
 探 tam3
 褟 tap4
 錔 tap4
-𩷽 tap4
 撢 tam5
 撣 tam5
-贉 tam5
 痰 tam5
 曇 tam5
 蕁 tam5
@@ -3427,7 +3418,6 @@
 磕 kap4
 闔 kap4
 巖 ngam5
-巗 ngam5
 巖 ngam5
 癌 ngam5
 蚶 ham1
@@ -3508,7 +3498,6 @@
 𢶍 sap4
 靸 sap4
 颯 sap4
-𧐔 sap4
 翁 ong1
 嗡 ong1
 䩺 ong1
@@ -3615,7 +3604,6 @@
 痛 tong3
 慟 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3700,7 +3688,6 @@
 槓 gong3
 汞 gong3
 贛 gong3
-贑 gong3
 灨 gong3
 供 gong3
 嘓 gok4
@@ -3726,7 +3713,6 @@
 空 kong3
 鞚 kong3
 柝 kok4
-𣟄 kok4
 哭 kok4
 嚳 kok4
 梏 kok4
@@ -3806,7 +3792,6 @@
 瘲 zong3
 衆 zong3
 囑 zok4
-斸 zok4
 矚 zok4
 劚 zok4
 祝 zok4
@@ -3963,7 +3948,6 @@
 騁 peng3
 珀 pek4
 碧 pek4
-𤏡 pek4
 劈 pek4
 匐 pek4
 擗 pek4
@@ -4103,7 +4087,6 @@
 惕 tek4
 慝 tek4
 趯 tek4
-鶒 tek4
 鷘 tek4
 陟 tek4
 騭 tek4
@@ -4235,7 +4218,6 @@
 掯 keng2
 啃 keng2
 慶 keng3
-檾 keng3
 罄 keng3
 磬 keng3
 曲 kek4
@@ -4744,7 +4726,6 @@
 芨 gip8
 欽 kim1
 嶔 kim1
-𡼲 kim1
 衾 kim1
 衿 kim1
 襟 kim1
@@ -4969,7 +4950,6 @@
 約 ioh4
 姚 io5
 窯 io5
-𡩴 io5
 窯 io5
 藥 ioh8
 表 bio1
@@ -5385,10 +5365,8 @@
 竅 kiau3
 喬 kiau5
 僑 kiau5
-蹻 kiau5
 蕎 kiau5
 鞽 kiau5
-䀉 kiau5
 荍 kiau5
 翹 kiau5
 橇 kiau5
@@ -5674,7 +5652,6 @@
 壤 riang2
 瀼 riang2
 攘 riang2
-𧟄 riang2
 禳 riang2
 釀 riang2
 攘 riang5
@@ -6124,7 +6101,6 @@
 魘 iam3
 壓 iap4
 擪 iap4
-擫 iap4
 靨 iap4
 鹽 iam5
 炎 iam7
@@ -6303,7 +6279,6 @@
 苫 siam2
 閃 siam2
 陝 siam2
-䀹 siam2
 睒 siam2
 澀 siap4
 霎 siap4
@@ -6479,7 +6454,6 @@
 辣 luah8
 柯 gua1
 呱 gua1
-𧿼 gua1
 寡 gua2
 果 gua2
 割 guah4
@@ -6576,7 +6550,6 @@
 鋇 bue6
 掊 bue6
 倍 bue6
-𦮷 bue6
 焙 bue7
 坯 pue1
 胚 pue1
@@ -6717,7 +6690,6 @@
 逶 ui2
 韙 ui2
 喂 ui2
-餧 ui2
 畏 ui3
 謂 ui3
 爲 ui5
@@ -7277,7 +7249,6 @@
 鸞 luang5
 巒 luang5
 灤 luang5
-圞 luang5
 孿 luang5
 欒 luang5
 亂 luang6
@@ -7958,7 +7929,6 @@
 塼 zng1
 甎 zng1
 葬 zng3
-𠿺 zng3
 鑽 zng3
 狀 zng7
 村 cng1

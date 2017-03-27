@@ -149,7 +149,6 @@
 砟 za3
 诈 za3
 鲊 za3
-𠷿 zah4
 卡 zah8
 栅 zah8
 炸 zah8
@@ -369,7 +368,6 @@
 螺 lo5
 瘰 lo5
 蠃 lo5
-𫌨 lo5
 牢 lo5
 漯 lo5
 落 loh8
@@ -2523,13 +2521,11 @@
 蟹 hoi6
 节 zoih4
 截 zoih8
-𦭶 soi1
 嘶 soi1
 洗 soi2
 洒 soi2
 洒 soi2
 细 soi3
-𩐅 soih4
 乌 ou1
 钨 ou1
 妪 ou2
@@ -2647,7 +2643,6 @@
 糊 gou5
 靠 gou6
 箍 kou1
-𥸱 kou1
 圈 kou1
 苦 kou2
 许 kou2
@@ -2888,7 +2883,6 @@
 洞 dang7
 峝 dang7
 峒 dang7
-𫄤 dak8
 值 dak8
 度 dak8
 踱 dak8
@@ -3014,14 +3008,12 @@
 奸 gang1
 奸 gang1
 蕑 gang1
-𫈉 gang1
 冈 gang1
 岗 gang1
 工 gang1
 杆 gang1
 江 gang1
 竿 gang1
-𥐻 gang1
 纲 gang1
 罡 gang1
 艰 gang1
@@ -3614,7 +3606,6 @@
 痛 tong3
 恸 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3984,7 +3975,6 @@
 骋 peng3
 珀 pek4
 碧 pek4
-𤏡 pek4
 劈 pek4
 匐 pek4
 擗 pek4
@@ -4123,7 +4113,6 @@
 惕 tek4
 慝 tek4
 趯 tek4
-𫛶 tek4
 鷘 tek4
 陟 tek4
 骘 tek4
@@ -4254,7 +4243,6 @@
 掯 keng2
 啃 keng2
 庆 keng3
-𦼖 keng3
 罄 keng3
 磬 keng3
 曲 kek4
@@ -5374,10 +5362,8 @@
 窍 kiou3
 乔 kiou5
 侨 kiou5
-𫏋 kiou5
 荞 kiou5
 鞒 kiou5
-𥁢 kiou5
 荍 kiou5
 翘 kiou5
 橇 kiou5
@@ -6251,7 +6237,6 @@
 苫 siang2
 闪 siang2
 陕 siang2
-𥅴 siang2
 睒 siang2
 涩 siak4
 霎 siak4

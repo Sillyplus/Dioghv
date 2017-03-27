@@ -242,7 +242,13 @@ extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource 
             // Do nothing
         }))
         alert.addAction(UIAlertAction(title: "确认", style: .default, handler: { (action) in
-            print("确认重置")
+            HUD.show(.progress)
+            self.delay(1, closure: { 
+                let tableName = Zeus.stringNameBy(PrimaryArea: Zeus.singleton.primaryArea!, AndType: Zeus.singleton.chineseType!)
+                Zeus.dropTable(named: tableName)
+                print("确认重置")
+                HUD.flash(.success)
+            })
         }))
         self.present(alert, animated: true) { 
             // Do Something after alert presented

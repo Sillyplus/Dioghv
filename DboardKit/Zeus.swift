@@ -88,7 +88,7 @@ public class Zeus {
 
 extension Zeus {
     
-     class func stringNameBy(PrimaryArea area: DboardPrimaryArea, AndType type: DboardChineseType) -> String {
+     public class func stringNameBy(PrimaryArea area: DboardPrimaryArea, AndType type: DboardChineseType) -> String {
         var ret = ""
         switch area {
         case .dieziu:

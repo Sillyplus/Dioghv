@@ -2523,13 +2523,11 @@
 蟹 hoi6
 節 zoih4
 截 zoih8
-𦭶 soi1
 嘶 soi1
 洗 soi2
 灑 soi2
 灑 soi2
 細 soi3
-𩐅 soih4
 烏 ou1
 鎢 ou1
 嫗 ou2
@@ -3308,7 +3306,6 @@
 探 tang3
 褟 tak4
 錔 tak4
-𩷽 tak4
 撢 tang5
 撣 tang5
 贉 tang5
@@ -3482,7 +3479,6 @@
 𢶍 sak4
 靸 sak4
 颯 sak4
-𧐔 sak4
 翁 ong1
 嗡 ong1
 䩺 ong1
@@ -3614,7 +3610,6 @@
 痛 tong3
 慟 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3725,7 +3720,6 @@
 空 kong3
 鞚 kong3
 柝 kok4
-𣟄 kok4
 哭 kok4
 嚳 kok4
 梏 kok4
@@ -5661,7 +5655,6 @@
 壤 riang2
 瀼 riang2
 攘 riang2
-𧟄 riang2
 禳 riang2
 釀 riang2
 攘 riang5
@@ -6424,7 +6417,6 @@
 辣 luah8
 柯 gua1
 呱 gua1
-𧿼 gua1
 割 guah4
 渴 guah4
 葛 guah4
@@ -6519,7 +6511,6 @@
 鋇 bue6
 掊 bue6
 倍 bue6
-𦮷 bue6
 焙 bue7
 坯 pue1
 胚 pue1
@@ -7171,7 +7162,6 @@
 魃 buak8
 鼥 buak8
 鵓 buak8
-𥎱 buak8
 藩 puang1
 藩 puang1
 墦 puang1
@@ -7947,7 +7937,6 @@
 塼 zvng1
 甎 zvng1
 葬 zvng3
-𠿺 zvng3
 鑽 zvng3
 狀 zvng7
 村 cvng1

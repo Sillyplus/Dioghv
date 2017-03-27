@@ -149,7 +149,6 @@
 砟 za3
 诈 za3
 鲊 za3
-𠷿 zah4
 卡 zah8
 栅 zah8
 炸 zah8
@@ -367,7 +366,6 @@
 螺 lo5
 瘰 lo5
 蠃 lo5
-𫌨 lo5
 牢 lo5
 漯 lo5
 落 loh8
@@ -969,7 +967,6 @@
 蔽 bi6
 被 bi6
 闭 bi6
-𢲾 bi6
 赑 bi6
 鞴 bi6
 鞁 bi6
@@ -1013,7 +1010,6 @@
 羝 di1
 蜘 di1
 踟 di1
-𩭲 di1
 袛 di2
 胝 di2
 底 di2
@@ -2325,7 +2321,6 @@
 茭 gau1
 句 gau1
 蛟 gau1
-𫐖 gau1
 郊 gau1
 钩 gau1
 槔 gau1
@@ -2524,13 +2519,11 @@
 蟹 hoi6
 节 zoih4
 截 zoih8
-𦭶 soi1
 嘶 soi1
 洗 soi2
 洒 soi2
 洒 soi2
 细 soi3
-𩐅 soih4
 乌 ou1
 钨 ou1
 妪 ou2
@@ -2649,7 +2642,6 @@
 糊 gou5
 靠 gou6
 箍 kou1
-𥸱 kou1
 圈 kou1
 苦 kou2
 许 kou2
@@ -2779,7 +2771,6 @@
 惮 dang6
 菪 dang6
 凼 dang6
-𫄤 dak8
 值 dak8
 度 dak8
 踱 dak8
@@ -2840,7 +2831,6 @@
 奸 gang1
 奸 gang1
 蕑 gang1
-𫈉 gang1
 杆 gang1
 竿 gang1
 艰 gang1
@@ -3144,7 +3134,6 @@
 岗 gang1
 工 gang1
 江 gang1
-𥐻 gang1
 纲 gang1
 罡 gang1
 茳 gang1
@@ -3311,10 +3300,8 @@
 探 tam3
 褟 tap4
 錔 tap4
-𩷽 tap4
 撢 tam5
 掸 tam5
-𫎫 tam5
 痰 tam5
 昙 tam5
 荨 tam5
@@ -3404,7 +3391,6 @@
 磕 kap4
 阖 kap4
 岩 ngam5
-𪨷 ngam5
 岩 ngam5
 癌 ngam5
 蚶 ham1
@@ -3485,7 +3471,6 @@
 𢶍 sap4
 靸 sap4
 飒 sap4
-𧐔 sap4
 翁 ong1
 嗡 ong1
 䩺 ong1
@@ -3616,7 +3601,6 @@
 痛 tong3
 恸 tong3
 柝 tok4
-𣟄 tok4
 佟 tong5
 侗 tong5
 僮 tong5
@@ -3701,7 +3685,6 @@
 杠 gong3
 汞 gong3
 赣 gong3
-𫎬 gong3
 灨 gong3
 供 gong3
 啯 gok4
@@ -3727,7 +3710,6 @@
 空 kong3
 鞚 kong3
 柝 kok4
-𣟄 kok4
 哭 kok4
 喾 kok4
 梏 kok4
@@ -3813,7 +3795,6 @@
 疭 zong3
 怂 zong3
 嘱 zok4
-𣃁 zok4
 瞩 zok4
 㔉 zok4
 祝 zok4
@@ -3978,7 +3959,6 @@
 骋 peng3
 珀 pek4
 碧 pek4
-𤏡 pek4
 劈 pek4
 匐 pek4
 擗 pek4
@@ -4118,7 +4098,6 @@
 惕 tek4
 慝 tek4
 趯 tek4
-𫛶 tek4
 鷘 tek4
 陟 tek4
 骘 tek4
@@ -4251,7 +4230,6 @@
 掯 keng2
 啃 keng2
 庆 keng3
-𦼖 keng3
 罄 keng3
 磬 keng3
 曲 kek4
@@ -4733,7 +4711,6 @@
 芨 gip8
 钦 kim1
 嵚 kim1
-𡼲 kim1
 衾 kim1
 衿 kim1
 襟 kim1
@@ -4956,7 +4933,6 @@
 约 ioh4
 姚 io5
 窑 io5
-𡩴 io5
 窑 io5
 药 ioh8
 表 bio1
@@ -5372,10 +5348,8 @@
 窍 kiau3
 乔 kiau5
 侨 kiau5
-𫏋 kiau5
 荞 kiau5
 鞒 kiau5
-𥁢 kiau5
 荍 kiau5
 翘 kiau5
 橇 kiau5
@@ -5659,7 +5633,6 @@
 壤 riang2
 瀼 riang2
 攘 riang2
-𧟄 riang2
 禳 riang2
 酿 riang2
 攘 riang5
@@ -6190,7 +6163,6 @@
 芡 kiam6
 俨 ngiam2
 䶮 ngiam2
-𤞤 ngiam2
 严 ngiam5
 阎 ngiam5
 酽 ngiam5
@@ -6249,7 +6221,6 @@
 苫 siam2
 闪 siam2
 陕 siam2
-𥅴 siam2
 睒 siam2
 涩 siap4
 霎 siap4
@@ -6432,7 +6403,6 @@
 辣 luah8
 柯 gua1
 呱 gua1
-𧿼 gua1
 寡 gua2
 割 guah4
 渴 guah4
@@ -6529,7 +6499,6 @@
 钡 bue6
 掊 bue6
 倍 bue6
-𦮷 bue6
 焙 bue7
 坯 pue1
 胚 pue1
@@ -7229,7 +7198,6 @@
 暖 nuang2
 㬉 nuang2
 煖 nuang2
-𫗬 nuang2
 卵 luang2
 恋 luang3
 挛 luang3
@@ -7274,7 +7242,6 @@
 灌 guang3
 祼 guang3
 罐 guang3
-𨱌 guang3
 鑵 guang3
 颧 guang3
 鹳 guang3
@@ -7882,7 +7849,6 @@
 塼 zng1
 甎 zng1
 葬 zng3
-𠿺 zng3
 钻 zng3
 状 zng7
 村 cng1
