@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     var baseSettingCell: UITableViewCell = UITableViewCell()
     var uiSettingCell: UITableViewCell = UITableViewCell()
     var proSettingCell: UITableViewCell = UITableViewCell()
-    var trainningCell: UITableViewCell = UITableViewCell()
+    var praticeCell: UITableViewCell = UITableViewCell()
     var courseCell: UITableViewCell = UITableViewCell()
     var aboutUsCell: UITableViewCell = UITableViewCell()
     var thanksCell: UITableViewCell = UITableViewCell()
@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Dboard"
+        self.navigationItem.title = "潮语"
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         tableView = UITableView(frame: self.view.bounds, style: .grouped)
@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
         baseSettingCell.accessoryType = .disclosureIndicator
         uiSettingCell.accessoryType = .disclosureIndicator
         proSettingCell.accessoryType = .disclosureIndicator
-        trainningCell.accessoryType = .disclosureIndicator
+        praticeCell.accessoryType = .disclosureIndicator
         courseCell.accessoryType = .disclosureIndicator
         aboutUsCell.accessoryType = .disclosureIndicator
         thanksCell.accessoryType = .disclosureIndicator
@@ -47,10 +47,10 @@ class HomeViewController: UIViewController {
         baseSettingCell.textLabel?.text = "基础设置"
         uiSettingCell.textLabel?.text = "界面设置"
         proSettingCell.textLabel?.text = "高级设置"
-        trainningCell.textLabel?.text = "练习"
+        praticeCell.textLabel?.text = "练习"
         courseCell.textLabel?.text = "教程"
-        aboutUsCell.textLabel?.text = "关于"
         thanksCell.textLabel?.text = "感谢"
+        aboutUsCell.textLabel?.text = "关于"
         
 
     }
@@ -119,7 +119,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 2:
             switch indexPath.row {
             case 0:
-                return self.trainningCell
+                return self.praticeCell
             case 1:
                 return self.courseCell
             default:
@@ -128,9 +128,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             switch indexPath.row {
             case 0:
-                return self.aboutUsCell
-            case 1:
                 return self.thanksCell
+            case 1:
+                return self.aboutUsCell
             default:
                 fatalError("Unknow Cell At Section 3")
             }
@@ -145,7 +145,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            let _ = "Donothing"
+            let guideVC = GuideViewController()
+            self.show(guideVC, sender: self)
         case 1:
             switch indexPath.row {
             case 0:
@@ -154,25 +155,30 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case 1:
                 let _ = "Donothing"
             case 2:
-                let _ = "Donothing"
+                let advanceSettingVC = AdvanceSettingViewController()
+                self.show(advanceSettingVC, sender: self)
             default:
                 fatalError("Unoknow Row At Section 1")
             }
         case 2:
             switch indexPath.row {
             case 0:
-                let _ = "Donothing"
+                let praticeVC = PraticeViewController()
+                self.show(praticeVC, sender: self)
             case 1:
-                let _ = "Donothing"
+                let courseVC = CourseViewController()
+                self.show(courseVC, sender: self)
             default:
                 fatalError("Unknow Cell At Section 2")
             }
         case 3:
             switch indexPath.row {
             case 0:
-                let _ = "Donothing"
+                let thanksVC = ThanksViewController()
+                self.show(thanksVC, sender: self)
             case 1:
-                let _ = "Donothing"
+                let aboutUsVC = AboutUsViewController()
+                self.show(aboutUsVC, sender: self)
             default:
                 fatalError("Unknow Cell At Section 3")
             }

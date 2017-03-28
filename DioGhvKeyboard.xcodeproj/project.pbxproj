@@ -35,12 +35,17 @@
 		3BA31F421E7F57350073DBEF /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F411E7F57350073DBEF /* Hermes.swift */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
 		3BB1A7021E8A442400453593 /* Dboard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BB1A7011E8A442400453593 /* Dboard.sqlite3 */; };
+		3BB1A7041E8A4CD700453593 /* AdvanceSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A7031E8A4CD700453593 /* AdvanceSettingViewController.swift */; };
+		3BB1A7061E8A4D0900453593 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A7051E8A4D0900453593 /* AboutUsViewController.swift */; };
+		3BB1A7081E8A4D1B00453593 /* ThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A7071E8A4D1B00453593 /* ThanksViewController.swift */; };
+		3BB1A70A1E8A4D3300453593 /* PraticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A7091E8A4D3300453593 /* PraticeViewController.swift */; };
+		3BB1A70C1E8A4D8300453593 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A70B1E8A4D8300453593 /* CourseViewController.swift */; };
+		3BB1A70E1E8A4DA400453593 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1A70D1E8A4DA400453593 /* GuideViewController.swift */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
 		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
 		3BB87A8C1E6EAA6300711FED /* Dboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8B1E6EAA6300711FED /* Dboard.swift */; };
 		3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */; };
-		3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67881E6E9E0800135DFE /* ViewController.swift */; };
 		3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */; };
 		3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD678C1E6E9E0800135DFE /* Images.xcassets */; };
 		3BCD67961E6EA21300135DFE /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67951E6EA21300135DFE /* Key.swift */; };
@@ -144,12 +149,17 @@
 		3BA31F411E7F57350073DBEF /* Hermes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
 		3BB1A7011E8A442400453593 /* Dboard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dboard.sqlite3; sourceTree = "<group>"; };
+		3BB1A7031E8A4CD700453593 /* AdvanceSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvanceSettingViewController.swift; sourceTree = "<group>"; };
+		3BB1A7051E8A4D0900453593 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		3BB1A7071E8A4D1B00453593 /* ThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksViewController.swift; sourceTree = "<group>"; };
+		3BB1A7091E8A4D3300453593 /* PraticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PraticeViewController.swift; sourceTree = "<group>"; };
+		3BB1A70B1E8A4D8300453593 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		3BB1A70D1E8A4DA400453593 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
 		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
 		3BB87A8B1E6EAA6300711FED /* Dboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dboard.swift; path = Dboard/Dboard.swift; sourceTree = "<group>"; };
 		3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DboardCandidate.swift; path = Dboard/DboardCandidate.swift; sourceTree = "<group>"; };
-		3BCD67881E6E9E0800135DFE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BCD678C1E6E9E0800135DFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BCD678D1E6E9E0800135DFE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,9 +351,14 @@
 		3BCD67871E6E9E0800135DFE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3BCD67881E6E9E0800135DFE /* ViewController.swift */,
 				3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */,
+				3BB1A70D1E8A4DA400453593 /* GuideViewController.swift */,
 				3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */,
+				3BB1A7031E8A4CD700453593 /* AdvanceSettingViewController.swift */,
+				3BB1A7091E8A4D3300453593 /* PraticeViewController.swift */,
+				3BB1A70B1E8A4D8300453593 /* CourseViewController.swift */,
+				3BB1A7071E8A4D1B00453593 /* ThanksViewController.swift */,
+				3BB1A7051E8A4D0900453593 /* AboutUsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -794,10 +809,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */,
+				3BB1A7041E8A4CD700453593 /* AdvanceSettingViewController.swift in Sources */,
+				3BB1A70C1E8A4D8300453593 /* CourseViewController.swift in Sources */,
+				3BB1A70E1E8A4DA400453593 /* GuideViewController.swift in Sources */,
 				3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */,
-				3BCD67911E6E9E0800135DFE /* ViewController.swift in Sources */,
 				3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */,
+				3BB1A7061E8A4D0900453593 /* AboutUsViewController.swift in Sources */,
+				3BB1A70A1E8A4D3300453593 /* PraticeViewController.swift in Sources */,
 				3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */,
+				3BB1A7081E8A4D1B00453593 /* ThanksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

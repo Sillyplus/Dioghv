@@ -75,13 +75,33 @@ extension Hermes {
         return ret
     }
     
-    public func predictions(with str: String) -> [String] {
+    public func predictions(with str: String) -> [Candy] {
         // TODO: Return predictions from selected string str
         return []
     }
     
     public func confirm(selected candyId: Int64) {
-        // TODO: Update selected string str's frequency
+        
+        let tableName = Zeus.stringNameBy(PrimaryArea: Zeus.singleton.primaryArea!, AndType: Zeus.singleton.chineseType!)
+        if let db = dbM.connection {
+            let tb = Table(tableName)
+            
+            do {
+                var freq = 0.0
+                if let candy = try db.pluck(tb.filter(Zeus.idEx == candyId)) {
+                    freq = candy[Zeus.frequencyEx]
+                } else {
+                    print("Get Freq. Failed")
+                }
+                if try db.run(tb.filter(Zeus.idEx == candyId).update(Zeus.frequencyEx <- (freq + 1.0))) == 1 {
+                    print("Update Freq. Success")
+                } else {
+                    print("No Freq. Updated")
+                }
+            } catch {
+                print("Update Freq. Failed")
+            }
+        }
     }
     
 }
