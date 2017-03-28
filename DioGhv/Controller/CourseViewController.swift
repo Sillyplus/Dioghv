@@ -10,11 +10,20 @@ import UIKit
 
 class CourseViewController: UIViewController {
 
+    let courseWebView = UIWebView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.navigationItem.title = "教程"
-        // Do any additional setup after loading the view.
+        
+        self.view.addSubview(courseWebView)
+        courseWebView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
+        courseWebView.loadRequest(URLRequest(url: URL(string: "https://kahaani.github.io/gatian")!))
+        
     }
 
     override func didReceiveMemoryWarning() {
