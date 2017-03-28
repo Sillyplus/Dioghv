@@ -34,6 +34,7 @@
 		3BA31F401E7E4B4F0073DBEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */; };
 		3BA31F421E7F57350073DBEF /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA31F411E7F57350073DBEF /* Hermes.swift */; };
 		3BAE438B1E744CAB003D0D32 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE438A1E744CAB003D0D32 /* Utilities.swift */; };
+		3BB1A7021E8A442400453593 /* Dboard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BB1A7011E8A442400453593 /* Dboard.sqlite3 */; };
 		3BB87A861E6EA78000711FED /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A841E6EA78000711FED /* Keyboard.swift */; };
 		3BB87A871E6EA78000711FED /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A851E6EA78000711FED /* Page.swift */; };
 		3BB87A891E6EA79E00711FED /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A881E6EA79E00711FED /* DirectionEnum.swift */; };
@@ -142,6 +143,7 @@
 		3BA31F3F1E7E4B4F0073DBEF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BA31F411E7F57350073DBEF /* Hermes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
 		3BAE438A1E744CAB003D0D32 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utility/Utilities.swift; sourceTree = "<group>"; };
+		3BB1A7011E8A442400453593 /* Dboard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dboard.sqlite3; sourceTree = "<group>"; };
 		3BB87A841E6EA78000711FED /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Model/Keyboard.swift; sourceTree = "<group>"; };
 		3BB87A851E6EA78000711FED /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Model/Page.swift; sourceTree = "<group>"; };
 		3BB87A881E6EA79E00711FED /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionEnum.swift; path = Model/DirectionEnum.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				3B4ABD451E88BF1700D73EFA /* tenghai */,
 				3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */,
 				3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */,
+				3BB1A7011E8A442400453593 /* Dboard.sqlite3 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 			files = (
 				3B4ABD561E88BF1700D73EFA /* vocabulary_s.txt in Resources */,
 				3B4ABD4C1E88BF1700D73EFA /* dict_dioion_s.txt in Resources */,
+				3BB1A7021E8A442400453593 /* Dboard.sqlite3 in Resources */,
 				3B4ABD531E88BF1700D73EFA /* dict_suantau_t.txt in Resources */,
 				3B4ABD501E88BF1700D73EFA /* dict_riaupeng_s.txt in Resources */,
 				3B4ABD521E88BF1700D73EFA /* dict_suantau_s.txt in Resources */,

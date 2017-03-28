@@ -72,6 +72,19 @@ public class Zeus {
     
     private init() {
         do {
+            // Copy prebuild database from bundle to app group container if the DB not exist
+            let dbPath = Utility.appGroupContainerPath()! + "/" + "Dboard.sqlite3"
+            let fileManager = FileManager.default
+            if !fileManager.fileExists(atPath: dbPath) {
+                let bundle = Bundle(for: Zeus.self)
+                let dbBundlepath = bundle.path(forResource: "Dboard", ofType: ".sqlite3")
+                do {
+                    try fileManager.copyItem(atPath: dbBundlepath!, toPath: dbPath)
+                } catch {
+                    print("Copy DB Failed")
+                }
+            }
+            
             self.connection = try Connection(Utility.appGroupContainerPath()! + "/" + "Dboard.sqlite3")
             print(self.connection ?? "No Connection")
         } catch {
