@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16E175b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2IN-Dn-7cm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Us View Controller-->
+        <scene sceneID="Xod-CN-H1a">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2IN-Dn-7cm" customClass="AboutUsViewController" customModule="DioGhv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="00y-is-0bh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibz-bM-Nif"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="otB-YN-iME">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="潮语" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-42-gel">
+                                <rect key="frame" x="104" y="86" width="168" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="o1N-Sl-yOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-QP-u3p">
+                                <rect key="frame" x="104" y="152" width="168" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="An3-rR-Kia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="潮语(Dboard)是一款基于潮汕话拼音方案的第三方输入法，希望通过本应用让更多人了解和使用潮汕话这门历史悠久，底蕴深厚的语言。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-gR-KlB">
+                                <rect key="frame" x="16" y="217" width="343" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright @ 2017-2017 Sillyplus. All Right Reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="koR-k6-xb3">
+                                <rect key="frame" x="16" y="625" width="343" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="XaX-53-H0W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dln-gR-KlB" firstAttribute="leading" secondItem="koR-k6-xb3" secondAttribute="leading" id="2m4-kn-nzp"/>
+                            <constraint firstItem="8Rl-42-gel" firstAttribute="leading" secondItem="otB-YN-iME" secondAttribute="leadingMargin" constant="88" id="AFr-7r-LYC"/>
+                            <constraint firstItem="2Df-QP-u3p" firstAttribute="top" secondItem="8Rl-42-gel" secondAttribute="bottom" constant="8" symbolic="YES" id="APG-kL-uxj"/>
+                            <constraint firstItem="Dln-gR-KlB" firstAttribute="trailing" secondItem="koR-k6-xb3" secondAttribute="trailing" id="CVm-fs-gh6"/>
+                            <constraint firstItem="Dln-gR-KlB" firstAttribute="trailing" secondItem="otB-YN-iME" secondAttribute="trailingMargin" id="H1F-Ou-gww"/>
+                            <constraint firstItem="Dln-gR-KlB" firstAttribute="top" secondItem="2Df-QP-u3p" secondAttribute="bottom" constant="44" id="M6a-p4-YZs"/>
+                            <constraint firstItem="8Rl-42-gel" firstAttribute="trailing" secondItem="2Df-QP-u3p" secondAttribute="trailing" id="Q8y-4B-alb"/>
+                            <constraint firstItem="8Rl-42-gel" firstAttribute="top" secondItem="00y-is-0bh" secondAttribute="bottom" constant="22" id="QWv-MW-k5F"/>
+                            <constraint firstItem="8Rl-42-gel" firstAttribute="leading" secondItem="2Df-QP-u3p" secondAttribute="leading" id="U8U-AE-UM4"/>
+                            <constraint firstItem="2Df-QP-u3p" firstAttribute="centerX" secondItem="Dln-gR-KlB" secondAttribute="centerX" id="bo6-C3-6fd"/>
+                            <constraint firstItem="Dln-gR-KlB" firstAttribute="leading" secondItem="otB-YN-iME" secondAttribute="leadingMargin" id="p6z-8u-x3j"/>
+                            <constraint firstItem="koR-k6-xb3" firstAttribute="bottom" secondItem="Dln-gR-KlB" secondAttribute="bottom" id="tNw-7e-DFV"/>
+                            <constraint firstAttribute="bottom" secondItem="koR-k6-xb3" secondAttribute="bottom" constant="20" symbolic="YES" id="tu5-7p-Fej"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q5s-Ud-kIj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuZ-d9-Ddu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="165.06746626686657"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wNf-Qn-N8t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2v2-78-Ie8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="joF-N7-2zn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2IN-Dn-7cm" kind="relationship" relationship="rootViewController" id="70x-BQ-oIN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIr-fd-Joz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="165.96701649175412"/>
+        </scene>
+    </scenes>
+</document>

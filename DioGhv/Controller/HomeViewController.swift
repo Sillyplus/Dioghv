@@ -174,10 +174,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             switch indexPath.row {
             case 0:
-                let thanksVC = ThanksViewController()
+                let thanksSB = UIStoryboard(name: "Thanks", bundle: nil)
+                let thanksVC = thanksSB.instantiateViewController(withIdentifier: "ThanksView")
                 self.show(thanksVC, sender: self)
             case 1:
-                let aboutUsVC = AboutUsViewController()
+                let aboutUsSB = UIStoryboard(name: "AboutUs", bundle: nil)
+                let aboutUsVC = aboutUsSB.instantiateViewController(withIdentifier: "AboutUsView")
                 self.show(aboutUsVC, sender: self)
             default:
                 fatalError("Unknow Cell At Section 3")
