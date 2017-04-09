@@ -104,4 +104,26 @@ extension Hermes {
         }
     }
     
+    
+    public func search(with word: String) -> [Row] {
+        var ret: [Row] = []
+
+        let tableName = Zeus.stringNameBy(PrimaryArea: Zeus.singleton.primaryArea!, AndType: Zeus.singleton.chineseType!)
+        if let db = dbM.connection {
+            let tb = Table(tableName)
+            let likeString = "%\(word)%"
+            let query = tb.filter(Zeus.nameEx.like(likeString)).order(Zeus.frequencyEx.desc)
+            do {
+                for row in try db.prepare(query) {
+                    ret.append(row)
+                }
+            } catch {
+                print("Prepare Data Failed")
+            }
+        } else {
+            print("Connect to DB Failed")
+        }
+        
+        return ret
+    }
 }

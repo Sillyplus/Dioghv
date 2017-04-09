@@ -25,6 +25,8 @@
 		3B4ABD551E88BF1700D73EFA /* dict_tenghai_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD471E88BF1700D73EFA /* dict_tenghai_t.txt */; };
 		3B4ABD561E88BF1700D73EFA /* vocabulary_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */; };
 		3B4ABD571E88BF1700D73EFA /* vocabulary_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */; };
+		3B6978851E987F050001FC7C /* WordCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6978831E987F050001FC7C /* WordCardTableViewCell.swift */; };
+		3B6978861E987F050001FC7C /* WordCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6978841E987F050001FC7C /* WordCardTableViewCell.xib */; };
 		3B9A2D251E723FEF009D7EB5 /* CandidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */; };
 		3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A2D2B1E739644009D7EB5 /* Utilities.swift */; };
 		3BA31F281E7B817A0073DBEF /* DboardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA31F261E7B817A0073DBEF /* DboardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -137,6 +139,8 @@
 		3B4ABD471E88BF1700D73EFA /* dict_tenghai_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_tenghai_t.txt; sourceTree = "<group>"; };
 		3B4ABD481E88BF1700D73EFA /* vocabulary_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary_s.txt; sourceTree = "<group>"; };
 		3B4ABD491E88BF1700D73EFA /* vocabulary_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary_t.txt; sourceTree = "<group>"; };
+		3B6978831E987F050001FC7C /* WordCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCardTableViewCell.swift; sourceTree = "<group>"; };
+		3B6978841E987F050001FC7C /* WordCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordCardTableViewCell.xib; sourceTree = "<group>"; };
 		3B9A2D241E723FEF009D7EB5 /* CandidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandidateButton.swift; path = Views/CandidateButton.swift; sourceTree = "<group>"; };
 		3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DioGhv.entitlements; path = ../DioGhv.entitlements; sourceTree = "<group>"; };
 		3B9A2D271E738F9B009D7EB5 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
@@ -391,6 +395,8 @@
 			children = (
 				3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */,
 				3B26F9211E8E6232006F104A /* Thanks.storyboard */,
+				3B6978831E987F050001FC7C /* WordCardTableViewCell.swift */,
+				3B6978841E987F050001FC7C /* WordCardTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				3B26F9201E8E5BE0006F104A /* AboutUs.storyboard in Resources */,
 				3B26F9221E8E6232006F104A /* Thanks.storyboard in Resources */,
 				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,
+				3B6978861E987F050001FC7C /* WordCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +824,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9A2D2C1E739644009D7EB5 /* Utilities.swift in Sources */,
+				3B6978851E987F050001FC7C /* WordCardTableViewCell.swift in Sources */,
 				3BB1A7041E8A4CD700453593 /* AdvanceSettingViewController.swift in Sources */,
 				3BB1A70C1E8A4D8300453593 /* CourseViewController.swift in Sources */,
 				3BB1A70E1E8A4DA400453593 /* GuideViewController.swift in Sources */,
