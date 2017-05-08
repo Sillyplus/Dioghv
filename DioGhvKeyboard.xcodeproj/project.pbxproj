@@ -11,6 +11,7 @@
 		3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */; };
 		3B26F9201E8E5BE0006F104A /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */; };
 		3B26F9221E8E6232006F104A /* Thanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26F9211E8E6232006F104A /* Thanks.storyboard */; };
+		3B377DC71EBB1798005ECA5A /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B377DC61EBB1798005ECA5A /* Guide.storyboard */; };
 		3B4ABD4A1E88BF1700D73EFA /* dict_dieziu_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD371E88BF1700D73EFA /* dict_dieziu_s.txt */; };
 		3B4ABD4B1E88BF1700D73EFA /* dict_dieziu_t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD381E88BF1700D73EFA /* dict_dieziu_t.txt */; };
 		3B4ABD4C1E88BF1700D73EFA /* dict_dioion_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B4ABD3A1E88BF1700D73EFA /* dict_dioion_s.txt */; };
@@ -125,6 +126,7 @@
 		3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSettingViewController.swift; sourceTree = "<group>"; };
 		3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		3B26F9211E8E6232006F104A /* Thanks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Thanks.storyboard; sourceTree = "<group>"; };
+		3B377DC61EBB1798005ECA5A /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		3B4ABD371E88BF1700D73EFA /* dict_dieziu_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_s.txt; sourceTree = "<group>"; };
 		3B4ABD381E88BF1700D73EFA /* dict_dieziu_t.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dieziu_t.txt; sourceTree = "<group>"; };
 		3B4ABD3A1E88BF1700D73EFA /* dict_dioion_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict_dioion_s.txt; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 		3BCD678E1E6E9E0800135DFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B377DC61EBB1798005ECA5A /* Guide.storyboard */,
 				3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */,
 				3B26F9211E8E6232006F104A /* Thanks.storyboard */,
 				3B6978831E987F050001FC7C /* WordCardTableViewCell.swift */,
@@ -682,6 +685,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B377DC71EBB1798005ECA5A /* Guide.storyboard in Resources */,
 				3B26F9201E8E5BE0006F104A /* AboutUs.storyboard in Resources */,
 				3B26F9221E8E6232006F104A /* Thanks.storyboard in Resources */,
 				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,

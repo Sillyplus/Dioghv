@@ -126,4 +126,28 @@ extension Hermes {
         
         return ret
     }
+    
+    public func randomRow() -> Row? {
+        var ret: Row? = nil
+        
+        let tableName = Zeus.stringNameBy(PrimaryArea: Zeus.singleton.primaryArea!, AndType: Zeus.singleton.chineseType!)
+        if let db = dbM.connection {
+            let tb = Table(tableName)
+            do {
+                let count = try db.scalar(tb.select(Zeus.idEx.count))
+                // seem dangerous
+                let randNum: Int64 = Int64(arc4random_uniform(UInt32(count) + 1))
+                
+                if let retRow = try db.pluck(tb.filter(Zeus.idEx == randNum)) {
+                    ret = retRow
+                }
+            } catch {
+                print("Get random row failed")
+            }
+        } else {
+            print("Connect to DB Failed")
+        }
+        
+        return ret
+    }
 }

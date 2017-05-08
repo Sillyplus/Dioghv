@@ -51,7 +51,6 @@ class HomeViewController: UIViewController {
         courseCell.textLabel?.text = "教程"
         thanksCell.textLabel?.text = "感谢"
         aboutUsCell.textLabel?.text = "关于"
-        
 
     }
 
@@ -145,7 +144,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            let guideVC = GuideViewController()
+            let guideSB = UIStoryboard(name: "Guide", bundle: nil)
+            let guideVC = guideSB.instantiateViewController(withIdentifier: "GuideView")
             self.show(guideVC, sender: self)
         case 1:
             switch indexPath.row {
