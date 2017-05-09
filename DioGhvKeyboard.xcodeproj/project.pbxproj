@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		398CF5E3275043BA8EFF3AE1 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F351B5FF569500BD01EE6F31 /* Pods_Keyboard.framework */; };
 		3B0E618F1E80E48000A300B5 /* BaseSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */; };
+		3B18BD031EC14C2000CFEE56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B18BD021EC14C2000CFEE56 /* Images.xcassets */; };
 		3B26F9201E8E5BE0006F104A /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */; };
 		3B26F9221E8E6232006F104A /* Thanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26F9211E8E6232006F104A /* Thanks.storyboard */; };
 		3B377DC71EBB1798005ECA5A /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B377DC61EBB1798005ECA5A /* Guide.storyboard */; };
@@ -52,7 +53,6 @@
 		3BB87A8C1E6EAA6300711FED /* Dboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8B1E6EAA6300711FED /* Dboard.swift */; };
 		3BB87A901E6FA54100711FED /* DboardCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */; };
 		3BCD67921E6E9E0800135DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */; };
-		3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCD678C1E6E9E0800135DFE /* Images.xcassets */; };
 		3BCD67961E6EA21300135DFE /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD67951E6EA21300135DFE /* Key.swift */; };
 		4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E807DC81946209600D875D1 /* KeyboardKey.swift */; };
 		4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */; };
@@ -124,6 +124,7 @@
 /* Begin PBXFileReference section */
 		202DA5DBAAE3C8AECEFB9D3F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		3B0E618E1E80E48000A300B5 /* BaseSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSettingViewController.swift; sourceTree = "<group>"; };
+		3B18BD021EC14C2000CFEE56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3B26F91F1E8E5BE0006F104A /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		3B26F9211E8E6232006F104A /* Thanks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Thanks.storyboard; sourceTree = "<group>"; };
 		3B377DC61EBB1798005ECA5A /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
@@ -171,7 +172,6 @@
 		3BB87A8B1E6EAA6300711FED /* Dboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dboard.swift; path = Dboard/Dboard.swift; sourceTree = "<group>"; };
 		3BB87A8F1E6FA54100711FED /* DboardCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DboardCandidate.swift; path = Dboard/DboardCandidate.swift; sourceTree = "<group>"; };
 		3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BCD678C1E6E9E0800135DFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BCD678D1E6E9E0800135DFE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCD67951E6EA21300135DFE /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Model/Key.swift; sourceTree = "<group>"; };
 		4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
@@ -383,8 +383,8 @@
 		3BCD678A1E6E9E0800135DFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B18BD021EC14C2000CFEE56 /* Images.xcassets */,
 				3BCD678B1E6E9E0800135DFE /* AppDelegate.swift */,
-				3BCD678C1E6E9E0800135DFE /* Images.xcassets */,
 				3B9A2D261E738F5E009D7EB5 /* DioGhv.entitlements */,
 				3BCD678D1E6E9E0800135DFE /* Info.plist */,
 			);
@@ -686,9 +686,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B377DC71EBB1798005ECA5A /* Guide.storyboard in Resources */,
+				3B18BD031EC14C2000CFEE56 /* Images.xcassets in Resources */,
 				3B26F9201E8E5BE0006F104A /* AboutUs.storyboard in Resources */,
 				3B26F9221E8E6232006F104A /* Thanks.storyboard in Resources */,
-				3BCD67931E6E9E0800135DFE /* Images.xcassets in Resources */,
 				3B6978861E987F050001FC7C /* WordCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

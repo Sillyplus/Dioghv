@@ -17,6 +17,10 @@ class CourseViewController: UIViewController {
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.navigationItem.title = "教程"
         
+        let safariBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "safari"), style: .plain, target: self, action: #selector(openSafari))
+//        let outLinkBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(openSafari))
+        self.navigationItem.rightBarButtonItem = safariBarButton
+        
         self.view.addSubview(courseWebView)
         courseWebView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
@@ -25,21 +29,16 @@ class CourseViewController: UIViewController {
         courseWebView.loadRequest(URLRequest(url: URL(string: "https://kahaani.github.io/gatian")!))
         
     }
+    
+    func openSafari() {
+        UIApplication.shared.open(URL(string: "https://kahaani.github.io/gatian")!, options: [:]) { (result) in
+            print(result)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
