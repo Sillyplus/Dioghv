@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     var tableView: UITableView = UITableView()
     var guideCell: UITableViewCell = UITableViewCell()
-    var baseSettingCell: UITableViewCell = UITableViewCell()
+    var basicSettingCell: UITableViewCell = UITableViewCell()
     var uiSettingCell: UITableViewCell = UITableViewCell()
     var proSettingCell: UITableViewCell = UITableViewCell()
     var praticeCell: UITableViewCell = UITableViewCell()
@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         self.view.addSubview(tableView)
         
         guideCell.accessoryType = .disclosureIndicator
-        baseSettingCell.accessoryType = .disclosureIndicator
+        basicSettingCell.accessoryType = .disclosureIndicator
         uiSettingCell.accessoryType = .disclosureIndicator
         proSettingCell.accessoryType = .disclosureIndicator
         praticeCell.accessoryType = .disclosureIndicator
@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
         thanksCell.accessoryType = .disclosureIndicator
         
         guideCell.textLabel?.text = "使用向导"
-        baseSettingCell.textLabel?.text = "基础设置"
+        basicSettingCell.textLabel?.text = "基础设置"
         uiSettingCell.textLabel?.text = "界面设置"
         proSettingCell.textLabel?.text = "高级设置"
         praticeCell.textLabel?.text = "练习"
@@ -72,7 +72,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 1
         case 1:
-            return 3
+            return 2
         case 2:
             return 2
         case 3:
@@ -107,11 +107,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             switch indexPath.row {
             case 0:
-                return self.baseSettingCell
+                return self.basicSettingCell
             case 1:
-                return self.uiSettingCell
-            case 2:
                 return self.proSettingCell
+            case 2:
+                return self.uiSettingCell
             default:
                 fatalError("Unknow Cell At Section 1")
             }
@@ -150,13 +150,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             switch indexPath.row {
             case 0:
-                let baseSettingVC = BaseSettingViewController()
-                self.show(baseSettingVC, sender: self)
+                let basicSettingVC = BasicSettingViewController()
+                self.show(basicSettingVC, sender: self)
             case 1:
-                let _ = "Donothing"
-            case 2:
                 let advanceSettingVC = AdvanceSettingViewController()
                 self.show(advanceSettingVC, sender: self)
+            case 2:
+                let _ = "Donothing"
             default:
                 fatalError("Unoknow Row At Section 1")
             }

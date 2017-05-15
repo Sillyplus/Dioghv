@@ -1,5 +1,5 @@
 //
-//  BaseSettingViewController.swift
+//  BasicSettingViewController.swift
 //  DioGhvKeyboard
 //
 //  Created by silly on 21/03/2017.
@@ -10,7 +10,7 @@ import UIKit
 import DboardKit
 import PKHUD
 
-class BaseSettingViewController: UIViewController {
+class BasicSettingViewController: UIViewController {
     
     let zeus = Zeus.singleton
     
@@ -92,7 +92,7 @@ class BaseSettingViewController: UIViewController {
 
 }
 
-extension BaseSettingViewController: UITableViewDelegate, UITableViewDataSource {
+extension BasicSettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
