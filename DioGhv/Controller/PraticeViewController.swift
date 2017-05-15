@@ -88,17 +88,16 @@ extension PraticeViewController: UITableViewDelegate, UITableViewDataSource {
         return 60
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath) as! WordCardTableViewCell
-//        tableView.deselectRow(at: indexPath, animated: false)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCardCell", for: indexPath) as! WordCardTableViewCell
 
         if let randRow = hermes.randomRow() {
             cell.wordLabel.text = randRow[Zeus.nameEx]
-            cell.pronLabel.text = randRow[Zeus.pronunciationEx]
+            cell.setPronLabelText(with: randRow[Zeus.pronunciationEx])
             cell.rowId = randRow[Zeus.idEx]
             self.inputWord = cell.wordLabel.text!
         }

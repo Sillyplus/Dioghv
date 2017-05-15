@@ -108,7 +108,7 @@ extension AdvanceSettingViewController: UITableViewDelegate, UITableViewDataSour
         if indexPath.section == 0 && indexPath.row < self.dataArray.count {
             let row = dataArray[indexPath.row]
             cell.wordLabel.text = row[Zeus.nameEx]
-            cell.pronLabel.text = row[Zeus.pronunciationEx]
+            cell.setPronLabelText(with: row[Zeus.pronunciationEx])
             cell.rowId = row[Zeus.idEx]
         }
         return cell
@@ -116,6 +116,7 @@ extension AdvanceSettingViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! WordCardTableViewCell
+        // TODO: show editor view
         print(cell.rowId!)
         tableView.deselectRow(at: indexPath, animated: true)
     }
