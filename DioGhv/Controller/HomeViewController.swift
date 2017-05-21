@@ -107,20 +107,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             switch indexPath.row {
             case 0:
-                return self.basicSettingCell
+                return self.courseCell
             case 1:
-                return self.proSettingCell
-            case 2:
-                return self.uiSettingCell
+                return self.praticeCell
             default:
                 fatalError("Unknow Cell At Section 1")
             }
         case 2:
             switch indexPath.row {
             case 0:
-                return self.praticeCell
+                return self.basicSettingCell
             case 1:
-                return self.courseCell
+                return self.proSettingCell
+            case 2:
+                return self.uiSettingCell
             default:
                 fatalError("Unknow Cell At Section 2")
             }
@@ -149,6 +149,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             self.show(guideVC, sender: self)
         case 1:
             switch indexPath.row {
+            case 1:
+                let praticeVC = PraticeViewController()
+                self.show(praticeVC, sender: self)
+            case 0:
+                let courseVC = CourseViewController()
+                self.show(courseVC, sender: self)
+            default:
+                fatalError("Unknow Cell At Section 1")
+            }
+        case 2:
+            switch indexPath.row {
             case 0:
                 let basicSettingVC = BasicSettingViewController()
                 self.show(basicSettingVC, sender: self)
@@ -158,18 +169,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case 2:
                 let _ = "Donothing"
             default:
-                fatalError("Unoknow Row At Section 1")
-            }
-        case 2:
-            switch indexPath.row {
-            case 0:
-                let praticeVC = PraticeViewController()
-                self.show(praticeVC, sender: self)
-            case 1:
-                let courseVC = CourseViewController()
-                self.show(courseVC, sender: self)
-            default:
-                fatalError("Unknow Cell At Section 2")
+                fatalError("Unoknow Row At Section 2")
             }
         case 3:
             switch indexPath.row {
